@@ -1,3 +1,6 @@
 [submodule "themes/hugo-notepadium"]
 	path = themes/hugo-notepadium
 	url = git@github.com-mach1:Mach1Studios/hugo-notepadium.git
+[submodule "themes/ace-documentation"]
+	path = themes/ace-documentation
+	url = git@github.com-mach1:Mach1Studios/ace-documentation.git

@@ -1,7 +1,7 @@
 baseURL = "https://research.mach1.tech"
 languageCode = "en-us"
 title = "Mach1 Research"
-theme = "hugo-notepadium"
+theme = "ace-documentation"
 copyright = "©2020 Mach1, Corp."
 
 enableRobotsTXT = true
