@@ -47,6 +47,13 @@ Before listing the existing standards we have come across, it is important to ke
 | applied second | attitude      | elevation | φ (phi)   | pitch            |
 | applied last   | bank          | tilt      | ψ (psi)   | roll             |
 
+### Origin Story for Different X-Y-Z Descriptions
+
+We were curious why different engines/frameworks might have a different description for X-Y-Z translations in space. There was a common story we were able to trace for two patterns: 
+
+- **X,Y,Z where Z represents up/down height depth:** Typically from more modern engines or software relating to CAD or architecture, the idea is the common 2D view is a top-down view so that X and Y represent left/right, front/back respectivaly. Z being added on to describe more "height" or "layers of height" above, specifically easier to imagine when thinking about architecture CAD software where Z represents floors of a building.
+
+- **X,Y,Z where Z represents front/back depth:** Typically derived from older game enginers, where we imagine looking at a 2D screen in front of you, X represents left/right and Y represents up/down. As the game engine or framework evolved from 2D to 3D; Z was added to represent "depth" for front/back as X and Y are already spoken for.
 
 ## Mach1 Standards
 
