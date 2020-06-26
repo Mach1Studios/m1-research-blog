@@ -39,6 +39,9 @@ Before listing the existing standards we have come across, it is important to ke
 |               | (yaw-roll-pitch) | Left handed  |             |
 |               | (yaw-roll-pitch) | Right handed |             |
 
+#### Early Developer Cheat Sheet for reference
+![Early Developer Cheat Sheet for reference](resources/describing-3d/axis.png)
+
 ### Ideal Euler Rotation Descriptions
 
 | Order          | airplane      | telescope | symbol    | angular velocity |
