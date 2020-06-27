@@ -103,88 +103,88 @@ The Spatialially decoded results are available here.
 _Both the source multichannel audio and decompressed codec multichannel audio are being decoded in as Mach1Spatial 8 channel (YPR) at the same settings, the codec test material are then subtracted from the source so we can audibly listen to the remainder which would be the "difference" of signals due to the compression process._
 
 #### Source Spatially Decoded:
-**SOURCE WAV** [PCM]: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/ORIGINAL_Y0.wav"></source></audio>
+**SOURCE WAV** [PCM]: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/ORIGINAL_Y0.wav"></source></audio>
 
 #### Decoded Difference:
 _Note: This test is to audibly hear the difference, the less heard the more successful the codec at this quality setting was at recreating the source after decompressing._
-**AAC C16** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/AAC_C16_SUM.wav"></source></audio>
+**AAC C16** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/AAC_C16_SUM.wav"></source></audio>
 
-**AAC C48** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/AAC_C48_SUM.wav"></source></audio>
+**AAC C48** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/AAC_C48_SUM.wav"></source></audio>
 
-**AAC C320** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/AAC_C320_SUM.wav"></source></audio>
+**AAC C320** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/AAC_C320_SUM.wav"></source></audio>
 
-**AAC V0** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/AAC_V0_SUM.wav"></source></audio>
+**AAC V0** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/AAC_V0_SUM.wav"></source></audio>
 
-**AAC V2** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/AAC_V2_SUM.wav"></source></audio>
+**AAC V2** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/AAC_V2_SUM.wav"></source></audio>
 
-**AAC V10** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/AAC_V10_SUM.wav"></source></audio>
+**AAC V10** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/AAC_V10_SUM.wav"></source></audio>
 
-**MP3 C320** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/MP3_C320_SUM.wav"></source></audio>
+**MP3 C320** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/MP3_C320_SUM.wav"></source></audio>
 
-**MP3 V30** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/MP3_V30_SUM.wav"></source></audio>
+**MP3 V30** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/MP3_V30_SUM.wav"></source></audio>
 
-**MP3 V260** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/MP3_V260_SUM.wav"></source></audio>
+**MP3 V260** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/MP3_V260_SUM.wav"></source></audio>
 
-**OPUS C16** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/OPUS_C16_SUM.wav"></source></audio>
+**OPUS C16** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/OPUS_C16_SUM.wav"></source></audio>
 
-**OPUS C32** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/OPUS_C32_SUM.wav"></source></audio>
+**OPUS C32** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/OPUS_C32_SUM.wav"></source></audio>
 
-**OPUS C96** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/OPUS_C96_SUM.wav"></source></audio>
+**OPUS C96** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/OPUS_C96_SUM.wav"></source></audio>
 
-**OPUS V8** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/OPUS_V8_SUM.wav"></source></audio>
+**OPUS V8** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/OPUS_V8_SUM.wav"></source></audio>
 
-**OPUS V16** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/OPUS_V16_SUM.wav"></source></audio>
+**OPUS V16** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/OPUS_V16_SUM.wav"></source></audio>
 
-**OPUS V32** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/OPUS_V32_SUM.wav"></source></audio>
+**OPUS V32** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/OPUS_V32_SUM.wav"></source></audio>
 
-**VORBIS Q0** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/VORBIS_Q0_SUM.wav"></source></audio>
+**VORBIS Q0** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/VORBIS_Q0_SUM.wav"></source></audio>
 
-**VORBIS Q3** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/VORBIS_Q3_SUM.wav"></source></audio>
+**VORBIS Q3** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/VORBIS_Q3_SUM.wav"></source></audio>
 
-**VORBIS Q7** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/VORBIS_Q7_SUM.wav"></source></audio>
+**VORBIS Q7** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/VORBIS_Q7_SUM.wav"></source></audio>
 
-**VORBIS Q10** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/VORBIS_Q10_SUM.wav"></source></audio>
+**VORBIS Q10** Phase Cancelled: <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/VORBIS_Q10_SUM.wav"></source></audio>
 
 #### Decoded Codecs:
 _Note: This is to hear the audio after compression->decompression to hear how it alters from the source in a subjective comparison._
 
-**AAC C16** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/AAC_C16.wav"></source></audio>
+**AAC C16** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/AAC_C16.wav"></source></audio>
 
-**AAC C48** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/AAC_C48.wav"></source></audio>
+**AAC C48** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/AAC_C48.wav"></source></audio>
 
-**AAC C320** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/AAC_C320.wav"></source></audio>
+**AAC C320** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/AAC_C320.wav"></source></audio>
 
-**AAC V0** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/AAC_V0.wav"></source></audio>
+**AAC V0** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/AAC_V0.wav"></source></audio>
 
-**AAC V2** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/AAC_V2.wav"></source></audio>
+**AAC V2** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/AAC_V2.wav"></source></audio>
 
-**AAC V10** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/AAC_V10.wav"></source></audio>
+**AAC V10** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/AAC_V10.wav"></source></audio>
 
-**MP3 C320** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/MP3_C320.wav"></source></audio>
+**MP3 C320** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/MP3_C320.wav"></source></audio>
 
-**MP3 V30** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/MP3_V30.wav"></source></audio>
+**MP3 V30** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/MP3_V30.wav"></source></audio>
 
-**MP3 V260** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/MP3_V260.wav"></source></audio>
+**MP3 V260** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/MP3_V260.wav"></source></audio>
 
-**OPUS C16** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/OPUS_C16.wav"></source></audio>
+**OPUS C16** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/OPUS_C16.wav"></source></audio>
 
-**OPUS C32** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/OPUS_C32.wav"></source></audio>
+**OPUS C32** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/OPUS_C32.wav"></source></audio>
 
-**OPUS C96** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/OPUS_C96.wav"></source></audio>
+**OPUS C96** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/OPUS_C96.wav"></source></audio>
 
-**OPUS V8** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/OPUS_V8.wav"></source></audio>
+**OPUS V8** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/OPUS_V8.wav"></source></audio>
 
-**OPUS V16** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/OPUS_V16.wav"></source></audio>
+**OPUS V16** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/OPUS_V16.wav"></source></audio>
 
-**OPUS V32** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/OPUS_V32.wav"></source></audio>
+**OPUS V32** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/OPUS_V32.wav"></source></audio>
 
-**VORBIS Q0** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/VORBIS_Q0.wav"></source></audio>
+**VORBIS Q0** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/VORBIS_Q0.wav"></source></audio>
 
-**VORBIS Q3** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/VORBIS_Q3.wav"></source></audio>
+**VORBIS Q3** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/VORBIS_Q3.wav"></source></audio>
 
-**VORBIS Q7** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/VORBIS_Q7.wav"></source></audio>
+**VORBIS Q7** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/VORBIS_Q7.wav"></source></audio>
 
-**VORBIS Q10** <audio controls="controls"><source type="audio/wav" src="resources/soundfield-compression/audio/VORBIS_Q10.wav"></source></audio>
+**VORBIS Q10** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/VORBIS_Q10.wav"></source></audio>
 
 ### Limitations and Future Works
 
