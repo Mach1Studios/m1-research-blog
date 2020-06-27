@@ -4,11 +4,15 @@ date: 2017-06-05T03:10:05-04:00
 draft: true
 ---
 
+## Introduction 
+
 In this post we will decode implemented spatial audio decoders and associated binaural filters and other HRTF effect processes. At the time of this testing we are selecting available ambisonic players and plugins as well as the Mach1 Spatial VVBP approach. 
 
 The following are comparison of audio encoded into the following formats and decoded back to stereo in an effort to hear and compare audio processed in different spatial audio formats. Note that this comparison is only looking into fixed decoded positions to compare audio degradation and stereo imagery on decoding, a large portion of spatial audio format comparisons should also derive on the effect of orientation/directional audio, which will be the proceeding test subject (results were decoded .wav, if on IE you will be hearing an .mp3 conversion).
 
 All audio comes from the same source, and are decoded as if the user/player was orientated looking forward with Euler angles: yaw, pitch, roll. All audio is gain matched to make comparisons easier, it should be noted that some of these decoding formats have less dynamic gain range which this comparison demonstration does not illustrate and is another major feature to M1 Spatial which supports a fuller dynamic range than any ambisonic related spatial audio format.
+
+## Comparisons
 
 <p>
     <h4>Source Stereo</h4>
@@ -109,7 +113,7 @@ All audio comes from the same source, and are decoded as if the user/player was 
     <br> 
 </p> -->
 
-<h3>Additional Ambisonic AmbiX FOA (Youtube ACNSN3D)</h3>
+## Additional Ambisonic AmbiX FOA (Youtube ACNSN3D)
 <p>
       <p>To compare different filtering schemes applied to mix.</p>
       <h4>Decoded Facing Upward</h4>

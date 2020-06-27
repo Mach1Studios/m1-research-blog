@@ -40,7 +40,7 @@ Before listing the existing standards we have come across, it is important to ke
 |               | (yaw-roll-pitch) | Right handed |             |
 
 #### Early Developer Cheat Sheet for reference
-![Early Developer Cheat Sheet for reference](resources/describing-3d/axis.png)
+<img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/describing-3d/axis.png" alt="" style="width:75%;">
 
 ### Ideal Euler Rotation Descriptions
 

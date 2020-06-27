@@ -17,7 +17,7 @@ To determine the value of compression in terms of file reduction compared to the
 - AAC via FDKAAC
 - AAC via apple
 
-### Test Material
+## Test Material
 - Test 1: Wideband noise material in 90 degree offset combined into a soundfield with a narrowband saw wave @ 2kHz in the front direction and a sine tone panned 90 degree to the left.
 
 ## Methodology
@@ -44,9 +44,9 @@ To determine the value of compression in terms of file reduction compared to the
 | MP3        | 260            | Variable        |
 
 ## First Test Case
-  To proceed, a mean over the total time of the Magnitude Squared Coherence Estimate was taken between the source PCM audio and the codec's decompressed PCM of each compression and quality to get the `Correlation Percent`.
+To proceed, a mean over the total time of the Magnitude Squared Coherence Estimate was taken between the source PCM audio and the codec's decompressed PCM of each compression and quality to get the `Correlation Percent`.
   
-  The `Time Difference` was calculated by comparing the number of samples in the source PCM audio file to the number of samples in the decompressed PCM of each compression and quality. 
+The `Time Difference` was calculated by comparing the number of samples in the source PCM audio file to the number of samples in the decompressed PCM of each compression and quality. 
   
 Figure below, depicts the accumulated results:
 
@@ -76,7 +76,9 @@ Figure below, depicts the accumulated results:
 | MP3 V260      | 2.68MB        |   91.64%   |     | No
 
 \*  _Only for showing decoded signal difference without compensating for time domain changes due to codec_ _(not conclusive, see \#Limitations section for more information)_
+
 \*\* _Calculated after decoding back to PCM and comparing number of samples_
+
 \*\*\* Possible exploit issue in command of compression settings, not definitive
 
 ## Observations for the First Test Case
@@ -186,7 +188,7 @@ _Note: This is to hear the audio after compression->decompression to hear how it
 
 **VORBIS Q10** <audio controls="controls"><source type="audio/wav" src="https://mach1-research-public.s3.amazonaws.com/posts/resources/soundfield-compression/audio/VORBIS_Q10.wav"></source></audio>
 
-### Limitations and Future Works
+## Limitations and Future Works
 
 Although these tests are analyzing different codecs and how they are affecting the files, they do not necessarily study how they might affect the spatial image of the multichannel files. One might argue that any changes in the sample numbers, amplitude and the frequency domain will inevitably affect the spatial image, but it is crucial to come up with methods to analyze this in further details.
 
