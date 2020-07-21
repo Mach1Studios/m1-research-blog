@@ -9,19 +9,26 @@ As more and more devices become available on the market for headtracking and pos
 
 Additionally we are excited to which of these devices will be easy for 3rd party developers to use for their use cases, instead of just having access to the tethered software of each device, we will list the ones that support open use (`open-use`) as well as those that do not (via `closed/inaccessible`)
 
+## Development Tracking
+- (`TBD`) - Orientation is not accessible, public SDK in progress
+- (`open-use`) - Orientation data is accessible, full public SDK available
+- (`semi-open-use`) - Orientation data is limited, no official public SDK available
+- (`closed/inaccessible`) - Orientation data is not accessible or is proprietary
+
 ### Headphones / Earphones
- - Apple AirPod Pro
- - Bose NC 700
- - Bose QC35 II
- - Bose Frames Alto
- - Bose Frames Rondo
+ - Apple AirPod Pro (`TBD`)
+ - Bose NC 700  (`semi-open-use`)
+ - Bose QC35 II (`semi-open-use`)
+ - Bose Frames Alto (`semi-open-use`)
+ - Bose Frames Rondo (`semi-open-use`)
+ - Audeze Mobius (`closed/inaccessible`)
  - JBL Quantum One (`closed/inaccessible`)
 
 ### Attachable IMU Trackers
- - EDTracker Pro
- - WitMotion
+ - EDTracker Pro (`open-use`)
+ - WitMotion (`open-use`)
  - Waves NX (`closed/inaccessible`)
- - BBC micro:bit
+ - BBC micro:bit (`open-use`)
 
 ### AR/MR Glasses
  - MagicLeap: Lightwear
