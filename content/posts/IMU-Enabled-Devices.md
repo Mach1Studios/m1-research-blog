@@ -21,7 +21,7 @@ Additionally we are excited to which of these devices will be easy for 3rd party
  - Bose QC35 II (`semi-open-use`)
  - Bose Frames Alto (`semi-open-use`)
  - Bose Frames Rondo (`semi-open-use`)
- - Audeze Mobius (`closed/inaccessible`)
+ - [Audeze Mobius](#audeze-mobius) (`semi-open-use`)
  - JBL Quantum One (`closed/inaccessible`)
 
 ### Attachable IMU Trackers
@@ -64,3 +64,9 @@ Additionally we are excited to which of these devices will be easy for 3rd party
 
 #### Opensource Facetrackers
  - Spark AR: Face Tracker
+
+## Device Specific Instructions
+
+#### Audeze Mobius
+The Link Mode checkbox in the HQ app is a beta feature in our latest HQ App & Firmware that allows apps using Zeroconf (such as FaceBook360's OSC protocol) to access the head tracking data provided by Mobius. If you have software that's compatible with that protocol, the data should transmit to it when you check the box in HQ as follows:
+<img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/imu-enabled-devices/inline-149321904.png" alt="" style="width:75%;">
