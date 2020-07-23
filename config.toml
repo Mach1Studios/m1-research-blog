@@ -18,10 +18,12 @@ style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: bas
 dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
 logo = ""  # if you have a logo png
 slogan = ""
-fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, default is false.
+fullRss = true # Puts entire HTML post into rss 'description' tag. If unset, default is false.
+disableSearch = false # default is false
+disableReadmoreNav = true # set true to hide prev/next navigation, default is false
 
 [params.comments]
-enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
+enable = true  # En/Disable comments globally, default: false. You can always enable comments on per page.
 
 [params.math]
 enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
@@ -41,5 +43,15 @@ title = "About"
 url = "/about"
 
 [params.nav]
-showCategories = false       # /categories/
-showTags = false             # /tags/
+showCategories = true       # /categories/
+showTags = true             # /tags/
+
+[[menu.shortcuts]]
+name = "Mach1"
+url = "https://www.mach1.tech"
+weight = 1
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-github'></i>"
+url = "https://github.com/Mach1Studios/m1-sdk"
+weight = 2
