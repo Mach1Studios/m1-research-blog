@@ -68,5 +68,5 @@ Additionally we are excited to which of these devices will be easy for 3rd party
 ## Device Specific Instructions
 
 #### Audeze Mobius
-The Link Mode checkbox in the HQ app is a beta feature in our latest HQ App & Firmware that allows apps using Zeroconf (such as FaceBook360's OSC protocol) to access the head tracking data provided by Mobius. If you have software that's compatible with that protocol, the data should transmit to it when you check the box in HQ as follows:
+The Link Mode checkbox in the [Audeze HQ](https://www.audeze.com/pages/audeze-hq-software) application contains a beta feature with Audeze's latest Firmware that allows apps using Zeroconf (OSC protocol) to access the headtracking data provided by [Audeze Mobius](https://www.audeze.com/products/mobius). If you have software that's compatible with that protocol, the data should transmit to it when you check the box in HQ as follows:
 <img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/imu-enabled-devices/inline-149321904.png" alt="" style="width:75%;">
