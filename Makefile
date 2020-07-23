@@ -20,13 +20,16 @@ deploy: build/
 	aws s3 sync public/ s3://$(s3_bucket_name) --content-type text/plain --cache-control no-cache --acl public-read --metadata-directive REPLACE --exclude "*" --include "*.txt" --profile mach1
 	aws s3 sync public/ s3://$(s3_bucket_name) --content-type text/css --cache-control no-cache --acl public-read --metadata-directive REPLACE --exclude "*" --include "*.css" --profile mach1
 	aws s3 sync public/ s3://$(s3_bucket_name) --content-type application/xhtml+xml --cache-control no-cache --acl public-read --metadata-directive REPLACE --exclude "*" --include "*.xml" --profile mach1
+	aws s3 sync public/ s3://$(s3_bucket_name) --cache-control no-cache --acl public-read --metadata-directive REPLACE --exclude "*.html" --exclude "*.txt" --exclude "*.css" --exclude "*.xml" --exclude "*.svg" --profile mach1
+
+assets: build/
+	# deploys only the assets for content to avoid large uploads
 	aws s3 sync public/ s3://$(s3_bucket_name) --content-type image/svg+xml --cache-control no-cache --acl public-read --metadata-directive REPLACE --exclude "*" --include "*.svg" --profile mach1
 	aws s3 sync public/ s3://$(s3_bucket_name) --content-type image/jpeg --acl public-read --metadata-directive REPLACE --exclude "*" --include "*.jpg" --include "*.jpeg" --profile mach1
 	aws s3 sync public/ s3://$(s3_bucket_name) --content-type image/tiff --acl public-read --metadata-directive REPLACE --exclude "*" --include "*.tiff" --include "*.tif" --profile mach1
 	aws s3 sync public/ s3://$(s3_bucket_name) --content-type audio/aiff --acl public-read --metadata-directive REPLACE --exclude "*" --include "*.aif" --include "*.aiff" --profile mach1
 	aws s3 sync public/ s3://$(s3_bucket_name) --content-type audio/mpeg --acl public-read --metadata-directive REPLACE --exclude "*" --include "*.mp3" --profile mach1
 	aws s3 sync public/ s3://$(s3_bucket_name) --content-type audio/wav --acl public-read --metadata-directive REPLACE --exclude "*" --include "*.wav" --profile mach1
-	aws s3 sync public/ s3://$(s3_bucket_name) --cache-control no-cache --acl public-read --metadata-directive REPLACE --exclude "*.html" --exclude "*.txt" --exclude "*.css" --exclude "*.xml" --exclude "*.svg" --profile mach1
 
 clean:
 	# remove generated static site

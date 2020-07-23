@@ -16,11 +16,11 @@ Additionally we are excited to which of these devices will be easy for 3rd party
 - (`closed/inaccessible`) - Orientation data is not accessible or is proprietary
 
 ### Headphones / Earphones
- - Apple AirPod Pro (`TBD`)
  - Bose NC 700  (`semi-open-use`)
  - Bose QC35 II (`semi-open-use`)
  - Bose Frames Alto (`semi-open-use`)
  - Bose Frames Rondo (`semi-open-use`)
+ - Apple AirPod Pro (`TBD`)
  - [Audeze Mobius](#audeze-mobius) (`semi-open-use`)
  - JBL Quantum One (`closed/inaccessible`)
 
