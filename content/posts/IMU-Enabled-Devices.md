@@ -20,7 +20,7 @@ Additionally we are excited to which of these devices will be easy for 3rd party
  - Bose QC35 II (`semi-open-use`)
  - Bose Frames Alto (`semi-open-use`)
  - Bose Frames Rondo (`semi-open-use`)
- - Apple AirPod Pro (`TBD`)
+ - Apple AirPod Pro (`open-use`)
  - [Audeze Mobius](#audeze-mobius) (`semi-open-use`)
  - JBL Quantum One (`closed/inaccessible`)
 
@@ -66,6 +66,10 @@ Additionally we are excited to which of these devices will be easy for 3rd party
  - Spark AR: Face Tracker
 
 ## Device Specific Instructions
+
+#### AirPod Pro
+As of Xcode 12 Beta Preview 6 or newer (Xcode 12) along with iOS 14+ the [CMHeadphoneMotionManager](https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager) API is available and with minimal effort we can expose the orientation data of the AirPod Pro. 
+View our demo implementation of this via an iOS app that outputs the orientation data via OSC here: https://github.com/Mach1Studios/M1-AirPodOSC
 
 #### Audeze Mobius
 The Link Mode checkbox in the [Audeze HQ](https://www.audeze.com/pages/audeze-hq-software) application contains a beta feature with Audeze's latest Firmware that allows apps using Zeroconf (OSC protocol) to access the headtracking data provided by [Audeze Mobius](https://www.audeze.com/products/mobius). If you have software that's compatible with that protocol, the data should transmit to it when you check the box in HQ as follows:
