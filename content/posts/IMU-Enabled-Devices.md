@@ -27,7 +27,7 @@ Additionally we are excited to which of these devices will be easy for 3rd party
 ### Attachable IMU Trackers
  - EDTracker Pro (`open-use`)
  - WitMotion (`open-use`)
- - Waves NX (`closed/inaccessible`)
+ - Waves NX (`closed/inaccessible`)(`semi-open-use`)
  - BBC micro:bit (`open-use`)
 
 ### AR/MR Glasses
@@ -70,6 +70,9 @@ Additionally we are excited to which of these devices will be easy for 3rd party
 #### AirPod Pro
 As of Xcode 12 Beta Preview 6 or newer (Xcode 12) along with iOS 14+ the [CMHeadphoneMotionManager](https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager) API is available and with minimal effort we can expose the orientation data of the AirPod Pro. 
 View our demo implementation of this via an iOS app that outputs the orientation data via OSC here: https://github.com/Mach1Studios/M1-AirPodOSC
+
+#### Waves NX : NXOSC (audiooo.com)
+The WavesNX are now usable for macOS to custom OSC output addresses via Katsuhiro Chiba's little middleman sniffer hacker application: https://audiooo.com/nxosc
 
 #### Audeze Mobius
 The Link Mode checkbox in the [Audeze HQ](https://www.audeze.com/pages/audeze-hq-software) application contains a beta feature with Audeze's latest Firmware that allows apps using Zeroconf (OSC protocol) to access the headtracking data provided by [Audeze Mobius](https://www.audeze.com/products/mobius). If you have software that's compatible with that protocol, the data should transmit to it when you check the box in HQ as follows:
