@@ -21,12 +21,14 @@ Additionally we are excited to which of these devices will be easy for 3rd party
  - Bose Frames Alto (`semi-open-use`)
  - Bose Frames Rondo (`semi-open-use`)
  - Apple AirPod Pro (`open-use`)
+ - Apple AirPod Max (`open-use`)
  - [Audeze Mobius](#audeze-mobius) (`semi-open-use`)
  - JBL Quantum One (`closed/inaccessible`)
 
 ### Attachable IMU Trackers
+ - [mBient Lab MetaMotion](https://mbientlab.com/metamotionr) (`open-use`)
+ - [WitMotion](#witmotion) (`open-use`)
  - EDTracker Pro (`open-use`)
- - WitMotion (`open-use`)
  - Waves NX (`closed/inaccessible`)(`semi-open-use`)
  - BBC micro:bit (`open-use`)
 
@@ -67,9 +69,14 @@ Additionally we are excited to which of these devices will be easy for 3rd party
 
 ## Device Specific Instructions
 
-#### AirPod Pro
+#### AirPod Pro & AirPod Max
 As of Xcode 12 Beta Preview 6 or newer (Xcode 12) along with iOS 14+ the [CMHeadphoneMotionManager](https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager) API is available and with minimal effort we can expose the orientation data of the AirPod Pro. 
 View our demo implementation of this via an iOS app that outputs the orientation data via OSC here: https://github.com/Mach1Studios/M1-AirPodOSC
+
+##### January-2021: On our latest QA the resulting orientation of the AirPod Max were different and not relative to the results outputted from AirPod Pro [Link](https://www.facebook.com/590732605/videos/10158158827442606/)
+
+#### WitMotion
+In an attempt to make the WitMotion controller accessible we have developed a cross-platform OpenFrameworks addon and example: https://github.com/Mach1Studios/ofxWitMotion
 
 #### Waves NX : NXOSC (audiooo.com)
 The WavesNX are now usable for macOS to custom OSC output addresses via Katsuhiro Chiba's little middleman sniffer hacker application: https://audiooo.com/nxosc
