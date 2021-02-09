@@ -73,7 +73,8 @@ Additionally we are excited to which of these devices will be easy for 3rd party
 As of Xcode 12 Beta Preview 6 or newer (Xcode 12) along with iOS 14+ the [CMHeadphoneMotionManager](https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager) API is available and with minimal effort we can expose the orientation data of the AirPod Pro. 
 View our demo implementation of this via an iOS app that outputs the orientation data via OSC here: https://github.com/Mach1Studios/M1-AirPodOSC
 
-##### January-2021: On our latest QA the resulting orientation of the AirPod Max were different and not relative to the results outputted from AirPod Pro [Link](https://www.facebook.com/590732605/videos/10158158827442606/)
+_January-2021: On our latest QA the resulting orientation of the AirPod Max were different and not relative to the results outputted from AirPod Pro_
+[Link](https://www.facebook.com/590732605/videos/10158158827442606/)
 
 #### WitMotion
 In an attempt to make the WitMotion controller accessible we have developed a cross-platform OpenFrameworks addon and example: https://github.com/Mach1Studios/ofxWitMotion
@@ -83,4 +84,5 @@ The WavesNX are now usable for macOS to custom OSC output addresses via Katsuhir
 
 #### Audeze Mobius
 The Link Mode checkbox in the [Audeze HQ](https://www.audeze.com/pages/audeze-hq-software) application contains a beta feature with Audeze's latest Firmware that allows apps using Zeroconf (OSC protocol) to access the headtracking data provided by [Audeze Mobius](https://www.audeze.com/products/mobius). If you have software that's compatible with that protocol, the data should transmit to it when you check the box in HQ as follows:
+
 <img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/imu-enabled-devices/inline-149321904.png" alt="" style="width:75%;">
