@@ -28,6 +28,7 @@ assets: build/
 	aws s3 sync public/ s3://$(s3_bucket_name) --content-type image/svg+xml --cache-control no-cache --acl public-read --metadata-directive REPLACE --exclude "*" --include "*.svg" --profile mach1
 	aws s3 sync public/ s3://$(s3_bucket_name) --content-type image/png --acl public-read --metadata-directive REPLACE --exclude "*" --include "*.png" --profile mach1
 	aws s3 sync public/ s3://$(s3_bucket_name) --content-type image/jpeg --acl public-read --metadata-directive REPLACE --exclude "*" --include "*.jpg" --include "*.jpeg" --profile mach1
+	aws s3 sync public/ s3://$(s3_bucket_name) --content-type image/gif --acl public-read --metadata-directive REPLACE --exclude "*" --include "*.gif" --profile mach1
 	aws s3 sync public/ s3://$(s3_bucket_name) --content-type image/tiff --acl public-read --metadata-directive REPLACE --exclude "*" --include "*.tiff" --include "*.tif" --profile mach1
 	aws s3 sync public/ s3://$(s3_bucket_name) --content-type audio/aiff --acl public-read --metadata-directive REPLACE --exclude "*" --include "*.aif" --include "*.aiff" --profile mach1
 	aws s3 sync public/ s3://$(s3_bucket_name) --content-type audio/mpeg --acl public-read --metadata-directive REPLACE --exclude "*" --include "*.mp3" --profile mach1
