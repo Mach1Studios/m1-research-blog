@@ -19,6 +19,31 @@ A very handy feature and addition to OPUS codec is the `mapping_family` argument
  - `1` for adding LFE filtering to multichannel inputs
  - `255` for discrete channel handling or to unspecify the channel_layout (thank you!!!)
 
+#### filter_complex
+You can get different channel orders by using different techniques to interleave multichannel streams in FFmpeg: 
+ - `amerge`
+ - `join` 
+
+#### Channel Ordering
+The following is an example of making a discretely handled 8 channels of audio.
+
+#### `amerge`
+```bash
+ffmpeg -i 000.wav -i 001.wav -i 002.wav -i 003.wav -i 004.wav -i 005.wav -i 006.wav -i 007.wav -filter_complex "[0:a][1:a][2:a][3:a][4:a][5:a][6:a][7:a]amerge=inputs=8[aout]" -map "[aout]" output.wav
+```
+```bash
+ffmpeg -i MERGED-amerge.wav -c:a libopus -mapping_family:a 255 -application:a audio -b:a 384K MERGED-amerge.opus 
+```
+
+#### `join`
+```bash
+ffmpeg -i 002.wav -i 000.wav -i 001.wav -i 003.wav -i 004.wav -i 005.wav -i 006.wav -i 007.wav -filter_complex "[0:a][1:a][2:a][3:a][4:a][5:a][6:a][7:a]join=inputs=8:channel_layout=octagonal[a]" -map "[aout]" output.wav
+```
+```bash
+ffmpeg -i output.wav -c:a libopus -mapping_family:a 255 -application:a audio output.opus
+```
+
+
 ### VORBIS (OGG)
 
 ### aac (AAC/M4A)
