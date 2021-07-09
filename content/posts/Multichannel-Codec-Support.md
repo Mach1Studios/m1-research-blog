@@ -25,7 +25,7 @@ You can get different channel orders by using different techniques to interleave
  - `join` 
 
 #### Channel Ordering
-The following is an example of making a discretely handled 8 channels of audio.
+The following is an example of making a discretely handled 8 channel audio file.
 
 #### `amerge`
 ```bash
@@ -37,16 +37,27 @@ ffmpeg -i MERGED-amerge.wav -c:a libopus -mapping_family:a 255 -application:a au
 
 #### `join`
 ```bash
-ffmpeg -i 002.wav -i 000.wav -i 001.wav -i 003.wav -i 004.wav -i 005.wav -i 006.wav -i 007.wav -filter_complex "[0:a][1:a][2:a][3:a][4:a][5:a][6:a][7:a]join=inputs=8:channel_layout=octagonal[a]" -map "[aout]" output.wav
+ffmpeg -i 002.wav -i 000.wav -i 001.wav -i 003.wav -i 004.wav -i 005.wav -i 006.wav -i 007.wav -filter_complex "[0:a][1:a][2:a][3:a][4:a][5:a][6:a][7:a]join=inputs=8:channel_layout=octagonal[a]" -map "[a]" output.wav
 ```
 ```bash
 ffmpeg -i output.wav -c:a libopus -mapping_family:a 255 -application:a audio output.opus
 ```
 
 
-### VORBIS (OGG)
+### vorbis (OGG)
 
 ### aac (AAC/M4A)
+
+#### Channel Ordering
+The following is an example of making a discretely handled 8 channel audio file.
+
+#### `join`		
+```bash
+ffmpeg -i 006.wav -i 000.wav -i 001.wav -i 007.wav -i 004.wav -i 005.wav -i 002.wav -i 003.wav -filter_complex "[0:a][1:a][2:a][3:a][4:a][5:a][6:a][7:a]join=inputs=8:channel_layout=octagonal[a]" -map "[a]" output.wav
+```
+```bash
+ffmpeg -i output.wav -c:a aac -b:a 1024k -q:a 10 output.aac 
+```
 
 ### fdk-aac (AAC/M4A)
 
