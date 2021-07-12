@@ -1,17 +1,19 @@
-## Spatial Audio Technology Terms
+---
+title: "Technology Terms"
+---
 
 ### [3DOF](#3dof-technical)
 
 _Typically refers to a single sensor (accelerometer or gyroscope) 3 axis output values_
 ##### Synonyms : 
-##### Related Terms : 3DOF (Movement)
+##### Related Terms : [3DOF (Movement)](../mixing-terms#3dof-mixing)
 
 ___
 ### [6DOF](#6dof-technical)
 
 _Typically refers to the usage of two sensors (accelerometer and/or gyroscope and/or magnometer) 6 axis output values_
 ##### Synonyms : 
-##### Related Terms : 6DOF (Movement)
+##### Related Terms : [6DOF (Movement)](../mixing-terms#6dof-mixing)
 
 ___
 ### [9DOF](#9dof-technical)

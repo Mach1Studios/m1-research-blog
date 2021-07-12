@@ -1,7 +1,7 @@
 ---
 title: "Comparing Binaural Decoders"
 date: 2017-06-05T03:10:05-04:00
-draft: true
+draft: false
 ---
 
 ## Introduction 

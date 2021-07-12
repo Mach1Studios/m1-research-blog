@@ -1,1 +1,0 @@
-# Spatial / Multichannel Audio Glossary

@@ -37,6 +37,9 @@ assets: build/
 clean:
 	# remove generated static site
 	rm -fr public/
+
+clear: clean
+	
 local:
 	hugo server -D
 
