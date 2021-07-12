@@ -24,6 +24,10 @@ You can get different channel orders by using different techniques to interleave
  - `amerge`
  - `join` 
 
+Using `amerge` tends to avoid channel_layout issues such as automatically processing and filtering `LFE` channels, however this could lead to issues later when other audio libraries or media handles assume your audio is something it is not. 
+
+Using `join` if possible should use `octoganal` (for 8 channel) or any channel_layout that tends to treat all channels more discretely (to avoid issues with channel order and filtering LFE channels when unintended). Not every codec can support all channel_layouts and not every codec has a nice way to indicate "LEAVE MY CHANNELS ALONE!".
+
 #### Channel Ordering
 The following is an example of making a discretely handled 8 channel audio file.
 
@@ -43,8 +47,18 @@ ffmpeg -i 002.wav -i 000.wav -i 001.wav -i 003.wav -i 004.wav -i 005.wav -i 006.
 ffmpeg -i output.wav -c:a libopus -mapping_family:a 255 -application:a audio output.opus
 ```
 
-
 ### vorbis (OGG)
+
+#### Channel Ordering
+The following is an example of making a discretely handled 8 channel audio file.
+
+#### `amerge`
+```bash
+ffmpeg -i 000.wav -i 002.wav -i 001.wav -i 007.wav -i 005.wav -i 006.wav -i 003.wav -i 004.wav -filter_complex "[0:a][1:a][2:a][3:a][4:a][5:a][6:a][7:a]amerge=inputs=8[aout]" -map "[aout]" MERGED.wav
+```
+```bash
+ffmpeg -i MERGED.wav -c:a libvorbis -q:a 10 output.ogg
+```
 
 ### aac (AAC/M4A)
 
