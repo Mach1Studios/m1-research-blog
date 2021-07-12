@@ -1,51 +1,43 @@
 ---
-title: "Mixing Terms"
+title: "2. Mixing Terms"
 ---
 
-### [Encode](#encode)
-##### Synonyms : [Pan](#panning), [Panning](#panning), Input to Spatial Soundfield
+### [Encode](../mixing-terms#encode)
+##### Synonyms : [Pan](../mixing-terms#panning), [Panning](../mixing-terms#panning), Input to Spatial Soundfield
 ##### Related Terms :
-
-___
-### [Decode](#decode)
-##### Synonyms : [Monitor](#monitoring), [Monitoring](#monitoring), [Listening](#monitoring), Stereo Playback, [Binauralized](#binaural)
+---
+### [Decode](../mixing-terms#decode)
+##### Synonyms : [Monitor](../mixing-terms#monitoring), [Monitoring](../mixing-terms#monitoring), [Listening](../mixing-terms#monitoring), Stereo Playback, [Binauralized](../mixing-terms#binaural)
 ##### Related Terms :
-
-___
-### [Divergence](#diverge)
+---
+### [Divergence](../mixing-terms#diverge)
 ##### Synonyms : Focus, Directional Isolation
 ##### Related Terms : [Distance](../general-terms#distance)
-
-___
-### [Diegetic](#diegetic)
+---
+### [Diegetic](../mixing-terms#diegetic)
 
 _Refers to a sound placed or panned in the scene or soundfield around the listener_
-##### Synonyms : Scene-locked, Spatialized, [Panned](#panning)
+##### Synonyms : Scene-locked, Spatialized, [Panned](../mixing-terms#panning)
 ##### Related Terms :
-
-___
-### [Non-Diegetic](#non-diegetic)
+---
+### [Non-Diegetic](../mixing-terms#non-diegetic)
 
 _Refers to a sound locked to stereo instead of placed in a scene around the listener_
 ##### Synonyms : Headlocked, Traditional Stereo, Static Stereo
 ##### Related Terms :
-
-___
-### [HRTF](#hrtf)
-##### Synonyms : [Head Related Transfer Functions](../general-terms#hrtf), [Head Related Transfer Filters](../mixing-terms#hrtf)
-##### Related Terms :
-
-___
-### [Room Modeling](#room-modeling)
+---
+### [HRTF](../mixing-terms#hrtf)
+##### Synonyms : [Head Related Transfer Functions](../general-terms#hrtf)
+##### Related Terms : 
+---
+### [Room Modeling](../mixing-terms#room-modeling)
 ##### Synonyms : [Reverberance](../mixing-terms#reverberance)
 ##### Related Terms :
-
-___
-### [3DOF](#3dof-mixing)
+---
+### [3DOF](../mixing-terms#3dof)
 ##### Synonyms : 
-##### Related Terms : [3DOF (sensor)](../technical-terms#3dof-technical)
-
-___
-### [6DOF](#6dof-mixing)
+##### Related Terms : [3DOF (sensor)](../technical-terms#3dof)
+---
+### [6DOF](../mixing-terms#6dof)
 ##### Synonyms : 
-##### Related Terms : [6DOF (sensor)](../technical-terms#6dof-technical)
+##### Related Terms : [6DOF (sensor)](../technical-terms#6dof)
