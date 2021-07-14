@@ -13,6 +13,7 @@ title: "Spatial Audio Glossary"
 	- Channel-based Soundfields
 	- Object-based Soundfields
 	- Scene-based / Ambisonic Soundfields
+	- [Binaural Filtering](mixing-terms#binaural-filtering)
 ---
 - [Technical Terms]({{< relref "/glossary/technical-terms" >}})
 	- [Dimensions](technical-terms#3dof)
