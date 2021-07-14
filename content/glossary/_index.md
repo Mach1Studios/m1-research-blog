@@ -27,5 +27,5 @@ title: "Spatial Audio Glossary"
 	- [Gimmicks](misc-terms#gimmicks)
 ---
 ###### Credits:
-[Aïli Arakida Izsak](https://github.com/clpng)\
+[Aïli Arakida Niimura](https://github.com/clpng)\
 [Dylan Marcus](https://github.com/himwho)
