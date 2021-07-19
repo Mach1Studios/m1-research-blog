@@ -20,6 +20,7 @@ title: "Spatial Audio Glossary"
 	- [Dimensions](technical-terms#3dof)
 	- Runtime Spatial Audio
 	- Pre-Rendered Spatial Audio
+	- [Describing Rotations](technical-terms#azimuth)
 	- IMU
 	- Latency
 	- Assumptions on Hearing
