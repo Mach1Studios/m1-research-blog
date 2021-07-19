@@ -22,3 +22,14 @@ _Typically refers to the usage and combination of sensors for 10 or more axis da
 ##### Synonyms : 
 ##### Related Terms : 
 ---
+### [Encode](../technical-terms#encode)
+Having audio content input into a spatial or multichannel soundfield.
+##### Synonyms : [Pan](../mixing-terms#panning), [Panning](../mixing-terms#panning), Input to Spatial Soundfield
+##### Related Terms :
+---
+### [Decode](../technical-terms#decode)
+Having spatial or multichannel soundfield content output for an intended two ear or two channel playback.
+
+##### Synonyms : [Monitor](../mixing-terms#monitoring), [Monitoring](../mixing-terms#monitoring), [Listening](../mixing-terms#monitoring), Stereo Playback, [Binauralized](../mixing-terms#binaural)
+##### Related Terms : [Binaural](../mixing-terms#binaural)
+---

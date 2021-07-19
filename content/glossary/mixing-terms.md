@@ -2,12 +2,13 @@
 title: "2. Mixing Terms"
 ---
 
-### [Encode](../mixing-terms#encode)
-##### Synonyms : [Pan](../mixing-terms#panning), [Panning](../mixing-terms#panning), Input to Spatial Soundfield
+### [Panning](../mixing-terms#panning)
+
+##### Synonyms : [Pan](../mixing-terms#panning), [Encode](../technical-terms#encode), Input to Spatial Soundfield
 ##### Related Terms :
 ---
-### [Decode](../mixing-terms#decode)
-##### Synonyms : [Monitor](../mixing-terms#monitoring), [Monitoring](../mixing-terms#monitoring), [Listening](../mixing-terms#monitoring), Stereo Playback, [Binauralized](../mixing-terms#binaural)
+### [Monitoring](../mixing-terms#monitoring)
+##### Synonyms : [Monitor](../mixing-terms#monitoring), [Decode](../technical-terms#decode), [Listening](../mixing-terms#monitoring), Stereo Playback, [Binauralized](../mixing-terms#binaural)
 ##### Related Terms :
 ---
 ### [Divergence](../mixing-terms#diverge)
