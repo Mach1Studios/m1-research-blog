@@ -4,7 +4,7 @@ date: 2020-07-20T05:19:00-04:00
 draft: false
 ---
 
-### Flags
+## Flags
 Some common audio/video related flags or arguments to FFmpeg commands and what they mean.
 
 ##### General:
@@ -12,12 +12,16 @@ Some common audio/video related flags or arguments to FFmpeg commands and what t
 
 ##### Audio/Video:
 _NOTE: `a` || `v` are interchangeable_
+
 `-an` or `-vn` = remove either audio or video
+
 `-b:a` or` -b:v` = bitrate, great for reducing a HQ video to work on mobile (example: `-b:v 20m`)
+
 `-r` = frame rate (video)
+
 `-c:a` or `-c:v` = refers to a command relating to the codec, so if you want to copy one of those codecs you can write: `-c:v copy` which is passthrough for video
 
-### Commands
+## Commands
 
 #### Remove Audio:
 `ffmpeg -i input.mp4 -c:v copy -an output.mp4`
@@ -42,16 +46,17 @@ or
 #### Scale a video by video filter for reducing size:
 `ffmpeg -i input.mp4 -vf scale=iw*.5:ih*.5 output.mp4`
 
-#### Stereoscopic to Monoscopic:
-
-#### Over-under (top-bottom):
-`ffmpeg -i input.mp4 -vf crop=h=in_h/2:y=0 output.mp4`
-
-#### Side-by-side (left-right):
-`ffmpeg -i input.mp4 -vf crop=h=in_w/2:y=0 output.mp4`
-
 #### Convert to DNxHD for Pro Tools
 `ffmpeg -i input.mp4 -c dnxhd -s 1280x720 -r 24000/1001 -pix_fmt yuv422p -b 90M OUTPUTNAME.mov`
+
+### 360 Video Manipulation
+
+#### Stereoscopic to Monoscopic:
+##### Over-under (top-bottom):
+`ffmpeg -i input.mp4 -vf crop=h=in_h/2:y=0 output.mp4`
+
+##### Side-by-side (left-right):
+`ffmpeg -i input.mp4 -vf crop=h=in_w/2:y=0 output.mp4`
 
 #### 360 Video Rotation
 Where `100` is the desired amount of vertical pixels you want to offset from right to left, shifting the image toward the right:
