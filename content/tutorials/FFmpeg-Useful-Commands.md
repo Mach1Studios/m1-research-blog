@@ -23,30 +23,30 @@ _NOTE: `a` || `v` are interchangeable_
 
 ## Commands
 
-#### Remove Audio:
+##### Remove Audio:
 `ffmpeg -i input.mp4 -c:v copy -an output.mp4`
 
-#### Extract Audio (use preferred codec):
+##### Extract Audio (use preferred codec):
 `ffmpeg -i video.mp4 -vn -c:a copy -acodec pcm_s16le output.wav`
 
-#### Add Audio To Video:
+##### Add Audio To Video:
 `ffmpeg -i input.mp4 -i input.wav -c:v copy -c:a aac -b:a 320k output.mp4`
 or
 `ffmpeg -i input.mov -i input.wav -c:v copy output.mov`
 
-#### Adjust the Volume (percentage or db works) :
+##### Adjust the Volume (percentage or db works) :
 `ffmpeg -i input.mp4 -vcodec copy -af "volume=-15dB" -b:a 320k output.mp4`
 
-#### Adjust Length to the shortest audio or video:
+##### Adjust Length to the shortest audio or video:
 `ffmpeg -i input.mp4 -i audio.aac -shortest -c:v copy -c:a copy output.mp4`
 
-#### Scale a video for performance:
+##### Scale a video for performance:
 `ffmpeg -i input.mp4 -s 1920×960 output.mp4`
-or
-#### Scale a video by video filter for reducing size:
+
+##### Scale a video by video filter for reducing size:
 `ffmpeg -i input.mp4 -vf scale=iw*.5:ih*.5 output.mp4`
 
-#### Convert to DNxHD for Pro Tools
+##### Convert to DNxHD for Pro Tools
 `ffmpeg -i input.mp4 -c dnxhd -s 1280x720 -r 24000/1001 -pix_fmt yuv422p -b 90M OUTPUTNAME.mov`
 
 ### 360 Video Manipulation
