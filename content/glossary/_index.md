@@ -29,6 +29,9 @@ title: "Spatial Audio Glossary"
 	- Assumptions on Hearing
 	- Interaction
 - [Misc]({{< relref "/glossary/misc-terms" >}})
+	- [Apple Spatial Audio Explained](misc-terms#apple-spatial-audio)
+	- [Dolby Atmos Explained](misc-terms#dolby-atmos)
+	- [Sony 360 Reality Explained](misc-terms#sony-360)
 	- [Misused Terms](misc-terms#misused)
 	- [Gimmicks](misc-terms#gimmicks)
 ---
