@@ -28,6 +28,24 @@ If we had to pick, then here are four main elements that could define spatial au
 
 ---
 
+## Perception Terms
+
+---
+
+### [Diegetic](../general-terms#diegetic)
+_Refers to a sound placed or panned in the scene or soundfield around the listener._
+##### Synonyms : Scene-locked, Spatialized, [Panned](../general-terms#panning)
+##### Related Terms :
+
+---
+
+### [Non-Diegetic](../general-terms#non-diegetic)
+_Refers to a sound locked to stereo instead of placed in a scene around the listener._
+##### Synonyms : [Headlocked](../general-terms#non-diegetic), Traditional Stereo, Static Stereo
+##### Related Terms :
+
+---
+
 ### [Presence](../general-terms#presence)
 Presence might be the most crucial aspect of spatial sound because it adds to our ability to be moved by the content we consume. Presence is also closely related to engagement, and connection to ourselves and others. Needless to say, it's a powerful energy that spatial sound can create. Presence is the feeling of '_being there'_.
 ##### Synonyms : 
@@ -52,6 +70,7 @@ _In some spatial audio systems such as spherical based systems like ambisonics o
 ---
 
 ### [Localisation](../general-terms#localisation)
+_Localisation often refers to how well a listener or user is able to perceive the direction of a sound source in a spatial or multichannel surround field._
 
 ##### Synonyms : 
 ##### Related Terms : 
@@ -59,6 +78,7 @@ _In some spatial audio systems such as spherical based systems like ambisonics o
 ---
 
 ### [Externalization](../general-terms#externalization)
+_Externalization refers to how well a listener or user perceives the sound emitting [Dietgetically](../general-terms#diegetic) or from the space around the listener or user. This can be achieved from utilizing ILD, ITD and additional room modeling, reverberance, delay and HRTF processing to enhance the sound to be perceived externally._
 
 ##### Synonyms : 
 ##### Related Terms : 
