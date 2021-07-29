@@ -15,9 +15,9 @@ title: "Spatial Audio Glossary"
 	- [Binaural Filtering](mixing-terms#binaural-filtering)
 	- [Binaural Recording](mixing-terms#binaural-recording)
 	- [Dimensions](mixing-terms#3dof)
-	- Channel-based Soundfields
-	- Object-based Soundfields
-	- Scene-based / Ambisonic Soundfields
+	- [Channel-based Soundfields](mixing-terms#channel-based)
+	- [Object-based Soundfields](mixing-terms#object-based)
+	- [Scene-based / Ambisonic Soundfields](mixing-terms#scene-based)
 ---
 - [Technical Terms]({{< relref "/glossary/technical-terms" >}})
 	- [Dimensions](technical-terms#3dof)
@@ -35,6 +35,6 @@ title: "Spatial Audio Glossary"
 	- [Misused Terms](misc-terms#misused)
 	- [Gimmicks](misc-terms#gimmicks)
 ---
-###### Credits:
+###### Contributors:
 [Aïli Arakida Niimura](https://github.com/clpng)\
 [Dylan Marcus](https://github.com/himwho)
