@@ -8,7 +8,7 @@ title: "Spatial Audio Glossary"
 	- [Spatial Audio](general-terms#spatial-audio)
 	- [HRTFs](general-terms#HRTF)
 	- [Binaural](general-terms#binaural)
-	- [Spatial Audio Perception Terms](#general-terms#perception)
+	- [Spatial Audio Perception Terms](#general-terms#perception-terms)
 ---
 - [Mixing Terms]({{< relref "/glossary/mixing-terms" >}})
 	- [Common Workflow Terms](mixing-terms#workflow-terms)

@@ -28,7 +28,7 @@ If we had to pick, then here are four main elements that could define spatial au
 
 ---
 
-## Perception Terms
+## [Perception Terms](../general-terms#perception-terms)
 
 ---
 
