@@ -2,6 +2,10 @@
 title: "2. Mixing Terms"
 ---
 
+---
+## [Common Workflow Terms](../mixing-terms#workflow-terms)
+---
+
 ### [Panning](../mixing-terms#panning)
 _Refers to panning a source sound or track into a spatial soundfield multichannel configuration or format. It is completely synonymous with [Encode](../technical-terms#encode)_
 ##### Synonyms : [Pan](../mixing-terms#panning), [Encode](../technical-terms#encode), Input to Spatial Soundfield
@@ -22,6 +26,8 @@ _This is unique to a vector based spatial or multichannel audio system and is di
 ##### Synonyms : Focus, Directional Isolation
 ##### Related Terms : [Distance](../general-terms#distance)
 
+---
+## [Processing Effect Terms](../mixing-terms#processing-terms)
 ---
 
 ### [HRTF](../mixing-terms#hrtf)
@@ -62,6 +68,8 @@ These methods sound similar but are doing different things. If you slap on a bin
 ##### Related Terms : [Binaural Filtering](../mixing-terms#binaural-filtering)
 
 ---
+## [Spatial Mix Dimensions](../mixing-terms#spatial-dimensions)
+---
 
 ### [3DOF](../mixing-terms#3dof)
 _3DOF stands for 3 Degrees of Freedom:_
@@ -87,6 +95,8 @@ Typically this is referred to as [roomscale](../technical-terms#roomscale) or or
 ##### Synonyms : [Roomscale](../technical-terms#roomscale), Orientational & Positional
 ##### Related Terms : [6DOF (sensor)](../technical-terms#6dof)
 
+---
+## [Spatial Mixing Types](../mixing-terms#mix-types)
 ---
 
 ### [Channel-Based](../mixing-terms#channel-based)

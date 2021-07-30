@@ -2,6 +2,10 @@
 title: "3. Technical Terms"
 ---
 
+---
+## [Degrees of Freedom (DOF)](../technical-terms#dof)
+---
+
 ### [3DOF](../technical-terms#3dof)
 _Typically refers to a single sensor (accelerometer or gyroscope) 3 axis output values_
 ##### Synonyms : 
@@ -28,6 +32,8 @@ _Typically refers to the usage and combination of sensors for 10 or more axis da
 ##### Synonyms : 
 ##### Related Terms : 
 
+---
+## [Inputs & Outputs](../technical-terms#io)
 ---
 
 ### [Source](../technical-terms#source)
@@ -56,6 +62,8 @@ _Having spatial or multichannel soundfield content output for an intended two ea
 ##### Synonyms : [Monitor](../mixing-terms#monitoring), [Monitoring](../mixing-terms#monitoring), [Listening](../mixing-terms#monitoring), Stereo Playback, [Binauralized](../mixing-terms#binaural), [Listener](../technical-terms#listener)
 ##### Related Terms : [Binaural](../mixing-terms#binaural)
 
+---
+## [Describing Rotations](../technical-terms#describing-rotation)
 ---
 
 ### [Azimuth](../technical-terms#azimuth)
@@ -117,6 +125,8 @@ Used to describe rotation angles in which a full rotation is `2π` or `6.2831853
 ##### Related Terms : [Euler](../technical-terms#euler)
 
 ---
+## [Spatial Audio Pain Points](../technical-terms#painpoints)
+---
 
 ### [Gimbal Lock](../technical-terms#gimbal-lock)
 Gimbal lock is a loss of a degree of freedom when two axes rotate in parralel, the output rotation becomes one less degree of freedom.
@@ -138,6 +148,8 @@ When discussing latency in the audio world in general it can refer to the actual
 ##### Synonyms : 
 ##### Related Terms : 
 
+---
+## [Additional Technologies](../technical-terms#tech)
 ---
 
 ### [IMU](../technical-terms#imu)

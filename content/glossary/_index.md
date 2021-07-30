@@ -11,19 +11,20 @@ title: "Spatial Audio Glossary"
 	- [Spatial Audio Perception Terms](#general-terms#perception)
 ---
 - [Mixing Terms]({{< relref "/glossary/mixing-terms" >}})
-	- [Spatial Processing Terms](mixing-terms#panning)
-	- [Binaural Filtering](mixing-terms#binaural-filtering)
-	- [Binaural Recording](mixing-terms#binaural-recording)
-	- [Dimensions](mixing-terms#3dof)
+	- [Common Workflow Terms](mixing-terms#workflow-terms)
+	- [Processing Effect Terms](mixing-terms#processing-terms)
+	- [Spatial Mix Dimensions](mixing-terms#mix-dimensions)
+	- [Spatial Mixing Types](mixing-terms#mixing-types)
 	- [Channel-based Soundfields](mixing-terms#channel-based)
 	- [Object-based Soundfields](mixing-terms#object-based)
 	- [Scene-based / Ambisonic Soundfields](mixing-terms#scene-based)
 ---
 - [Technical Terms]({{< relref "/glossary/technical-terms" >}})
-	- [Dimensions](technical-terms#3dof)
-	- [Describing Rotations](technical-terms#azimuth)
-	- [IMU](technical-terms#imu)
-	- [Latency](technical-terms#latency)
+	- [Degrees of Freedom (DOF)](technical-terms#dof)
+	- [Inputs & Outputs](https://research.mach1.tech/glossary/technical-terms#io)
+	- [Describing Rotations](technical-terms#describing-rotations)
+	- [Spatial Audio Pain Points](../technical-terms#painpoints)
+	- [Additional Technologies](../technical-terms#tech)
 	- Assumptions on Hearing
 	- Interaction
 ---
@@ -36,6 +37,7 @@ title: "Spatial Audio Glossary"
 	- [Surround](existing-formats#surround)
 	###### Runtime Spatial Audio Implementations:
 	- [Apple Spatial Audio Explained](existing-formats#apple-spatial-audio)
+	- [Game Engine Object Audio](existing-formats#game-engine-object-audio)
 ---
 - [Misc]({{< relref "/glossary/misc-terms" >}})
 ---
