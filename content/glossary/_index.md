@@ -21,19 +21,23 @@ title: "Spatial Audio Glossary"
 ---
 - [Technical Terms]({{< relref "/glossary/technical-terms" >}})
 	- [Dimensions](technical-terms#3dof)
-	- Runtime Spatial Audio
-	- Pre-Rendered Spatial Audio
 	- [Describing Rotations](technical-terms#azimuth)
-	- IMU
-	- Latency
+	- [IMU](technical-terms#imu)
+	- [Latency](technical-terms#latency)
 	- Assumptions on Hearing
 	- Interaction
+---
+- [Existing Formats]({{< relref "/glossary/existing-formats" >}})
+	###### Pre-Rendered Spatial Audio Formats:
+	- [Mach1 Spatial](existing-formats#mach1-spatial)
+	- [Ambisonics](existing-formats#ambisonics)
+	- [Dolby Atmos Explained](existing-formats#dolby-atmos)
+	- [Sony 360 Reality Explained](existing-formats#sony-360)
+	- [Surround](existing-formats#surround)
+	###### Runtime Spatial Audio Implementations:
+	- [Apple Spatial Audio Explained](existing-formats#apple-spatial-audio)
+---
 - [Misc]({{< relref "/glossary/misc-terms" >}})
-	- [Apple Spatial Audio Explained](misc-terms#apple-spatial-audio)
-	- [Dolby Atmos Explained](misc-terms#dolby-atmos)
-	- [Sony 360 Reality Explained](misc-terms#sony-360)
-	- [Misused Terms](misc-terms#misused)
-	- [Gimmicks](misc-terms#gimmicks)
 ---
 ###### Contributors:
 [Aïli Arakida Niimura](https://github.com/clpng)\

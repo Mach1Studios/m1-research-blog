@@ -61,37 +61,100 @@ _Having spatial or multichannel soundfield content output for an intended two ea
 ### [Azimuth](../technical-terms#azimuth)
 _Refers to the horizontal angle or direction or rotation. Typically when discussing spatial audio a common example of usage of azimuth would be the azimuth of a sound source [panned](../mixing-terms#panning) around you as the [listener](../technical-terms#listener)._
 ##### Synonyms : Yaw
-##### Related Terms : 
+##### Related Terms : [Heading](../technical-terms#heading) 
 
 ---
 
 ### [Elevation](../technical-terms#elevation)
 _Refers to the angular distance of the source above or below the horizon._
 ##### Synonyms : Height, Pitch
-##### Related Terms : 
+##### Related Terms : [Heading](../technical-terms#heading)
+
+---
+
+### [Heading](../technical-terms#heading)
+A direction or bearing, combining the above terms of [Azimuth](../technical-terms#azimuth) and [Elevation](../technical-terms#elevation).
+
+##### Synonyms : 
+##### Related Terms : [Azimuth](../technical-terms#azimuth), [Elevation](../technical-terms#elevation)
 
 ---
 
 ### [Euler](../technical-terms#euler)
+Description of rotations comprised of 3 angles. Commonly using: 
+ - Yaw
+ - Pitch
+ - Roll / Tilt
+
+but sometimes referred to as `X, Y, Z` in some 3D systems _(be mindful of the order in which `X, Y, Z` can refer to `Yaw, Pitch, Roll`)_
+
+[Read more on this here.](https://research.mach1.tech/posts/describing-3d-motion)
 
 ##### Synonyms : 
-##### Related Terms : [Degrees](../technical-terms#degrees), [Radians](../technical-terms#radians)
+##### Related Terms : [Degrees](../technical-terms#degrees), [Radians](../technical-terms#radians), [Gimbal Lock](../technical-terms#gimbal-lock)
 
 ---
 
 ### [Quaternion](../technical-terms#quat)
+Mathematical notation for representing spatial orientations and rotations of elements in three dimensional space. Useful for [avoiding common issues when describing 3D](https://research.mach1.tech/posts/describing-3d-motion) rotations in [Euler](../technical-terms#euler) such as [Gimbal Lock](../technical-terms#gimbal-lock)
 ##### Synonyms : [Quat](../technical-terms#quat)
 ##### Related Terms : 
 
 ---
 
 ### [Degrees](../technical-terms#degrees)
+Used to describe rotation angles in which a full rotation is `360` degree units. 
+
+##### Synonyms : 
+##### Related Terms : [Euler](../technical-terms#euler)
+
+---
+
+### [Radians](../technical-terms#radians)
+Used to describe rotation angles in which a full rotation is `2π` or `6.28318530718`.
+
+##### Synonyms : 
+##### Related Terms : [Euler](../technical-terms#euler)
+
+---
+
+### [Gimbal Lock](../technical-terms#gimbal-lock)
+Gimbal lock is a loss of a degree of freedom when two axes rotate in parralel, the output rotation becomes one less degree of freedom.
+
+To explain this more simply; two or more axes line up in a way so that the applied Euler rotation cannot distiguish which of the two axes are rotating because they yield the same results. 
+
+_Example: If you add 90 pitch upward in degrees to an object, rotating yaw or roll would yield the same result._
+
+##### Synonyms : 
+##### Related Terms : [Euler](../technical-terms#euler)
+ 
+---
+
+### [Latency](../technical-terms#latency)
+Describes when something has a latent or delayed reaction. Typically in spatial audio world we can describe headtracking or 3D rotations as being latent when you can percieve a time delay from your real world motion to the interacted virtual motion. This can be a very destructive issue for any hardware that has motion based sensors in them when applied to audio for spatial audio perception.
+
+When discussing latency in the audio world in general it can refer to the actual audio signal itself having a perceived delay.
+
 ##### Synonyms : 
 ##### Related Terms : 
 
 ---
 
-### [Radians](../technical-terms#radians)
+### [IMU](../technical-terms#imu)
+Stands for *I*nertial *M*otion *U*nit, a series of sensors usually within a silicon chip that can typically include any number of the following sensor types:
+- Accelerometer
+- Gyroscope
+- Magnometer
+
+Each of these sensor outputs can have typically 3 data outputs so the IMU typically includes a process called [Sensor Fusion](../technical-terms#sensor-fusion) to combine the datasets of all sensors into one dataset for orientation and/or position.
+##### Synonyms : 
+##### Related Terms : [Sensor Fusion](../technical-terms#sensor-fusion)
+
+--- 
+
+### [Sensor Fusion](../technical-terms#sensor-fusion)
+Sensor Fusion is a a mathematics for combining multiple datasets relating to motion or force into one dataset for predicting orientation, [heading](../technical-terms#heading) and/or position. The output data can be collected into different types such as [Radians](../technical-terms#radians) or [Degrees](../technical-terms#degrees) or [Quaternion](../technical-terms#quat).
+
 ##### Synonyms : 
 ##### Related Terms : 
 

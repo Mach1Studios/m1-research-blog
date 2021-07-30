@@ -90,19 +90,20 @@ Typically this is referred to as [roomscale](../technical-terms#roomscale) or or
 ---
 
 ### [Channel-Based](../mixing-terms#channel-based)
-##### Synonyms : 
-##### Related Terms : 
+
+##### Synonyms : [Surround](../existing-formats#surround)
+##### Related Terms : [Mach1 Spatial](../existing-formats#mach1-spatial), [Dolby Atmos](../existing-formats#dolby-atmos)
 
 ---
 
 ### [Object-Based](../mixing-terms#object-based)
 
 ##### Synonyms : 
-##### Related Terms : 
+##### Related Terms : [Dolby Atmos](../existing-formats#dolby-atmos), [Sony 360](../existing-formats#sony-360)
 
 ---
 
 ### [Scene-Based](../mixing-terms#scene-based)
 
-##### Synonyms : [Ambisonics](../mixing-terms#ambisonics)
+##### Synonyms : [Ambisonics](../existing-formats#ambisonics)
 ##### Related Terms : 
