@@ -44,26 +44,14 @@ _Room modeling is a catch all term for various [reverberance](../mixing-terms#re
 ---
 
 ### [Binaural Filtering](../mixing-terms#binaural-filtering)
-When you make a **binaural recording**, you put one microphone into each ear of a dummy head, thereby recording from a first-person perspective. Remember that this means the perspective you are recording will be 'colored' by the dimensions of the dummy head and ears.  
 
-Alternatively, you can pop a microphone in each of your own ears and record with your own head size and ear shape. But the same concept applies to this method – if you pass on your recording to someone else, they will be listening from the perspective of _your_ ears. It might be pretty different from their own ears, which could degrade the quality of the spatial experience.
-
-Binaural recording is used most often for ASMR, for testing in audio technology, and for art and entertainment experiences.
 ##### Synonyms : 
 ##### Related Terms : [Binaural Recording](../mixing-terms#binaural-recording)
 
 ---
 
 ### [Binaural Recording](../mixing-terms#binaural-recording)
-When you hear any kind of ''spatial audio'' in your headphones, it is always a binaural mixdown, unless your headphones are over your ears and have multiple drivers (there are experimental versions of this but nothing of the sort is available for consumers, so we'll ignore experimental headsets for now). 
 
-If your recording was not made *binaurally*, the second and third way in which the term binaural is used is for **filtering and rendering**. 
-
-You could take a sound source such as a recording you took on your phone of your daughter playing violin, and bring it into a DAW. Then, you could apply some kind of binaural filter using a #plugin. 
-
-Or you could use a different kind of spatial audio plugin and then export it as a binaural file (two-channels but from a first-person perspective), or a multichannel binaural mix. The number of channels you are able to play back depend on the system you are using. If you have a multichannel file that can't be played on your system, you will have zero spatial audio. The way to overcome this is to create a binaural mixdown – an intermediary step that takes your multichannel file, and accurately mixes it down to two channels. However, if you do this, pay attention, because you might lose the ability to have head-tracking.
- 
-These methods sound similar but are doing different things. If you slap on a binaural filter early on, you're stuck with it. 
 ##### Synonyms : 
 ##### Related Terms : [Binaural Filtering](../mixing-terms#binaural-filtering)
 
