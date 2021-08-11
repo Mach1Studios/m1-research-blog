@@ -101,6 +101,10 @@ _Localisation often refers to how well a listener or user is able to perceive th
 ### [Externalization](../general-terms#externalization)
 _Externalization refers to how well a listener or user perceives the sound emitting [Dietgetically](../general-terms#diegetic) or from the space around the listener or user. This can be achieved from utilizing ILD, ITD and additional room modeling, reverberance, delay and HRTF processing to enhance the sound to be perceived externally._
 
+Externalisation is the phenomenon of perceiving that what you hear is outside your head. It's exactly how we hear every day in normal life – when you hear a car coming up behind you as you walk to the coffee shop, you know where the car is, roughly how close it is, and how fast it is approaching you. An airplane sounds like it's above your head, obviously not inside your skull. 
+
+But when we put on a pair of headphones and listen to **stereo** content, something called in-head localisation occurs. In-head localisation just means that you hear the 'soundstage' on a line behind your eyes and between your two ears. So, instead of hearing Joni Mitchell crooning to you on stage, she's right in the center of your head. The in-head localisation effect has pros and cons. On one hand, lots of new music is produced for headphones. They fully take advantage of stereo phenomena (this speaks to how important it is to have your end-point rendering system in mind when you are producing), as well as the considerations of retroactively spatialising a stereo mix. On the other hand, a lot of artists love the creative that freedom spatial audio offers them. In addition, it can be really exhausting for your brain. Cognitively speaking, stereo listening over headphones is unnatural for your brain. When paired with immersive visual content, it is important to have spatial audio externalisation in order to really drive home your experience.
+
 ##### Synonyms : 
 ##### Related Terms : 
 
