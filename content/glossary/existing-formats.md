@@ -2,14 +2,15 @@
 title: "4. Existing Systems, methods, and formats of Spatial Audio"
 ---
 
-## Pre-rendered Spatial Audio Formats
 
 ### [Mach1 Spatial](../existing-formats#mach1-spatial)
+
 Mach1 spatial audio is an effect-process free and transparent container that introduces interactivity to unlock creative freedom for audio professionals and developers for scalable and customizable soundfield pipelines. This framework allows all the other flavors of “spatial audio” to be safely added on top of a simplified and modular spatial audio framework, and ensures that traditional post-production pipelines are preserved as new mediums are invented.
 
 Mach1 is a VVBP system (Virtual Vector based panning system). VVBP is a useful method because it does not use effects that produce damaging artifacts in an artistic mix. There is no timbral effect on the mix, meaning the frequencies do not change and the quality of audio isn't altered in any way. Mach1 was born to meet the criteria for the preservation of professional audio standards and best practices in a medium where quality of sound is critical for maintaining immersion. The system is contained into a single multichannel deliverable through already existing audio containers and codecs. The system supports both head-tracked 3DOF spatial audi as well as 6DOF when integrated into a 3D Game Engine. It does not require any audio library or media engine and can function fully on top of any existing audio system/engine. The Mach1 system takes all traditional post-production practices and allows them to be deployed for interactive mediums such as VR, AR, MR and installations. 
 
 Mach1 Spatial is a "universal delivery format" because it handles multiple multichannel and spatial audio formats and configurations, as well as conversions between them and stereo conversions both with and without head-tracking. This system allows for full down mix and up mix control without any abstract layers of ''encoders'' and ''decoders'' (data conversion processes). The framework simplifies spatial/multichannel audio to allow the development of custom multichannel configurations allowing backend development control to speaker configurations. The control over custom audio pipelines creates a futureproof solution as new mediums emerge. 
+
 ---
 
 ### [Ambisonics](../existing-formats#ambisonics)
@@ -49,6 +50,7 @@ Apple's spatial audio is currently highly feature and use-case driven. The proce
 Dolby Atmos is not spatial audio. Dolby Atmos is an object-based method of audio rendering, making it a useful tool for spatial audio. It would be unexpected for Apple to continue using Dolby Atmos, especially as Apple must add an extra layer of processing and filtering in order to create the binaural effect. It will certainly not be used for all applications, as it would not be necessary to use their Dolby Atmos license for spatialised calls and notifications, and related auxiliary functions. 
 
 On the developer side, Apple has some spatial audio features such as #HRTFs and binaural room impulse responses, all of which are at odds with our vision of what spatial audio should be. Using developer tools, it is possible to develop spatial audio applications for Apple devices containing #IMU's.  The latest WWDC showed another audio engine called PHASE which can also be used for spatial and interactive audio. 
+
 ---
 
 ### [Facebook Spatial Audio](../existing-formats#facebook-spatial-audio)
@@ -67,12 +69,14 @@ For more information on Dolby Atmos, refer to [[2. Object-based]]
 ---
 
 ### [THX Spatial Audio](../existing-formats#thx-spatial-audio)
+
 While Mach1 Spatial and Facebook 360 are focused on the creation of spatial audio, THX offers an entirely different perspective and should not be compared. THX is an end-user solution that is marketed to enhance a gaming experience. We haven't seen any head-tracked spatial audio coming from THX. Our best description of THX is a post-processing chain of binaural filters and equalisation designed for listening to specific parts of a gaming soundscape. THX falls into the "virtual surround sound" category, but with more expansive calibration. Besides EQ, the two main spatial audio features they offer are virtual rendering of 7.1 surround sound and binauralized up-mixed version of standard stereo content. 
 At Mach1, we believe in preserving the high quality audio that sound designers, composers, and engineers worked expertly to create. While it is surely an entertaining feature, it is important to note that the methods THX use to spatialise audio are ultimately destructive to the creative mix.  
 
 ---
 
 ### [High Fidelity Spatial Audio](../existing-formats#high-fidelity-spatial-audio)
+
 High Fidelity is a spatial audio company that evolved as a pivot from social VR. Early beta versions demonstrated High Fidelity as an online platform with a 2D top-down view that featured spatial audio for the purpose of hosting, for example, simultaneous DJ sets that you could move your 2D avatar around the 2D space to discover. So 2D visuals, 3D audio. Recently, High Fidelity has offered themselves as a spatial audio integration tool for networked environments. Their spatial audio processing is geared for WebRTC (Web real-time communication). That makes their tools great for real-time voice over IP solutions with low latency and effective spatialisation. While their tools are interesting, they are not made for creators to produce spatial audio content by any means. 
 
 ---
