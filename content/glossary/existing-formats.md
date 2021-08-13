@@ -80,3 +80,19 @@ At Mach1, we believe in preserving the high quality audio that sound designers, 
 High Fidelity is a spatial audio company that evolved as a pivot from social VR. Early beta versions demonstrated High Fidelity as an online platform with a 2D top-down view that featured spatial audio for the purpose of hosting, for example, simultaneous DJ sets that you could move your 2D avatar around the 2D space to discover. So 2D visuals, 3D audio. Recently, High Fidelity has offered themselves as a spatial audio integration tool for networked environments. Their spatial audio processing is geared for WebRTC (Web real-time communication). That makes their tools great for real-time voice over IP solutions with low latency and effective spatialisation. While their tools are interesting, they are not made for creators to produce spatial audio content by any means. 
 
 ---
+
+### [Codec vs. Format](../existing-formats#codec-vs-format)
+
+
+A codec is a software that compresses your media content into a container. When discussing spatial audio, MPEG-H is often brought up as the future of spatial audio formats. While MPEG-H is a very helpful technology for spatial audio, this isn't entirely correct. 
+
+MPEG-H is a modern codec and container to encourage support of large multichannel audio content/formats and metadata when needed. 
+It isn't relevant to compare a spatial audio format to MPEG-H because they are entirely different components.
+
+MPEG-H is the "container" and "codec" and "packaging" for multichannel/spatial/interactive audio content, whether it is Mach1 Spatial, ambisonics, surround sound, something custom made, or Dolby Atmos. All of these formats can be packaged in a codec and you can use MPEG-H as your preferred codec for that packaging. MPEG-H is suited to modernize and support the growing requirements of audio object solutions that require meta-data for processing. In short, it's a file container for audio that requires an audio engine with 3D math support to render that audio.
+
+So on it's own, MPEG-H is just an empty container, which begs the question of how to fill that container with audio content. 
+
+Mach1 Spatial offers a solution by focusing on how to fill that container with audio content that can be safely re-purposed or bridged to any and all other audio content formats. Mach1 Spatial's agnostic design and independence from proprietary codecs or containers makes it highly compatible with MPEG-H. The Mach1 Spatial format is a multichannel audio format that does not require any meta-data since the spatial audio is pre-rendered, and works easily with MPEG-H.
+
+---
