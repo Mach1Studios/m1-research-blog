@@ -2,18 +2,24 @@
 title: "4. Existing Systems, methods, and formats of Spatial Audio"
 ---
 
+## Deliverable Spatial Audio Formats
+---
 
 ### [Mach1 Spatial](../existing-formats#mach1-spatial)
 
-Mach1 spatial audio is an effect-process free and transparent container that introduces interactivity to unlock creative freedom for audio professionals and developers for scalable and customizable soundfield pipelines. This framework allows all the other flavors of “spatial audio” to be safely added on top of a simplified and modular spatial audio framework, and ensures that traditional post-production pipelines are preserved as new mediums are invented.
+##### Type: Channel-Based Audio
 
-Mach1 is a VVBP system (Virtual Vector based panning system). VVBP is a useful method because it does not use effects that produce damaging artifacts in an artistic mix. There is no timbral effect on the mix, meaning the frequencies do not change and the quality of audio isn't altered in any way. Mach1 was born to meet the criteria for the preservation of professional audio standards and best practices in a medium where quality of sound is critical for maintaining immersion. The system is contained into a single multichannel deliverable through already existing audio containers and codecs. The system supports both head-tracked 3DOF spatial audi as well as 6DOF when integrated into a 3D Game Engine. It does not require any audio library or media engine and can function fully on top of any existing audio system/engine. The Mach1 system takes all traditional post-production practices and allows them to be deployed for interactive mediums such as VR, AR, MR and installations. 
+Mach1 Spatial audio is an effect-process free and transparent container that introduces interactivity to unlock creative freedom for audio professionals and developers for scalable and customizable soundfield pipelines. This framework allows all the other flavors of “spatial audio” to be safely added on top of a simplified and modular spatial audio framework, and ensures that traditional post-production pipelines are preserved as new mediums are invented.
 
-Mach1 Spatial is a "universal delivery format" because it handles multiple multichannel and spatial audio formats and configurations, as well as conversions between them and stereo conversions both with and without head-tracking. This system allows for full down mix and up mix control without any abstract layers of ''encoders'' and ''decoders'' (data conversion processes). The framework simplifies spatial/multichannel audio to allow the development of custom multichannel configurations allowing backend development control to speaker configurations. The control over custom audio pipelines creates a futureproof solution as new mediums emerge. 
+Mach1 Spatial is a VVBP system (Virtual Vector based panning system). VVBP is a useful method because it does not use effects that can produce damaging artifacts in an artistic mix. There is no timbral effect on the mix, meaning the frequencies do not change and the quality of audio isn't altered in any way. Instead Mach1 Spatial acts as a framework for correctly assembling, translating and containing spatial soundfields with full transparency and ease of use. Mach1 Spatial was born to meet the criteria for the preservation of professional audio standards and best practices in a medium where quality of sound is critical for maintaining immersion. The system is contained into a single multichannel deliverable through already existing audio containers and codecs and does not require use of any additional metadata or complex processing, all of the spatial soundfield information is within the audio data. The system supports both head-tracked 3DOF spatial audi as well as 6DOF when integrated into a 3D engines. It does not require any proprietary audio library or media engine and can function fully on top of any existing audio system/engine.
+
+Mach1 Spatial is a "universal delivery format" because it can safely handle or ingest all surround, multichannel and spatial audio audio formats and configurations, as well as conversions between them and stereo conversions both with and without head-tracking. This system allows for full down-mix and up-mix control without any private or protected abstract layers allowing full control of the spatial audio from end to end. The framework simplifies spatial/multichannel audio to allow the development of custom multichannel configurations allowing backend development control to speaker configurations. The control over custom audio pipelines creates a futureproof solution as new mediums emerge.
 
 ---
 
 ### [Ambisonics](../existing-formats#ambisonics)
+
+##### Type: Ambisonics / Scene Audio
 
 Scene-based spatialisation represents an audio scene from a first-person perspective. The most common example of scene-based spatialisation is #Ambisonics, a technology that was developed in the 1970s and has since been used as one of the dominant spatialisation techniques. It's popularity stems from its use within academia rather than from its quality and ease of use from an industry perspective.
 
@@ -31,7 +37,53 @@ For industry creators, ambisonics lack the creative freedom and dramatic flair r
 
 ---
 
+### [Facebook 360 Audio](../existing-formats#fb360)
+
+##### Type: Ambisonics / Scene Audio
+
+Facebook's spatial audio is part of their 360 Spatial Workstation. The system was bought by Facebook from Two Big Ears. They feature production tools that can be encoded with platform-specific metadata. It's focus is on playback within a specific application. The framework places a listener at the center of a sphere and uses panning within that sphere. Early and late room reflections are also available. In this sense, Facebook 360 uses a room modelling based approach. This is consistent with the research produced by Facebook Reality Labs, as their agenda focuses on users having a sense of shared space. 
+
+Like Mach1 Spatial, the essence of the tools from a user perspective are controlled via plugins in a Digital Audio Workstation. Unlike Mach1 Spatial, Facebook spatial audio not only relies on room modelling (a somewhat arbitrary method of spatialisation due to the assumptions built on room characteristics) but also on HRTFs and ambisonics. Ambisonic recordings are not a prerequisite to use the tools at all, but their workflow prioritizes an ambisonic approach to audio spatialisation.
+
+---
+
+### [Dolby Atmos Audio](../existing-formats#dolby-atmos)
+
+##### Type: Object Audio
+
+Dolby Atmos is a proprietary production software suite that follows the [[2. Object-based]] method of creating spatial audio ideal for a Dolby Atmos speaker configuration, but due to its object-based approach is configuration agnostic. One of the distinguishing factors when compared to other surround sound formats is its use of height information. Like ADM, Dolby Atmos does not store its information in channels. It is rendered in real-time using metadata containing X, Y, and Z information. 
+
+For more information on Dolby Atmos, refer to [[2. Object-based]] 
+
+---
+
+### [Sony 360 Audio](../existing-formats#sony-360)
+
+##### Type: Object Audio
+
+For more information on Sony 360, refer to [[2. Object-based]] 
+
+---
+## Runtime Spatial Audio Implementations
+---
+
+### [Apple Spatial Audio](../existing-formats#apple-spatial-audio)
+
+##### Type: Other / Channel-Based Audio
+
+While Apple is developing their own spatial audio formats and engines, as well as production tools, they currently offer a version of head-tracked "surround" audio playback and head-locked Dolby Atmos as "spatial audio".
+
+Apple's spatial audio is currently highly feature and use-case driven. The process used for spatialisation differs between these applications. For example, the head-tracked Dolby Atmos output from Apple TV undergoes a different process than Apple Music spatialisation to a certain extent. Apple Music spatial audio tracks have all had to be "re-engineered" using Dolby Atmos. Ideally this would allow the benefit of ensuring that the spatial mix that is released is more closely related to what the producer intended you to hear, however Apple Spatial does not utilize any of the processing effects forced by Dolby Atmos and upon rendering for Apple Spatial from Dolby Atmos all of the soundfield's height, room modeling and HRTF processing are stripped away to create a resulting 5.1 mix. This 5.1 mix is then forced through another object style playback rendering with additional **new** room modeling and HRTF processing that cannot be edited or controlled, further degrading and shrinking the intended spatial soundfield for head-tracked playback with IMU enabled AirPods. 
+
+Dolby Atmos is not spatial audio. Dolby Atmos is an object-based method of audio rendering, making it a useful tool for spatial audio. It would be unexpected for Apple to continue using Dolby Atmos, especially as Apple must add an extra layer of processing and filtering in order to create the binaural effect. It will certainly not be used for all applications, as it would not be necessary to use their Dolby Atmos license for spatialised calls and notifications, and related auxiliary functions. 
+
+On the developer side, Apple has some spatial audio features such as #HRTFs and binaural room impulse responses, all of which are at odds with our vision of what spatial audio should be. Using developer tools, it is possible to develop spatial audio applications for Apple devices containing #IMU's.  The latest WWDC showed another audio engine called PHASE which can also be used for spatial and interactive audio. 
+
+---
+
 ### [Game Engine Object Audio](../existing-formats#game-engine-object-audio)
+
+##### Type: Object Audio
 
 Object-based audio is a good example of a spatialisation method that *lends itself* to interactive content, or head-tracked spatial audio.
 
@@ -43,41 +95,21 @@ Because object-based audio is a runtime solution (you program rules and it plays
 
 ---
 
-### [Apple Spatial Audio](../existing-formats#apple-spatial-audio)
+### [High Fidelity Spatial Audio](../existing-formats#high-fidelity-spatial-audio)
 
-While Apple is developing their own spatial audio formats and engines, as well as production tools, they currently offer a version of head-tracked and head-locked Dolby Atmos as "spatial audio".
-Apple's spatial audio is currently highly feature and use-case driven. The process used for spatialisation differs between these applications. For example, the head-tracked Dolby Atmos output from Apple TV undergoes a different process than Apple Music spatialisation to a certain extent. Apple Music spatial audio tracks have all had to be "re-engineered" using Dolby Atmos. On one hand, this has the benefit of ensuring that the spatial mix that is released is more closely related to what the producer intended you to hear. On the other hand, it creates the problem wherein it has become common for people to think that Apple Music Dolby Atmos is the be-all and end-all of spatial audio.
-Dolby Atmos is not spatial audio. Dolby Atmos is an object-based method of audio rendering, making it a useful tool for spatial audio. It would be unexpected for Apple to continue using Dolby Atmos, especially as Apple must add an extra layer of processing and filtering in order to create the binaural effect. It will certainly not be used for all applications, as it would not be necessary to use their Dolby Atmos license for spatialised calls and notifications, and related auxiliary functions. 
+##### Type: Object Audio
 
-On the developer side, Apple has some spatial audio features such as #HRTFs and binaural room impulse responses, all of which are at odds with our vision of what spatial audio should be. Using developer tools, it is possible to develop spatial audio applications for Apple devices containing #IMU's.  The latest WWDC showed another audio engine called PHASE which can also be used for spatial and interactive audio. 
-
----
-
-### [Facebook Spatial Audio](../existing-formats#facebook-spatial-audio)
-
-Facebook's spatial audio is part of their 360 Spatial Workstation. The system was bought by Facebook from Two Big Ears. They feature production tools that can be encoded with platform-specific metadata. It's focus is on playback within a specific application. The framework places a listener at the center of a sphere and uses panning within that sphere. Early and late room reflections are also available. In this sense, Facebook 360 uses a room modelling based approach. This is consistent with the research produced by Facebook Reality Labs, as their agenda focuses on users having a sense of shared space. 
-Like Mach1, the essence of the tools from a user perspective are controlled via plugins in a Digital Audio Workstation. Unlike Mach1, Facebook spatial audio not only relies on room modelling (a somewhat arbitrary method of spatialisation due to the assumptions built on room characteristics) but also on HRTFs and ambisonics. Ambisonic recordings are not a prerequisite to use the tools at all, but their workflow prioritizes an ambisonic approach to audio spatialisation.
-
-
----
-
-### [Dolby Spatial Audio](../existing-formats#dolby-spatial-audio)
-
-Dolby Atmos is a proprietary production software suite that follows the [[2. Object-based]] method of creating spatial audio ideal for a Dolby Atmos speaker configuration, but due to its object-based approach is configuration agnostic. One of the distinguishing factors when compared to other surround sound formats is its use of height information. Like MPEG-H, Dolby Atmos does not store its information in channels. It is rendered in real-time using metadata containing X, Y, and Z information. Dolby Atmos for headphones is another application available on certain hardware platforms, which will render Dolby Atmos with head-tracking (the audio is rendered in real-time according to your head position). Some people commute to work by train, others take the bus. Despite the coverage Dolby Atmos has received due to their partnership with Apple, it is not the only tool used by spatial audio creators. 
-For more information on Dolby Atmos, refer to [[2. Object-based]] 
+High Fidelity is a spatial audio company that evolved as a pivot from social VR. Early beta versions demonstrated High Fidelity as an online platform with a 2D top-down view that featured spatial audio for the purpose of hosting, for example, simultaneous DJ sets that you could move your 2D avatar around the 2D space to discover. So 2D visuals, 3D audio. Recently, High Fidelity has offered themselves as a spatial audio integration tool for networked environments. Their spatial audio processing is geared for WebRTC (Web real-time communication). That makes their tools great for real-time voice over IP solutions with low latency and effective spatialisation. While their tools are interesting, they are not made for creators to produce spatial audio content by any means. 
 
 ---
 
 ### [THX Spatial Audio](../existing-formats#thx-spatial-audio)
 
+##### Type: Other / HRTF
+
 While Mach1 Spatial and Facebook 360 are focused on the creation of spatial audio, THX offers an entirely different perspective and should not be compared. THX is an end-user solution that is marketed to enhance a gaming experience. We haven't seen any head-tracked spatial audio coming from THX. Our best description of THX is a post-processing chain of binaural filters and equalisation designed for listening to specific parts of a gaming soundscape. THX falls into the "virtual surround sound" category, but with more expansive calibration. Besides EQ, the two main spatial audio features they offer are virtual rendering of 7.1 surround sound and binauralized up-mixed version of standard stereo content. 
+
 At Mach1, we believe in preserving the high quality audio that sound designers, composers, and engineers worked expertly to create. While it is surely an entertaining feature, it is important to note that the methods THX use to spatialise audio are ultimately destructive to the creative mix.  
-
----
-
-### [High Fidelity Spatial Audio](../existing-formats#high-fidelity-spatial-audio)
-
-High Fidelity is a spatial audio company that evolved as a pivot from social VR. Early beta versions demonstrated High Fidelity as an online platform with a 2D top-down view that featured spatial audio for the purpose of hosting, for example, simultaneous DJ sets that you could move your 2D avatar around the 2D space to discover. So 2D visuals, 3D audio. Recently, High Fidelity has offered themselves as a spatial audio integration tool for networked environments. Their spatial audio processing is geared for WebRTC (Web real-time communication). That makes their tools great for real-time voice over IP solutions with low latency and effective spatialisation. While their tools are interesting, they are not made for creators to produce spatial audio content by any means. 
 
 ---
 

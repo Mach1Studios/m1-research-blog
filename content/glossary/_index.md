@@ -29,15 +29,17 @@ title: "Spatial Audio Glossary"
 	- Interaction
 ---
 - [Existing Formats]({{< relref "/glossary/existing-formats" >}})
-	###### Pre-Rendered Spatial Audio Formats:
+	###### Spatial Audio Formats:
 	- [Mach1 Spatial](existing-formats#mach1-spatial)
 	- [Ambisonics](existing-formats#ambisonics)
-	- [Dolby Atmos Explained](existing-formats#dolby-atmos)
-	- [Sony 360 Reality Explained](existing-formats#sony-360)
+	- [Facebook360](existing-formats#fb360)
+	- [Dolby Atmos](existing-formats#dolby-atmos)
+	- [Sony 360 Reality](existing-formats#sony-360)
 	- [Surround](existing-formats#surround)
 	###### Runtime Spatial Audio Implementations:
-	- [Apple Spatial Audio Explained](existing-formats#apple-spatial-audio)
+	- [Apple Spatial Audio](existing-formats#apple-spatial-audio)
 	- [Game Engine Object Audio](existing-formats#game-engine-object-audio)
+	- [THX](existing-formats#thx)
 ---
 - [Misc]({{< relref "/glossary/misc-terms" >}})
 ---
