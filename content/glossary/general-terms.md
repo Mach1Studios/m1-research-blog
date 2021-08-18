@@ -26,15 +26,11 @@ Spatial audio rendering is so essential for immersive audio and yet it is one of
 The requirements and processes for creating and delivering spatial audio truly depend on whether you are in the gaming, music, communication, event, or hardware space, and whether you are a creator, implementer, or hardware engineer. 
 We hope that this brief overview of spatial audio provided a glimpse into the vast and endlessly fascinating world of spatial audio. 
 
-
 #### Industry Definition 
-
 
 We see many differences and definitions, or 'flavors' of spatial audio. These differences can be quite drastically different in their execution and results, but we see that they are ultimately used interchangeably, leading to confusion and a lack of a standard definition. 
 
-
 Some use the terms "spatial audio" to describe how a *non-interactive*, or #head-locked stereo soundfield can be exaggerated or accentuated with additional processing, for example via #HRTF's or Room Modeling (simulating how the sound would be in a predetermined room). 
-
 
 There are many ways to simulate spatial characteristics. The three main ways we can model a sound in space is by:
 

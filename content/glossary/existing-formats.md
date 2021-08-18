@@ -51,9 +51,9 @@ Like Mach1 Spatial, the essence of the tools from a user perspective are control
 
 ##### Type: Object Audio
 
-Dolby Atmos is a proprietary production software suite that follows the [[2. Object-based]] method of creating spatial audio ideal for a Dolby Atmos speaker configuration, but due to its object-based approach is configuration agnostic. One of the distinguishing factors when compared to other surround sound formats is its use of height information. Like ADM, Dolby Atmos does not store its information in channels. It is rendered in real-time using metadata containing X, Y, and Z information. 
+Dolby Atmos is a proprietary production software suite that follows the [Object-Based](../mixing-terms#object-based) method of creating spatial audio ideal for a Dolby Atmos speaker configuration, but due to its object-based approach is configuration agnostic. One of the distinguishing factors when compared to other surround sound formats is its use of height information. Like ADM, Dolby Atmos does not store its information in channels. It is rendered in real-time using metadata containing X, Y, and Z information. 
 
-For more information on Dolby Atmos, refer to [[2. Object-based]] 
+For more information on Dolby Atmos, refer to [Object-Based](../mixing-terms#object-based) 
 
 ---
 
@@ -61,7 +61,7 @@ For more information on Dolby Atmos, refer to [[2. Object-based]]
 
 ##### Type: Object Audio
 
-For more information on Sony 360, refer to [[2. Object-based]] 
+For more information on Sony 360, refer to [Object-Based](../mixing-terms#object-based) 
 
 ---
 ## Runtime Spatial Audio Implementations
@@ -87,7 +87,7 @@ On the developer side, Apple has some spatial audio features such as #HRTFs and 
 
 Object-based audio is a good example of a spatialisation method that *lends itself* to interactive content, or head-tracked spatial audio.
 
-**Object-based audio refers to a system that sums together audio-objects at runtime/playtime.** This is a commonly used format that is growing in popularity due to its ability to assemble mixes for different configurations in real time, rather than having to create a new mix for each configuration, as seen in [[1. Channel-based]]. We see this approach used all the time in game audio (game engines function using object-based audio), as well as proprietary systems such as Dolby Atmos #DolbyAtmos. Wave-field synthesis (WFS) is also a type of object-based spatialisation, but not one commonly used in the industry.
+**Object-based audio refers to a system that sums together audio-objects at runtime/playtime.** This is a commonly used format that is growing in popularity due to its ability to assemble mixes for different configurations in real time, rather than having to create a new mix for each configuration, as seen in [Channel-Based](../mixing-terms#channel-based). We see this approach used all the time in game audio (game engines function using object-based audio), as well as proprietary systems such as Dolby Atmos #DolbyAtmos. Wave-field synthesis (WFS) is also a type of object-based spatialisation, but not one commonly used in the industry.
 
 **In object-based audio, metadata from your audio format tells your rendering system where objects are and when they play, depending on the audio delivery system you are using.** Object-based audio is easily made interactive, which may sound great (and it is!), but it has inherent tradeoffs.
 
@@ -114,7 +114,6 @@ At Mach1, we believe in preserving the high quality audio that sound designers, 
 ---
 
 ### [Codec vs. Format](../existing-formats#codec-vs-format)
-
 
 A codec is a software that compresses your media content into a container. When discussing spatial audio, MPEG-H is often brought up as the future of spatial audio formats. While MPEG-H is a very helpful technology for spatial audio, this isn't entirely correct. 
 

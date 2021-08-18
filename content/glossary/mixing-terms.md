@@ -113,7 +113,7 @@ All audio is ultimately delivered via a given number of channels. The main diffe
 
 There are some exceptions to this, however. Formats such as #Mach1,  unify the handling of multichannel and spatial audio formats/configurations and conversions between them. They allow for the development of custom multichannel configurations allowing backend development control to speaker configurations. While many virtual spatializers will use damaging effects to spatialise a channel-based mix, Mach1 Spatial's system is contained into a single multichannel deliverable through already existing audio containers and codecs.
 
-Channel-based spatialisation is not set to disappear anytime soon. For all the discussion on the versatility of [[2. Object-based]] audio, channel-based spatialisation may have its own advantages depending on the experience that needs to be created and the system it's created for.
+Channel-based spatialisation is not set to disappear anytime soon. For all the discussion on the versatility of [Object-Based](../mixing-terms#object-based) audio, channel-based spatialisation may have its own advantages depending on the experience that needs to be created and the system it's created for.
 
 ##### Synonyms : [Surround](../existing-formats#surround)
 ##### Related Terms : [Mach1 Spatial](../existing-formats#mach1-spatial), [Dolby Atmos](../existing-formats#dolby-atmos)
@@ -124,7 +124,7 @@ Channel-based spatialisation is not set to disappear anytime soon. For all the d
 
 Object-based audio is a good example of a spatialisation method that *lends itself* to interactive content, or head-tracked spatial audio.
 
-**Object-based audio refers to a system that sums together audio-objects at runtime/playtime.** This is a commonly used format that is growing in popularity due to its ability to assemble mixes for different configurations in real time, rather than having to create a new mix for each configuration, as seen in [[1. Channel-based]]. We see this approach used all the time in game audio (game engines function using object-based audio), as well as proprietary systems such as Dolby Atmos #DolbyAtmos. Wave-field synthesis (WFS) is also a type of object-based spatialisation, but not one commonly used in the industry.
+**Object-based audio refers to a system that sums together audio-objects at runtime/playtime.** This is a commonly used format that is growing in popularity due to its ability to assemble mixes for different configurations in real time, rather than having to create a new mix for each configuration, as seen in [Channel-Based](../mixing-terms#channel-based). We see this approach used all the time in game audio (game engines function using object-based audio), as well as proprietary systems such as Dolby Atmos #DolbyAtmos. Wave-field synthesis (WFS) is also a type of object-based spatialisation, but not one commonly used in the industry.
 
 **In object-based audio, metadata from your audio format tells your rendering system where objects are and when they play, depending on the audio delivery system you are using.** Object-based audio is easily made interactive, which may sound great (and it is!), but it has inherent tradeoffs.
 
