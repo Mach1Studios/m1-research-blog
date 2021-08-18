@@ -9,6 +9,50 @@ Spatial audio is a concept that has been used and defined in several ways. You c
 
 If we had to pick, then here are four main elements that could define spatial audio. Spatial audio tends to make use of sound [externalisation](../general-terms#externalisation), [direction](../general-terms#direction), [distance](../general-terms#distance), and [presence](../general-terms#presence).
 
+#### How is spatial audio made?
+
+If we define spatial audio as a way to reproduce how we hear naturally, we can do so in several different ways. The best approach typically depends on your purpose. 
+
+A spatial audio recording can be created using a spatial audio microphone – a special kind of microphone that actually has many microphones, giving you a recording format which has to be decoded. Then you render that recording binaurally([[3. Binaural]]).  Spatially captured recordings can be nice for some use cases, for example, if you are looking to capture an ambient soundscape. 
+
+Another way spatial audio is created is by using spatial audio plugins within a DAW (Digital Audio Workstation). Each #plugin uses a different approach to spatialisation. Multichannel approaches are also often used in spatial audio installations, wherein one channel corresponds to one loudspeaker.
+
+#### How is spatial audio rendered?
+
+Spatial audio rendering is so essential for immersive audio and yet it is one of the most neglected aspects of the whole industry. If you want to have [[5. Dynamic Spatial Audio]], then you need to render properly to achieve the intended effect. That is to say, you need to be able to decode such that your virtual channels are placed correctly, or that your virtual objects are panned correctly, and that your head-tracker is updating these virtual locations correctly using the metadata available from the file. 
+
+#### Spatial Audio for VR, for gaming, for music, productivity, social spaces, and audio wearables. 
+
+The requirements and processes for creating and delivering spatial audio truly depend on whether you are in the gaming, music, communication, event, or hardware space, and whether you are a creator, implementer, or hardware engineer. 
+We hope that this brief overview of spatial audio provided a glimpse into the vast and endlessly fascinating world of spatial audio. 
+
+
+#### Industry Definition 
+
+
+We see many differences and definitions, or 'flavors' of spatial audio. These differences can be quite drastically different in their execution and results, but we see that they are ultimately used interchangeably, leading to confusion and a lack of a standard definition. 
+
+
+Some use the terms "spatial audio" to describe how a *non-interactive*, or #head-locked stereo soundfield can be exaggerated or accentuated with additional processing, for example via #HRTF's or Room Modeling (simulating how the sound would be in a predetermined room). 
+
+
+There are many ways to simulate spatial characteristics. The three main ways we can model a sound in space is by:
+
+1) Simulating the way our ears perceive sound ( #HRTF ).
+2) Re-creating the way our ears perceive the acoustics of a particular room ( #Room-modelling ).
+3) Applying processing to simulate **direction** and **distance** of a sound from two ears.
+
+All of these methods intend to reach the same effects
+
+The industry also uses the term "spatial audio" to refer to *interactive* audio that changes with head-tracking information from an [[6. IMU]], the sensor device we have embedded in our portable electronics such as phones, smart-watches, and sometimes headphones. [[2. Object-based]] spatialisation methods lend themselves to this kind of interactive audio. 
+
+Non-interactive spatial audio can also be created using [[2. Object-based]] spatial audio, found via platforms such as Sony Real 360 https://electronics.sony.com/360-reality-audio. In this case, object-based systems are used to make a headlocked stereo playback that is “exaggerated”, or for creating a spatial effect. It is important to consider that not all "spatial effects" are created equal. Head-locked stereo playback of object-based systems are not as effective or immersive as head-tracked spatial audio. 
+
+So object audio itself isn't interactive, but it can be easily adapted to become interactive the way we think of spatial audio. 
+
+
+You can find more about #head-tracked vs. #head-locked spatial audio and the methods used to create spatial audio such as in our section on [[5. Dynamic Spatial Audio]], as well as in [[2. HRTFs]].
+
 ##### Synonyms : 3D Audio, [Diegetic Audio](../general-terms#diegetic)
 ##### Related Terms : 
 
