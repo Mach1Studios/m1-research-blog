@@ -3,6 +3,7 @@ title: "Posts"
 ---
 
 - [Previewing Spatial Audio on Apple AirPods]({{< relref "posts/previewing-spatial-audio-on-apple" >}})
+- [How is the term Spatial Audio Used Per Company?]({{< relref "posts/how-is-the-term-spatial-audio-used-by-different-companies" >}})
 - [Multichannel Codec Support]({{< relref "posts/multichannel-codec-support" >}})
 - [Feedback on Apple's Spatial Audio Implementation]({{< relref "posts/feedback-on-apple-spatial-audio" >}})
 - [Describing 3D Motion]({{< relref "posts/describing-3d-motion" >}})
