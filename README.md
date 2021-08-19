@@ -1,6 +1,7 @@
 # Spatial & Multichannel Audio Research Blog and Glossary
 
-[<img align="right" width="150" src="https://firstcontributions.github.io/assets/Readme/join-slack-team.png">](https://join.slack.com/t/spatialaudio/shared_invite/enQtNjk0ODE4NjQ4NjExLWQ5YWUyNWQ4NWEwMDEwZmJiNmI5MzBhYjM3OTE3NTYxYzdjZDE2YTlhZDI4OGY0ZjdkNmM1NzgxNjI5OGU4ZWE)
+[![Slack Channel](https://img.shields.io/badge/Slack-Join-purple)](https://join.slack.com/t/spatialaudio/shared_invite/enQtNjk0ODE4NjQ4NjExLWQ5YWUyNWQ4NWEwMDEwZmJiNmI5MzBhYjM3OTE3NTYxYzdjZDE2YTlhZDI4OGY0ZjdkNmM1NzgxNjI5OGU4ZWE)
+[![YouTube Channel](https://img.shields.io/badge/YouTube-Subscribe-red)](https://www.youtube.com/channel/UCqoFv8OnTYjkwjHeo6JDUFg)
 
 ## Goals
 Here at Mach1 we have encountered numerous amounts of pitfalls and learning curves while being creators, developers and consumers of spatial, multichannel and interactive audio projects and productions. We are striving to build better understanding to encourage best practices by sharing our experiences and knowledge and constructing tools that others can use or build on top of. Some of these tools have been collected into the following related repositories: 
