@@ -54,6 +54,45 @@ You can find more about #head-tracked vs. #head-locked spatial audio and the met
 
 ---
 
+### [Dynamic Spatial Audio (Head-Tracking)](../general-terms#dynamic-spatial-audio)
+
+Dynamic spatial audio refers to audio that is updated in real-time according the your head-position. It means that the spatial audio is #head-tracked (as opposed to #head-locked). 
+
+While dynamic spatial audio is a perfectly fine term to use, it doesn't tell us much about what head-tracking is all about. 
+
+The fundamental technology behind head-tracking is IMU's, or Intertial Measurement Units. You can also read more about [[6. IMU]]'s.
+
+Using #IMU's, we are able to extract 3 coordinates of data which express the #yaw #pitch and #roll and the head. Your head's position at any angle can be expressed as a combination of the x, y and z values read out by the IMU. 
+
+When we talk about dynamic spatial audio, #latency is often brought up. We discuss it briefly in this section on [[7. Latency]].
+
+#### Head-tracked vs. Head-locked
+
+A quick way to feel the difference between head-tracked and head-locked spatial audio is to stick your left arm out and make a ball with your hand. Pretend the ball is the sound source. Now, keep your arm still (don't move it), and rotate your head to the right, like you're trying to see something over your right shoulder. See how the distance and angle between the ball and you head has changed? That's head-tracked spatial audio. 
+
+If that exercise wasn't too cumbersome, try it again. This time, when you rotate your hear to the right, bring your arm around with you, so that your arm and your head/torse are moving together. That's head-locked spatial audio. 
+
+##### Head-locked Spatial Audio
+Head-locked spatial audio is anchored at a point relative to the lister.
+
+##### Head-tracked Spatial Audio
+Head-tracked spatial audio is anchored in absolute space, which can be detected as the listener rotates their head.
+
+The majority of spatial audio experiences are #head-locked. This is truly a shame, because while head-locked spatial audio may be more immersive way to tell a story than regular stereo or mono audio, ****head-tracked spatial audio is *far* more interesting and even magical.** If spatial audio is defined as a way to replicate the way we hear naturally, then head-tracked spatial audio *is* spatial audio. 
+
+Head-tracked spatial audio many other advantages, including but not limited to: 
+- Helping the user adapt to non-individualised HRTFs 
+- Interactive and helpful for gameplay
+- Essential mechanism for VR
+- Keeping realism/suspension of disbelief
+- Superior user experience
+- Providing audio cues to guide a user
+
+
+The difference between head-tracked and head-locked spatial audio is really important. Spatial audio experiences and technology should include head-tracking to be truly considered as such. 
+
+---
+
 ### [HRTF](../general-terms#hrtf)
 *A transfer function is an algorithm that describes how to go from one thing to another*. If we had a basket of apples, but we wanted an apple pie, then the apple-pie-related-transfer-function would describe how to slice the apples, decorate them on the tart, and what temperature to bake it at.
 
@@ -155,3 +194,5 @@ But when we put on a pair of headphones and listen to **stereo** content, someth
 ##### Related Terms : 
 
 ---
+
+
