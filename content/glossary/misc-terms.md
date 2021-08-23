@@ -25,7 +25,7 @@ In case it hasn't already been made clear, **using dimensions to express spatial
 
 3D audio as a term can often be found used in marketing campaigns where zero spatial audio is happening and there is no for of interactivity such as head-tracking or movement. This raises some questions about market intelligence and can lead to issues where specific features or even projects are misunderstood technologically by consumers due to the varying level of expectations thrown around for the terms such as "3D Audio" or even "Spatial Audio"
 
-##### Synonyms : 
-##### Related Terms : 
+##### Synonyms : [Headtracked](../general-terms#headtracked), [Headlocked](../general-terms#headlocked), [HRTF](../general-terms#hrtf)
+##### Related Terms : [Spatial Audio](../general-terms#spatial-audio)
 
 ---
