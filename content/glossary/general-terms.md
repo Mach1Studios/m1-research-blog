@@ -13,13 +13,13 @@ If we had to pick, then here are four main elements that could define spatial au
 
 If we define spatial audio as a way to reproduce how we hear naturally, we can do so in several different ways. The best approach typically depends on your purpose. 
 
-A spatial audio recording can be created using a spatial audio microphone – a special kind of microphone that actually has many microphones, giving you a recording format which has to be decoded. Then you render that recording binaurally([[3. Binaural]]).  Spatially captured recordings can be nice for some use cases, for example, if you are looking to capture an ambient soundscape. 
+A spatial audio recording can be created using a spatial audio microphone – a special kind of microphone that actually has many microphones, giving you a recording format which has to be decoded. Then you render that recording [binaurally](../general-terms#binaural).  Spatially captured recordings can be nice for some use cases, for example, if you are looking to capture an ambient soundscape. 
 
 Another way spatial audio is created is by using spatial audio plugins within a DAW (Digital Audio Workstation). Each #plugin uses a different approach to spatialisation. Multichannel approaches are also often used in spatial audio installations, wherein one channel corresponds to one loudspeaker.
 
 #### How is spatial audio rendered?
 
-Spatial audio rendering is so essential for immersive audio and yet it is one of the most neglected aspects of the whole industry. If you want to have [[5. Dynamic Spatial Audio]], then you need to render properly to achieve the intended effect. That is to say, you need to be able to decode such that your virtual channels are placed correctly, or that your virtual objects are panned correctly, and that your head-tracker is updating these virtual locations correctly using the metadata available from the file. 
+Spatial audio rendering is so essential for immersive audio and yet it is one of the most neglected aspects of the whole industry. If you want to have [headtracking spatial audio](../general-terms#headtracked), then you need to render properly to achieve the intended effect. That is to say, you need to be able to decode such that your virtual channels are placed correctly, or that your virtual objects are panned correctly, and that your head-tracker is updating these virtual locations correctly using the metadata available from the file. 
 
 #### Spatial Audio for VR, for gaming, for music, productivity, social spaces, and audio wearables. 
 
@@ -34,49 +34,43 @@ Some use the terms "spatial audio" to describe how a *non-interactive*, or #head
 
 There are many ways to simulate spatial characteristics. The three main ways we can model a sound in space is by:
 
-1) Simulating the way our ears perceive sound ( #HRTF ).
-2) Re-creating the way our ears perceive the acoustics of a particular room ( #Room-modelling ).
-3) Applying processing to simulate **direction** and **distance** of a sound from two ears.
+1) Simulating the way our ears perceive sound ([HRTF](../general-terms#hrtf)).
+2) Re-creating the way our ears perceive the acoustics of a particular room ([Externalization](../general-terms#externalization)).
+3) Applying processing to simulate **[direction](../general-terms#direction)** and **[distance](../general-terms#distance)** of a sound from two ears.
 
 All of these methods intend to reach the same effects
 
-The industry also uses the term "spatial audio" to refer to *interactive* audio that changes with head-tracking information from an [[6. IMU]], the sensor device we have embedded in our portable electronics such as phones, smart-watches, and sometimes headphones. [[2. Object-based]] spatialisation methods lend themselves to this kind of interactive audio. 
+The industry also uses the term "spatial audio" to refer to *interactive* audio that changes with head-tracking information from an [IMU](../technical-terms#imu), the sensor device we have embedded in our portable electronics such as phones, smart-watches, and sometimes headphones. [Object-Based](../mixing-terms#object-based) spatialisation methods lend themselves to this kind of interactive audio. 
 
-Non-interactive spatial audio can also be created using [[2. Object-based]] spatial audio, found via platforms such as Sony Real 360 https://electronics.sony.com/360-reality-audio. In this case, object-based systems are used to make a headlocked stereo playback that is “exaggerated”, or for creating a spatial effect. It is important to consider that not all "spatial effects" are created equal. Head-locked stereo playback of object-based systems are not as effective or immersive as head-tracked spatial audio. 
+Non-interactive spatial audio can also be created using [Object-Based](../mixing-terms#object-based) spatial audio, found via platforms such as Sony Real 360 https://electronics.sony.com/360-reality-audio. In this case, object-based systems are used to make a headlocked stereo playback that is “exaggerated”, or for creating a spatial effect. It is important to consider that not all "spatial effects" are created equal. Head-locked stereo playback of object-based systems are not as effective or immersive as head-tracked spatial audio. 
 
 So object audio itself isn't interactive, but it can be easily adapted to become interactive the way we think of spatial audio. 
 
-
-You can find more about #head-tracked vs. #head-locked spatial audio and the methods used to create spatial audio such as in our section on [[5. Dynamic Spatial Audio]], as well as in [[2. HRTFs]].
+You can find more about [headtracked](../general-terms#headtracked) vs. [headlocked](../general-terms#headlocked) spatial audio and the methods used to create spatial audio such as in our section on [headtracking](../general-terms#headtracked), as well as in [HRTFs](../general-terms#hrtf).
 
 ##### Synonyms : 3D Audio, [Diegetic Audio](../general-terms#diegetic)
 ##### Related Terms : 
 
 ---
 
-### [Dynamic Spatial Audio (Head-Tracking)](../general-terms#dynamic-spatial-audio)
+### [Headtracked](../general-terms#headtracked)
+Head-tracked spatial audio is anchored in absolute space, which can be detected as the listener rotates their head.
 
 Dynamic spatial audio refers to audio that is updated in real-time according the your head-position. It means that the spatial audio is #head-tracked (as opposed to #head-locked). 
 
 While dynamic spatial audio is a perfectly fine term to use, it doesn't tell us much about what head-tracking is all about. 
 
-The fundamental technology behind head-tracking is IMU's, or Intertial Measurement Units. You can also read more about [[6. IMU]]'s.
+The fundamental sensor technology behind head-tracking is [IMUs](../technical-terms#imu), or[Inertial Motion Unit](../technical-terms#imu). You can also read more about [IMUs](../technical-terms#imu).
 
 Using #IMU's, we are able to extract 3 coordinates of data which express the #yaw #pitch and #roll and the head. Your head's position at any angle can be expressed as a combination of the x, y and z values read out by the IMU. 
 
-When we talk about dynamic spatial audio, #latency is often brought up. We discuss it briefly in this section on [[7. Latency]].
+When we talk about dynamic spatial audio, [latency](../technical-terms#latency) is often brought up. We discuss it briefly in this section on [latency](../technical-terms#latency).
 
 #### Head-tracked vs. Head-locked
 
 A quick way to feel the difference between head-tracked and head-locked spatial audio is to stick your left arm out and make a ball with your hand. Pretend the ball is the sound source. Now, keep your arm still (don't move it), and rotate your head to the right, like you're trying to see something over your right shoulder. See how the distance and angle between the ball and you head has changed? That's head-tracked spatial audio. 
 
 If that exercise wasn't too cumbersome, try it again. This time, when you rotate your hear to the right, bring your arm around with you, so that your arm and your head/torse are moving together. That's head-locked spatial audio. 
-
-##### Head-locked Spatial Audio
-Head-locked spatial audio is anchored at a point relative to the lister.
-
-##### Head-tracked Spatial Audio
-Head-tracked spatial audio is anchored in absolute space, which can be detected as the listener rotates their head.
 
 The majority of spatial audio experiences are #head-locked. This is truly a shame, because while head-locked spatial audio may be more immersive way to tell a story than regular stereo or mono audio, ****head-tracked spatial audio is *far* more interesting and even magical.** If spatial audio is defined as a way to replicate the way we hear naturally, then head-tracked spatial audio *is* spatial audio. 
 
@@ -91,6 +85,17 @@ Head-tracked spatial audio many other advantages, including but not limited to:
 
 The difference between head-tracked and head-locked spatial audio is really important. Spatial audio experiences and technology should include head-tracking to be truly considered as such. 
 
+##### Synonyms : Headtracking
+##### Related Terms : [Headlocked](../general-terms#headlocked)
+
+---
+
+### [Headlocked](../general-terms#headlocked)
+Head-locked spatial audio is anchored at a point relative to the listener.
+
+##### Synonyms : 
+##### Related Terms : [Headtracked](../general-terms#headtracking)
+
 ---
 
 ### [HRTF](../general-terms#hrtf)
@@ -100,7 +105,7 @@ A head-related transfer function (HRTF) then describes the difference between th
 
 Until recently, it was computationally costly to update a HRTF in real-time, because a HRTF is not one monolithic thing, even when it is personalised. Each angle/position at which you might be looking will require a new HRTF (if you are working with head-tracked spatial audio). That's a lot of math for a small device to handle. These days, however, it's more than doable. 
 
-A quick google search on spatial audio will tell you that HRTFs are fundamental for good spatial audio, but that's not always the case. If you have a standard HRTF – a HRTF that was *not* indivualised specifically for you – you'll get mediocre results for your spatial audio experience. They simply don't work for everyone. They work well enough for the most part, but they are far from a perfect solution and are not the only way to describe the way your ears perceive distance. If there are other elements along your chain of audio spatialisation that are less than ideal (such as low-order [[7. Ambisonics]], using HRTFs will likely amplify perceivable issues. 
+A quick google search on spatial audio will tell you that HRTFs are fundamental for good spatial audio, but that's not always the case. If you have a standard HRTF – a HRTF that was *not* indivualised specifically for you – you'll get mediocre results for your spatial audio experience. They simply don't work for everyone. They work well enough for the most part, but they are far from a perfect solution and are not the only way to describe the way your ears perceive distance. If there are other elements along your chain of audio spatialisation that are less than ideal (such as low-order [ambisonics](../mixing-terms#scene-based), using HRTFs will likely amplify perceivable issues. 
 
 So what goes into an HRTF or other psychoacoustic algorithm? **The main attributes necessary to create spatial audio effects are inter-aural time difference (ITD) and inter-aural level difference (ILD)**. #ITD is the difference in the time it takes for a sound to reach your left ear vs. your right ear. The #ILD is the difference in loudness between the two ears. ITD and ILD are dependent on your head-size and shape, but despite those variables, ITD and ILD are somewhat more straightforward to model.
 There are other attributes that may contribute to the creation of an HRTF, such as timbral filters – a 'tuning' of the frequencies (pitches) your device responds to, much like tuning an instrument. You can easily hear why this is necessary by cupping your ear in any direction – you will hear a change in what frequencies you are hearing. So, if a very loud fly came by your ear and then flew up, you would detect three main changes, which impact each ear differently: time, level, and frequency.
@@ -172,7 +177,7 @@ _In some spatial audio systems such as spherical based systems like ambisonics o
 ### [Localisation](../general-terms#localisation)
 _Localisation often refers to how well a listener or user is able to perceive the direction of a sound source in a spatial or multichannel surround field._
 
-Spatial audio tends to incorporate a sense of direction and distance. There are many other factors that can heighten the sense of sound coming from a specific location, but when we say localisation, we usually mean direction and distance. So if you are looking straight ahead, you can hear sound from every direction around you.  But it's not enough to hear the direction of a sound source. We hypothetically also want to be able to tell how far away our zombie enemy is from our character in a RPG game. While it turns out that humans are not great at detecting distance with precision, that doesn't mean that the sense of distance isn't important. Keep in mind that relaying the sense of distance towards the front of the listener's head is more challenging than to the sides. We talk about this more in [[9. Assumptions on Hearing]].  Similarly, if you are using [[2. HRTFs]], you may encounter front-back confusion. The good news is that when you use [[5. Dynamic Spatial Audio]], you can often mitigate some of these issues.
+Spatial audio tends to incorporate a sense of direction and distance. There are many other factors that can heighten the sense of sound coming from a specific location, but when we say localisation, we usually mean direction and distance. So if you are looking straight ahead, you can hear sound from every direction around you.  But it's not enough to hear the direction of a sound source. We hypothetically also want to be able to tell how far away our zombie enemy is from our character in a RPG game. While it turns out that humans are not great at detecting distance with precision, that doesn't mean that the sense of distance isn't important. Keep in mind that relaying the sense of distance towards the front of the listener's head is more challenging than to the sides. Similarly, if you are using [HRTFs](../general-terms#hrtf), you may encounter front-back confusion. The good news is that when you use [headtracking](../general-terms#headtracked), you can often mitigate some of these issues.
 
 There are also contextual factors that play into our perception of direction and distance. For example, if your spatial sound effect is accompanied by a visual image, let's say you see someone playing the violin and you hear violin music, you will have a much easier time believing that the violin music is coming from the violin player, even if without the visuals you would not have been able to locate the direction of the violin music. On the other hand, if your violin music isn't spatialised, you will be less immersed and engaged in the suspension of disbelief. 
 

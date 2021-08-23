@@ -102,8 +102,7 @@ Because object-based audio is a runtime solution (you program rules and it plays
 High Fidelity is a spatial audio company that evolved as a pivot from social VR. Early beta versions demonstrated High Fidelity as an online platform with a 2D top-down view that featured spatial audio for the purpose of hosting, for example, simultaneous DJ sets that you could move your 2D avatar around the 2D space to discover. So 2D visuals, 3D audio. Recently, High Fidelity has offered themselves as a spatial audio integration tool for networked environments. Their spatial audio processing is geared for WebRTC (Web real-time communication). That makes their tools great for real-time voice over IP solutions with low latency and effective spatialisation. While their tools are interesting, they are not made for creators to produce spatial audio content by any means. 
 
 ---
-
-### [THX Spatial Audio](../existing-formats#thx-spatial-audio)
+### [THX Spatial Audio]({{< relref "glossary/existing-formats#thx" >}})
 
 ##### Type: Other / HRTF
 

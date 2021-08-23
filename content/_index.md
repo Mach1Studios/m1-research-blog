@@ -10,4 +10,5 @@ These pages are open to contribution and include exploration and pain points unc
 
 ##### Contributions
 
-If you are interested in editing or adding a post please create a Pull Request. Please visit the repository page to learn more: [https://github.com/Mach1Studios/m1-research-blog/](https://github.com/Mach1Studios/m1-research-blog/)
+If you are interested in editing or adding a post please create a Pull Request or by reaching out directly. 
+Please visit the repository page to learn more: [https://github.com/Mach1Studios/m1-research-blog/](https://github.com/Mach1Studios/m1-research-blog/)
