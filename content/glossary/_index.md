@@ -43,10 +43,12 @@ title: "Spatial Audio Glossary"
 ---
 - [Misc]({{< relref "/glossary/misc-terms" >}})
 	- [Loose Terms]({{< relref "/glossary/misc-terms#loose-terms" >}})
+
 ---
-###### Contributions
+###### Contributions:
 If you are interested in editing or adding a post please create a Pull Request or by reaching out directly. 
 Please visit the repository page to learn more: [https://github.com/Mach1Studios/m1-research-blog/](https://github.com/Mach1Studios/m1-research-blog/)
+
 ---
 ###### Contributors:
 [Aïli Arakida Niimura](https://github.com/clpng)\

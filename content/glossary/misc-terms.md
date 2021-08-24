@@ -23,7 +23,19 @@ In case it hasn't already been made clear, **using dimensions to express spatial
 
 ### [3D Audio](../misc-terms#3daudio)
 
-3D audio as a term can often be found used in marketing campaigns where zero spatial audio is happening and there is no for of interactivity such as head-tracking or movement. This raises some questions about market intelligence and can lead to issues where specific features or even projects are misunderstood technologically by consumers due to the varying level of expectations thrown around for the terms such as "3D Audio" or even "Spatial Audio"
+3D audio as a term can often be found used in marketing campaigns where zero spatial audio is happening and there is no for of interactivity such as head-tracking or movement. This raises some questions about market intelligence and can lead to issues where specific features or even projects are misunderstood technologically by consumers due to the varying level of expectations thrown around for the terms such as "3D Audio" or even "Spatial Audio".
+
+3D Audio has been used as a term to describe any of the following: 
+ - headtracking and interactive spatial audio
+ - headlocked room modeling processed audio
+ - HRTF specific processed audio (headlocked)
+ - HRTF processing for object audio (headtracking)
+ - Binaural effect processed headlocked stereo (similar to non-technical terms like `8D` or `8D Audio`)
+ - Binaural recorded headlocked stereo audio
+ - Roomscale game object audio processing
+ - Roomscale spatial pre-rendered audio processing
+
+As the list grows it is becoming more clear that when someone refers to 3D Audio or Spatial Audio it can really mean anything, leading to miscommunications and pain points for both creatives and consumers.
 
 ##### Synonyms : [Headtracked](../general-terms#headtracked), [Headlocked](../general-terms#headlocked), [HRTF](../general-terms#hrtf)
 ##### Related Terms : [Spatial Audio](../general-terms#spatial-audio)

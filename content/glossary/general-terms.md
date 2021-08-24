@@ -3,87 +3,43 @@ title: "1. General Terms"
 ---
 
 ### [Spatial Audio](../general-terms#spatial-audio)
-The term spatial audio has been thrown around a lot lately, especially as companies such as Apple tout it as a new feature – but *what is spatial audio*? What does it mean when you're listening to something with spatial audio? 
+The term spatial audio has been thrown around a lot lately, especially as companies such as Apple tout it as a new feature - but *what is spatial audio*? What does it mean when you're listening to something with spatial audio? 
 
-Spatial audio is a concept that has been used and defined in several ways. You could say that any audio expressed with more than one channel is spatial audio. The advent of stereo technology or surround sound systems can be considered spatial, but are not spatial audio as we define it today. You could also say that spatial audio is any kind of sound that interacts with space or spatial effects. We use spatial effects all the time in music. Reverberation, for example, is a spatial effect that represents the physical phenomenon of a sound wave bouncing off different materials in the real world, the way light bounces off a mirror. In a way, any sound that replicates the way we hear naturally in real life is spatial audio.
+Spatial audio is a concept that has been used and defined in several ways in our current audio landscape and marketplace. You could say that any audio expressed with more than one channel is spatial audio. The advent of stereo technology or surround sound systems can be considered spatial, but are not spatial audio as we define it today. You could also say that spatial audio is any kind of sound that interacts with space or spatial effects. We use spatial effects all the time in music. Reverberation, for example, is a spatial effect that represents the physical phenomenon of a sound wave bouncing off different materials in the real world, the way light bounces off a mirror. In a way, any sound that replicates the way we hear naturally in real life is spatial audio. This seems to be logic of how it is currently used as a term in upcoming technologies, just as loosely defined and differs drastically in press release to press release. We are trying to work out a common langauge that can be agreed upon so we can prepare consumers and creatives a like to have the correct expectations as these mediums are developed and used to share experiences.
 
-If we had to pick, then here are four main elements that could define spatial audio. Spatial audio tends to make use of sound [externalisation](../general-terms#externalisation), [direction](../general-terms#direction), [distance](../general-terms#distance), and [presence](../general-terms#presence).
+If we had to pick, then here are four main elements that could define spatial audio. Spatial audio tends to make use of sound [direction](../general-terms#direction), [distance](../general-terms#distance), [externalisation](../general-terms#externalisation) and [presence](../general-terms#presence). These are typical quality traits we can discuss when listening to anything that is `spatial audio`. However there are also some technical traits we need to outline to make sure when two parties discuss something about `spatial audio` they are in fact referring to the same thing. From our experience the easiest starting point when discussing `spatial audio` is whether it is interactive and involves headtracking or position tracking of any kind (updates with interactivity or movement and rotation), or if we are referring to processing effects applied to traditional stereo with no interactivity aka "[headlocked](../general-terms#headlocked) spatial audio".
 
-#### How is spatial audio made?
+#### Headtracked vs. Headlocked
+As mentioned above, we find it easier to boil down the usage of `spatial audio` to whether its [headtracking](../general-terms#headtracked) or roomscale interactive or headlocked for room modeling and HRTF processing simulation. From there it becomes clearer to narrow down expectations for all parties involved.
 
-If we define spatial audio as a way to reproduce how we hear naturally, we can do so in several different ways. The best approach typically depends on your purpose. 
+A quick way to feel the difference between headtracked and headlocked spatial audio is to stick your left arm out and make a ball with your hand. Pretend the ball is the sound source. Now, keep your arm still (don't move it), and rotate your head to the right, like you're trying to see something over your right shoulder. See how the distance and angle between the ball and you head has changed? Those changes are what would be applied to the audio while listening to headtracked `spatial audio`. 
 
-A spatial audio recording can be created using a spatial audio microphone – a special kind of microphone that actually has many microphones, giving you a recording format which has to be decoded. Then you render that recording [binaurally](../general-terms#binaural).  Spatially captured recordings can be nice for some use cases, for example, if you are looking to capture an ambient soundscape. 
+If that exercise wasn't too cumbersome, try it again. This time, when you rotate your ear to the right, bring your arm around with you, so that your arm and your head/torse are moving together. That's headlocked spatial audio. Headlocked stereo audio is what we have been listening to in headphones since the advent of stereo an unnatural phenomon that has be taught to us all. 
 
-Another way spatial audio is created is by using spatial audio plugins within a DAW (Digital Audio Workstation). Each #plugin uses a different approach to spatialisation. Multichannel approaches are also often used in spatial audio installations, wherein one channel corresponds to one loudspeaker.
+The majority of spatial audio experiences are headlocked. This is truly a shame, because while headlocked spatial audio processing can be used creatively and effectively it has always existed via traditional stereo audio listening experiences, **headtracking spatial audio is *far* more interesting and even magical**. If spatial audio is defined as a way to replicate the way we hear naturally, then headtracking spatial audio *is* `spatial audio`. 
 
-#### How is spatial audio rendered?
+Spatial audio with headtracking has many other advantages, including but not limited to: 
+- Helping the user adapt to non-individualised HRTFs 
+- Interactive and helpful for gameplay
+- Essential mechanism for VR,AR,XR
+- Keeping realism/suspension of disbelief
+- Superior user experience
+- Providing audio cues to guide a user
+- Being used creatively and not just to spatially place sounds around a user
 
-Spatial audio rendering is so essential for immersive audio and yet it is one of the most neglected aspects of the whole industry. If you want to have [headtracking spatial audio](../general-terms#headtracked), then you need to render properly to achieve the intended effect. That is to say, you need to be able to decode such that your virtual channels are placed correctly, or that your virtual objects are panned correctly, and that your head-tracker is updating these virtual locations correctly using the metadata available from the file. 
+The difference between head-tracked and head-locked spatial audio is really important. Spatial audio experiences and technology should include headtracking to be truly considered as such. You can find more about [headtracked](../general-terms#headtracked) vs. [headlocked](../general-terms#headlocked) spatial audio and the methods used to create spatial audio such as in our section on [headtracking](../general-terms#headtracked), as well as in [HRTFs](../general-terms#hrtf).
 
-#### Spatial Audio for VR, for gaming, for music, productivity, social spaces, and audio wearables. 
-
-The requirements and processes for creating and delivering spatial audio truly depend on whether you are in the gaming, music, communication, event, or hardware space, and whether you are a creator, implementer, or hardware engineer. 
-We hope that this brief overview of spatial audio provided a glimpse into the vast and endlessly fascinating world of spatial audio. 
-
-#### Industry Definition 
-
-We see many differences and definitions, or 'flavors' of spatial audio. These differences can be quite drastically different in their execution and results, but we see that they are ultimately used interchangeably, leading to confusion and a lack of a standard definition. 
-
-Some use the terms "spatial audio" to describe how a *non-interactive*, or #head-locked stereo soundfield can be exaggerated or accentuated with additional processing, for example via #HRTF's or Room Modeling (simulating how the sound would be in a predetermined room). 
-
-There are many ways to simulate spatial characteristics. The three main ways we can model a sound in space is by:
-
-1) Simulating the way our ears perceive sound ([HRTF](../general-terms#hrtf)).
-2) Re-creating the way our ears perceive the acoustics of a particular room ([Externalization](../general-terms#externalization)).
-3) Applying processing to simulate **[direction](../general-terms#direction)** and **[distance](../general-terms#distance)** of a sound from two ears.
-
-All of these methods intend to reach the same effects
-
-The industry also uses the term "spatial audio" to refer to *interactive* audio that changes with head-tracking information from an [IMU](../technical-terms#imu), the sensor device we have embedded in our portable electronics such as phones, smart-watches, and sometimes headphones. [Object-Based](../mixing-terms#object-based) spatialisation methods lend themselves to this kind of interactive audio. 
-
-Non-interactive spatial audio can also be created using [Object-Based](../mixing-terms#object-based) spatial audio, found via platforms such as Sony Real 360 https://electronics.sony.com/360-reality-audio. In this case, object-based systems are used to make a headlocked stereo playback that is “exaggerated”, or for creating a spatial effect. It is important to consider that not all "spatial effects" are created equal. Head-locked stereo playback of object-based systems are not as effective or immersive as head-tracked spatial audio. 
-
-So object audio itself isn't interactive, but it can be easily adapted to become interactive the way we think of spatial audio. 
-
-You can find more about [headtracked](../general-terms#headtracked) vs. [headlocked](../general-terms#headlocked) spatial audio and the methods used to create spatial audio such as in our section on [headtracking](../general-terms#headtracked), as well as in [HRTFs](../general-terms#hrtf).
-
-##### Synonyms : 3D Audio, [Diegetic Audio](../general-terms#diegetic)
+##### Synonyms : [3D Audio](../misc-terms#3daudio), [Diegetic Audio](../general-terms#diegetic)
 ##### Related Terms : 
 
 ---
 
-### [Headtracked](../general-terms#headtracked)
-Head-tracked spatial audio is anchored in absolute space, which can be detected as the listener rotates their head.
+### [Headtracking](../general-terms#headtracked)
+Headtracked spatial audio is anchored in absolute space, which can be detected as the listener rotates their head or in some cases [moves within a space](../mixing-terms#6dof).
 
-Dynamic spatial audio refers to audio that is updated in real-time according the your head-position. It means that the spatial audio is #head-tracked (as opposed to #head-locked). 
+We recommend that the term `spatial audio` refers to audio that is updated in real-time according the your head orientation and/or position. It means that the spatial audio is headtracking (as opposed to [headlocked](../general-terms#headlocked)). However until this term is more commonly understood in the marketplace it is best to over explain what you are referring to what using terms like `spatial audio`.
 
-While dynamic spatial audio is a perfectly fine term to use, it doesn't tell us much about what head-tracking is all about. 
-
-The fundamental sensor technology behind head-tracking is [IMUs](../technical-terms#imu), or[Inertial Motion Unit](../technical-terms#imu). You can also read more about [IMUs](../technical-terms#imu).
-
-Using #IMU's, we are able to extract 3 coordinates of data which express the #yaw #pitch and #roll and the head. Your head's position at any angle can be expressed as a combination of the x, y and z values read out by the IMU. 
-
-When we talk about dynamic spatial audio, [latency](../technical-terms#latency) is often brought up. We discuss it briefly in this section on [latency](../technical-terms#latency).
-
-#### Head-tracked vs. Head-locked
-
-A quick way to feel the difference between head-tracked and head-locked spatial audio is to stick your left arm out and make a ball with your hand. Pretend the ball is the sound source. Now, keep your arm still (don't move it), and rotate your head to the right, like you're trying to see something over your right shoulder. See how the distance and angle between the ball and you head has changed? That's head-tracked spatial audio. 
-
-If that exercise wasn't too cumbersome, try it again. This time, when you rotate your hear to the right, bring your arm around with you, so that your arm and your head/torse are moving together. That's head-locked spatial audio. 
-
-The majority of spatial audio experiences are #head-locked. This is truly a shame, because while head-locked spatial audio may be more immersive way to tell a story than regular stereo or mono audio, ****head-tracked spatial audio is *far* more interesting and even magical.** If spatial audio is defined as a way to replicate the way we hear naturally, then head-tracked spatial audio *is* spatial audio. 
-
-Head-tracked spatial audio many other advantages, including but not limited to: 
-- Helping the user adapt to non-individualised HRTFs 
-- Interactive and helpful for gameplay
-- Essential mechanism for VR
-- Keeping realism/suspension of disbelief
-- Superior user experience
-- Providing audio cues to guide a user
-
-
-The difference between head-tracked and head-locked spatial audio is really important. Spatial audio experiences and technology should include head-tracking to be truly considered as such. 
+There are several ways to introduce orientation data to act as a form of "headtracking" input, commonly a sensor technology is used known as an [IMU](../technical-terms#imu), or [Inertial Motion Unit](../technical-terms#imu). You can also read more about [IMUs](../technical-terms#imu). Other methods can be more passive such as a [camera to detect face/head changes](https://github.com/Mach1Studios/m1-web-spatialaudioplayer#facetracking), or even just other devices around the user.
 
 ##### Synonyms : Headtracking
 ##### Related Terms : [Headlocked](../general-terms#headlocked)
@@ -91,7 +47,9 @@ The difference between head-tracked and head-locked spatial audio is really impo
 ---
 
 ### [Headlocked](../general-terms#headlocked)
-Head-locked spatial audio is anchored at a point relative to the listener.
+Head-locked spatial audio is anchored at a point relative to the listener. Technically equivelent to just stereo audio playback, however we have seen rise to the usage of spatial audio processing effects such as HRTFs, room modeling, reverbs and binaural filters being applied to headlocked stereo audio and earning the right to be called "spatial audio", we are very weary of this as it causes confusion in expectations for creators, developers and consumers alike.
+
+It should be noted that there is no effect process that happens in headlocked spatial audio processes that couldn't be applied to `spatial audio` with headtracking to make it even more effective.
 
 ##### Synonyms : 
 ##### Related Terms : [Headtracked](../general-terms#headtracking)
@@ -111,6 +69,7 @@ So what goes into an HRTF or other psychoacoustic algorithm? **The main attribut
 There are other attributes that may contribute to the creation of an HRTF, such as timbral filters – a 'tuning' of the frequencies (pitches) your device responds to, much like tuning an instrument. You can easily hear why this is necessary by cupping your ear in any direction – you will hear a change in what frequencies you are hearing. So, if a very loud fly came by your ear and then flew up, you would detect three main changes, which impact each ear differently: time, level, and frequency.
 
 When you are discussing loudspeakers rather than headphones, you may also encounter filters to compensate for the spatialisation. Our ears naturally spatialise audio, so we need filters such as inter-aural cross-correlation cancellation so that the audio isn't spatialised twice. 
+
 ##### Synonyms : [Head Related Transfer Functions](../general-terms#hrtf), [Head Related Transfer Filters](../mixing-terms#hrtf)
 ##### Related Terms :
 
@@ -139,6 +98,7 @@ Let's start from the beginning. We established that binaural means that each of 
 
 ### [Diegetic](../general-terms#diegetic)
 _Refers to a sound placed or panned in the scene or soundfield around the listener._
+
 ##### Synonyms : Scene-locked, Spatialized, [Panned](../general-terms#panning)
 ##### Related Terms :
 
@@ -146,19 +106,14 @@ _Refers to a sound placed or panned in the scene or soundfield around the listen
 
 ### [Non-Diegetic](../general-terms#non-diegetic)
 _Refers to a sound locked to stereo instead of placed in a scene around the listener._
+
 ##### Synonyms : [Headlocked](../general-terms#non-diegetic), Traditional Stereo, Static Stereo
 ##### Related Terms :
 
 ---
 
-### [Presence](../general-terms#presence)
-Presence might be the most crucial aspect of spatial sound because it adds to our ability to be moved by the content we consume. Presence is also closely related to engagement, and connection to ourselves and others. Needless to say, it's a powerful energy that spatial sound can create. Presence is the feeling of '_being there'_.
-##### Synonyms : 
-##### Related Terms : 
-
----
-
 ### [Direction](../general-terms#direction)
+_Refers to the original angle the source of a sound is perceived to come from compared to the listener._
 
 ##### Synonyms : [Azimuth](../technical-terms#azimuth), [Elevation](../technical-terms#elevation), [Pan](../mixing-terms#panning), [Panning](../mixing-terms#panning)
 ##### Related Terms : 
@@ -200,4 +155,10 @@ But when we put on a pair of headphones and listen to **stereo** content, someth
 
 ---
 
+### [Presence](../general-terms#presence)
+Presence might be the most crucial aspect of spatial sound because it adds to our ability to be moved by the content we consume. Presence is also closely related to engagement, and connection to ourselves and others. Needless to say, it's a powerful energy that spatial sound can create. Presence is the feeling of '_being there'_.
 
+##### Synonyms : 
+##### Related Terms : 
+
+---
