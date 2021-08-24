@@ -59,16 +59,16 @@ It should be noted that there is no effect process that happens in headlocked sp
 ### [HRTF](../general-terms#hrtf)
 *A transfer function is an algorithm that describes how to go from one thing to another*. If we had a basket of apples, but we wanted an apple pie, then the apple-pie-related-transfer-function would describe how to slice the apples, decorate them on the tart, and what temperature to bake it at.
 
-A head-related transfer function (HRTF) then describes the difference between the way a sound in space and the way we hear the sound. This concept is important and widely used in acoustics because each person has a completely unique set of features that contribute to their unique HRTF. 
+A head related transfer function (HRTF) then describes the difference between the way a sound in space and the way we hear the sound. This concept is important and widely used in acoustics because each person has a completely unique set of features that contribute to their unique HRTF. 
 
-Until recently, it was computationally costly to update a HRTF in real-time, because a HRTF is not one monolithic thing, even when it is personalised. Each angle/position at which you might be looking will require a new HRTF (if you are working with head-tracked spatial audio). That's a lot of math for a small device to handle. These days, however, it's more than doable. 
+Until recently, it was computationally costly to update a HRTF in real-time, because a HRTF is not one monolithic thing, even when it is personalised. Each angle/position at which you might be looking will require a new HRTF (if you are working with headtracked spatial audio). That's a lot of math for a small device to handle. These days, however, it's more than doable. 
 
-A quick google search on spatial audio will tell you that HRTFs are fundamental for good spatial audio, but that's not always the case. If you have a standard HRTF – a HRTF that was *not* indivualised specifically for you – you'll get mediocre results for your spatial audio experience. They simply don't work for everyone. They work well enough for the most part, but they are far from a perfect solution and are not the only way to describe the way your ears perceive distance. If there are other elements along your chain of audio spatialisation that are less than ideal (such as low-order [ambisonics](../mixing-terms#scene-based), using HRTFs will likely amplify perceivable issues. 
+A quick google search on spatial audio will tell you that HRTFs are fundamental for good spatial audio, but that's not always the case. If you have a standard HRTF – a HRTF that was *not* indivualised specifically for you – you'll get mediocre results for your spatial audio experience. They simply don't work for everyone. They work well enough for the most part, but they are far from a perfect solution and are not the only way to describe the way your ears perceive distance. If there are other elements along your chain of audio spatialisation that are less than ideal (such as low-order [ambisonics](../mixing-terms#scene-based), using HRTFs will likely amplify perceivable issues. However one of the greatest issues with them is that they add an additional processing layer to an audio mix that is out of control of the creator or audio engineer, this adds a further gap between an intended artistic mix and ways we can play it back as intended.
 
-So what goes into an HRTF or other psychoacoustic algorithm? **The main attributes necessary to create spatial audio effects are inter-aural time difference (ITD) and inter-aural level difference (ILD)**. #ITD is the difference in the time it takes for a sound to reach your left ear vs. your right ear. The #ILD is the difference in loudness between the two ears. ITD and ILD are dependent on your head-size and shape, but despite those variables, ITD and ILD are somewhat more straightforward to model.
-There are other attributes that may contribute to the creation of an HRTF, such as timbral filters – a 'tuning' of the frequencies (pitches) your device responds to, much like tuning an instrument. You can easily hear why this is necessary by cupping your ear in any direction – you will hear a change in what frequencies you are hearing. So, if a very loud fly came by your ear and then flew up, you would detect three main changes, which impact each ear differently: time, level, and frequency.
+So what goes into an HRTF or other psychoacoustic algorithm? **The main attributes necessary to create spatial audio effects are interaural time difference ([ITD](../general-terms#itd)) and interaural level difference ([ILD](../general-terms#ild))**. [ITD](../general-terms#itd) is the difference in the time it takes for a sound to reach your left ear vs. your right ear. The [ILD](../general-terms#ild) is the difference in loudness between the two ears. [ITD](../general-terms#itd) and [ILD](../general-terms#ild) are dependent on your head-size and shape, but despite those variables, [ITD](../general-terms#itd) and [ILD](../general-terms#ild) are somewhat more straightforward to model.
+There are other attributes that may contribute to the creation of an HRTF, such as timbral filters – a 'tuning' of the frequencies (pitches) your device responds to, much like tuning an instrument. You can easily hear why this is necessary by cupping your ear in any direction – you will hear a change in what frequencies you are hearing. So, if a very loud fly came by your ear and then flew up, you would detect three main changes, which impact each ear differently: time, level, and frequency.
 
-When you are discussing loudspeakers rather than headphones, you may also encounter filters to compensate for the spatialisation. Our ears naturally spatialise audio, so we need filters such as inter-aural cross-correlation cancellation so that the audio isn't spatialised twice. 
+When you are discussing loudspeakers rather than headphones, you may also encounter filters to compensate for the spatialisation. Our ears naturally spatialise audio, so we need filters such as interaural cross-correlation cancellation so that the audio isn't spatialised twice. 
 
 ##### Synonyms : [Head Related Transfer Functions](../general-terms#hrtf), [Head Related Transfer Filters](../mixing-terms#hrtf)
 ##### Related Terms :
@@ -157,6 +157,20 @@ But when we put on a pair of headphones and listen to **stereo** content, someth
 
 ### [Presence](../general-terms#presence)
 Presence might be the most crucial aspect of spatial sound because it adds to our ability to be moved by the content we consume. Presence is also closely related to engagement, and connection to ourselves and others. Needless to say, it's a powerful energy that spatial sound can create. Presence is the feeling of '_being there'_.
+
+##### Synonyms : 
+##### Related Terms : 
+
+---
+
+### [ILD](../general-terms#ild)
+
+##### Synonyms : 
+##### Related Terms : 
+
+---
+
+### [ITD](../general-terms#itd)
 
 ##### Synonyms : 
 ##### Related Terms : 
