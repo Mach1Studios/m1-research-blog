@@ -8,7 +8,7 @@ The Mach1 Spatial team is adamant about sharing tools and info to help the commu
 We have been tracking and collating tools for various headtracking and IMU enabled devices as we find them and [summarizing them here](https://research.mach1.tech/imu-enabled-devices).
 This includes examples we make to evaluate headtracking hardware (and used for this post) such as: https://github.com/Mach1Studios/M1-AirPodOSC
 
-## Issues and Feedback on Apple's Spatial Audio
+## Issues and Feedback on Apple's Spatial Audio
 
 In the initial implementations using [CMHeadphoneMotionManager](https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager) we noticed a few things developers and Apple might want to resolve:
  

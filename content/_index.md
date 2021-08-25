@@ -6,7 +6,7 @@ These pages are open to contribution and include exploration and pain points unc
 - [Research Posts]({{< relref "/posts" >}})
 - [Usecase Examples]({{< relref "/usecases" >}})
 - [Tutorials]({{< relref "/tutorials" >}})
-- [Glossary]({{< relref "/glossary" >}})
+- [Spatial Audio Glossary]({{< relref "/glossary" >}})
 
 ##### Contributions
 

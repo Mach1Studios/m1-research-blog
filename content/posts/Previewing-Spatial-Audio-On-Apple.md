@@ -10,7 +10,7 @@ Apple seems to simply expect a video file with an `EAC3` encoded audio track con
 It should be known that the `5.1(side)` then undergoes an arbritrary and frankly sloppy and low quality HRTF process by Apple that drastically shrinks the soundfield range, limits your divergence in the soundfield and results in a low quality and hard to mix for soundfield. Going into further detail about the soundfield limitations: 
 
 #### Limitations & Issues with Apple's Spatial Implementation
-_These limitations are based on the date of this written post_
+_These limitations are based on the date of this written post: 2021-08-12_
  - 5.1(side) = Left, Right, Center, LFE, Side-Left, Side-Right (L,R,C,LFE,SL,SR)
  - The HRTF process force blends front/back aspects of the soundfield, if you turn around you will still hear the front bleed to 180 yaw orientation, also you will hear the rear bleed into the front. It seems Apple only wants to target a simulated "theatre" instead of opening this up to be applicable to many spatial audio concepts such as Spatial Music, Interactive Spatial Podcasts or any concept that doesn't want the listener to pretend they are in a front-facing theatre (which is nearly all concepts using headtracking spatial audio)
  - The HRTF process heavily colors the intended mix, adding an additional filtering and room modeling process on top of the intended mix also drastically limiting the usage of this technology

@@ -171,3 +171,33 @@ Sensor Fusion is a a mathematics for combining multiple datasets relating to mot
 ##### Related Terms : 
 
 ---
+## [Technical Descriptions](../technical-terms#techdesc)
+---
+
+### [Realtime](../technical-terms#realtime)
+_Refers to a process or effect that can be applied in realtime, usually during playback but in general any process that can be computed faster than actual time._
+
+##### Synonyms : 
+##### Related Terms : 
+
+---
+
+### [Runtime](../technical-terms#runtime)
+_Refers to all processes that happen during the playback of the sound content._
+
+`Spatial audio` processes that are limited to runtime processes have to compensate for what processing power is available on that device, this limitation means that these processes have to be able to run faster than realtime and can sometimes be limited in quality.
+
+##### Synonyms : 
+##### Related Terms : 
+
+---
+
+### [Render](../technical-terms#render)
+_Refers to a process of pre-determining all intended processes and effects to an output file usually to be faithfully replayed or reused without change._ 
+
+`Spatial audio` content that has been pre-rendered or rendered has the added benefit of using more time expensive and higher quality processing effects that might not normally be too expensive to be processed in realtime, especially from device to device.
+
+##### Synonyms : Pre-rendered
+##### Related Terms : 
+
+---

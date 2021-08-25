@@ -1,7 +1,6 @@
 ---
 title: "How is the term 'Spatial Audio' used by different companies?"
 date: 2021-08-11T03:10:05-04:00
-draft: false
 ---
 
 ## What do companies mean when they talk about spatial audio?
