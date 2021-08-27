@@ -4,6 +4,7 @@ date: 2021-08-24T10:10:00-04:00
 ---
 
 ## Introduction
+_Date: 2021-08-24_
 This post is to discuss our internal observations and limitations we found when using Dolby Atmos for a creative spatial audio project. Using Dolby Atmos for front facing projected style content should be discussed separately from this post, we want to only focus on pain points we found when using and comparing Dolby Atmos for full spatial audio mixing and post-production when every direction is important from a first person perspective, not just the front.
 
 ## Panning Space
