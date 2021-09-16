@@ -1,14 +1,14 @@
 ---
-title: "How is the term 'Spatial Audio' used by different companies?"
+title: "How is the term \"Spatial Audio\" used by different companies?"
 date: 2021-08-11T03:10:05-04:00
 ---
 
 ## What do companies mean when they talk about spatial audio?
 
-This is a very broad question because spatial audio is a subject spanning across disciplines and industries. We could talk about different [[Methods]] of audio spatialization, or about the history of spatial audio in academia. What we would like to focus on is the way the consumer electronics industry has most commonly employed the term in recent years, and share some points of clarification based on our years of experience both creating spatial audio experiences and the tools necessary to create them.
+Currently this is a very broad question because spatial audio is a subject spanning across disciplines and industries. We could talk about different [flavors of audio spatialization]({{< relref "glossary/general-terms#spatial-audio" >}}), or about the history of spatial audio in academia. What we would like to focus on is the way the consumer electronics industry has most commonly employed the term in recent years, and share some points of clarification based on our years of experience both creating spatial audio experiences and the tools necessary to create them.
   
-Sony, Dolby Atmos, and by extension Apple, all use object-based audio using the MPEG-H 3D audio standard. This means that the metadata encoded in each file format follows the same standard. However, they each require proprietary codecs to decode the metadata in these files. That means that if you play a Sony 360 audio file without a compatible device, you won't be able to decode the metadata within it. You will hear *something*, but it will be a channel-based mix unable to scale in the modular way the object-based mix was intended to do.
-We share more on object-based audio [in our glossary.](../glossary/mixing-terms#object-based)
+Sony, Dolby Atmos, and by extension Apple, are all object-based audio style formats that utilize metadata loosely based on ADM & MPEG-H standards, [more info on differences here]({{< relref "posts/observations-and-limitations-of-dolby-atmos-for-spatial-mixing" >}}). This means that the metadata encoded in each file format follows the same standard. However, they each require proprietary codecs to decode the metadata in these files. That means that if you play a Sony 360 audio file without a compatible device, you won't be able to decode the metadata within it. You will hear *something*, but it will be a [channel-based]({{< relref "glossary/mixing-terms#channel-based" >}}) mix unable to scale in the modular way the object-based mix was intended to do.
+We share more on [object-based]({{< relref "glossary/mixing-terms#object-based" >}}) audio [in our glossary.]({{< relref "glossary/mixing-terms#object-based" >}})
 
 Many object-based audio systems are *not* transparent about the physical modeling involved in the way they make what you're hearing sound like it's inside a space. By physical modeling, we mean the addition of arbitrary room acoustics. While sound in real life always exists in space and is therefore colored by the room it's in (or the lack thereof), we believe that the addition of such arbitrary room acoustics – whether or not they are customizable – goes against the artistic intention of the mix. As creators of spatial audio mixes, we've developed a spatial audio workflow wherein *the technical mix is the creative mix*.
 
