@@ -1,5 +1,5 @@
 ---
-title: "4. Existing Systems, methods, and formats of Spatial Audio"
+title: "4. Existing Forms of Spatial Audio"
 ---
 
 ## Deliverable Spatial Audio Formats
@@ -12,8 +12,6 @@ title: "4. Existing Systems, methods, and formats of Spatial Audio"
 Mach1 Spatial acts as a universal delivery format by safely handling or ingesting all surround, multichannel and spatial audio formats and configurations, as well as conversions between them and stereo conversions both with and without head-tracking. This system allows for full down-mix and up-mix control without any proprietary steps or protected abstract layers allowing full control of the spatial or multichannel audio from end to end. The framework simplifies spatial and multichannel audio to encourage the development of custom multichannel configurations allowing backend development control to any target on any platform. Mach1 Spatial effect-process free framework can also be used to easily introduce interactivity and unlock creative freedom for audio professionals and developers for scalable, customizable and futureproofed soundfield pipelines. The goal of Mach1 Spatial is to allow all the other flavors of “spatial audio” to be safely added on top of a simplified and modular spatial audio framework, and ensures that traditional post-production pipelines are preserved as new mediums are invented.
 
 Mach1 Spatial is a VVBP system (Virtual Vector based panning system). VVBP is a useful method because it does not use effects that can produce damaging artifacts in an artistic mix. There is no timbral effect on the mix, meaning the frequencies do not change and the quality of audio isn't altered in any way. Instead Mach1 Spatial acts as a framework for correctly assembling, translating and containing spatial soundfields with full transparency and ease of use. Mach1 Spatial was born to meet the criteria for the preservation of professional audio standards and best practices in a medium where quality of sound is critical for maintaining immersion. The system is contained into a single multichannel deliverable through already existing audio containers and codecs and does not require use of any additional metadata or complex processing, all of the spatial soundfield information is within the audio data. The system supports both head-tracked 3DOF spatial audi as well as 6DOF when integrated into a 3D engines. It does not require any proprietary audio library or media engine and can function fully on top of any existing audio system/engine.
-
-Mach1 Spatial is a "universal delivery format" because it can safely handle or ingest all surround, multichannel and spatial audio audio formats and configurations, as well as conversions between them and stereo conversions both with and without head-tracking. This system allows for full down-mix and up-mix control without any private or protected abstract layers allowing full control of the spatial audio from end to end. The framework simplifies spatial/multichannel audio to allow the development of custom multichannel configurations allowing backend development control to speaker configurations. The control over custom audio pipelines creates a futureproof solution as new mediums emerge.
 
 ---
 
@@ -122,7 +120,8 @@ While Mach1 Spatial and Facebook 360 are focused on the creation of spatial audi
 At Mach1, we believe in preserving the high quality audio that sound designers, composers, and engineers worked expertly to create. While it is surely an entertaining feature, it is important to note that the methods THX use to spatialise audio are ultimately destructive to the creative mix.  
 
 ---
-
+## Format Terminology
+---
 ### [Codec vs. Format](../existing-formats#codec-vs-format)
 
 A codec is a software that compresses your media content into a container. When discussing spatial audio, MPEG-H is often brought up as the future of spatial audio formats. While MPEG-H is a very helpful technology for spatial audio, this isn't entirely correct. 
