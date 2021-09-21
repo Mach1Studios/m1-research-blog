@@ -1,7 +1,6 @@
 ---
 title: "Custom Formats with Mach1Transcode"
 date: 2020-06-15T03:15:37-04:00
-draft: true
 ---
 
 The Mach1Transcode API and CommandLine executable `m1-transcode` can be supplied with a description of a custom multichannel format/configuration to be used as either an input desciption of a soundfield or an output soundfield.  
