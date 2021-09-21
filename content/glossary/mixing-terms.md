@@ -38,7 +38,7 @@ _This is unique to a vector based spatial or multichannel audio system and is di
 
 ### [Room Modeling](../mixing-terms#room-modeling)
 _Room modeling is a catch all term for various [reverberance](../mixing-terms#reverb), delay and even filter digital signal processes (DSP) that can be applied to the audio content. This can be used as a tool to add more externalization preception ability to any audio content but comes at the cost of altering the signal to do so. This effect is highly dependent on the use case and how this is being utilized to be more effective than destructive._
-##### Synonyms : [Reverb](../mixing-terms#reverb), [Reverberance](../mixing-terms#reverb)
+##### Synonyms : [Reverb](../mixing-terms#reverb), [Reverberance](../mixing-terms#reverb), Physical Modeling
 ##### Related Terms : [Externalization](../general-terms#externalization)
 
 ---
