@@ -125,7 +125,7 @@ Used to describe rotation angles in which a full rotation is `2π` or `6.2831853
 ##### Related Terms : [Euler](../technical-terms#euler)
 
 ---
-## [Spatial Audio Pain Points](../technical-terms#painpoints)
+## [Spatial Audio: Common Issues](../technical-terms#commonissues)
 ---
 
 ### [Gimbal Lock](../technical-terms#gimbal-lock)

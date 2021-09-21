@@ -3,10 +3,9 @@
 These pages are open to contribution and include exploration and pain points uncovered around spatial and multichannel audio in both the development and creative side. The posts focus on 
 
 ### Contents
-- [Research Posts]({{< relref "/posts" >}})
-- [Usecase Examples]({{< relref "/usecases" >}})
-- [Tutorials]({{< relref "/tutorials" >}})
 - [Spatial Audio Glossary]({{< relref "/glossary" >}})
+- [Research Posts]({{< relref "/posts" >}})
+- [Tutorials]({{< relref "/tutorials" >}})
 
 ##### Contributions
 

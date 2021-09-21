@@ -23,7 +23,7 @@ title: "Spatial Audio Glossary"
 	- [Degrees of Freedom (DOF)](technical-terms#dof)
 	- [Inputs & Outputs](https://research.mach1.tech/glossary/technical-terms#io)
 	- [Describing Rotations](technical-terms#describing-rotations)
-	- [Spatial Audio Pain Points](technical-terms#painpoints)
+	- [Spatial Audio: Common Issues](technical-terms#commonissues)
 	- [Additional Technologies](technical-terms#tech)
 	- [Technical Descriptions](technical-terms#techdesc)
 	- Assumptions on Hearing
