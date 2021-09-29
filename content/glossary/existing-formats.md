@@ -5,6 +5,17 @@ title: "4. Existing Forms of Spatial Audio"
 ## Deliverable Spatial Audio Formats
 ---
 
+---
+## Categories
+
+The breakdown of this page is to list some common components of spatial audio. Currently the major categories include: codecs & containers, formats & configurations and lastly standards & other components or tools.
+
+A codec is software that compresses and contains media data typically for transportation or storage as a file or files. Codecs are in a different category to formats typically, a ~good~ analogy to explain the difference would be that a codec is the box and shipping method for your packaging which is the format and the contents of the package is your spatial audio mix.
+
+The last category is to add descriptions for other common tools seen in some spatial audio approaches or workflows such as typical metadata standards or tools used for formats & codecs agnostically.
+
+---
+
 ### [Mach1 Spatial](../existing-formats#mach1-spatial)
 
 ##### Type: Channel-Based Audio
@@ -81,7 +92,7 @@ For more information on Sony 360, refer to [Object-Based](../mixing-terms#object
 
 ##### Type: Other / Channel-Based Audio
 
-Apple's spatial audio is currently highly feature and use-case driven. The process used for spatialisation differs between these applications. For example, the headtracked Dolby Atmos output from Apple TV undergoes a different process than Apple Music spatialisation to a certain extent. Apple Music spatial audio tracks have all had to be "re-engineered" using Dolby Atmos. Ideally this would allow the benefit of ensuring that the spatial mix that is released is more closely related to what the producer intended you to hear, however Apple Spatial does not utilize any of the processing effects forced by Dolby Atmos and upon rendering for Apple Spatial from Dolby Atmos all of the soundfield's height, room modeling and HRTF processing are stripped away to create a resulting 5.1 mix. This 5.1 mix is then forced through another object style playback rendering with additional **new** room modeling and HRTF processing that cannot be edited or controlled, further degrading and shrinking the intended spatial soundfield for headtracked playback with IMU enabled AirPods. 
+Apple's spatial audio is currently highly feature and usecase driven. The process used for spatialisation differs between these applications. For example, the headtracked Dolby Atmos output from Apple's TV app undergoes a different process than Apple Music spatialisation to a certain extent. Apple Music spatial audio tracks have all had to be "re-engineered" using Dolby Atmos. Ideally this would allow the benefit of ensuring that the spatial mix that is released is more closely related to what the producer intended you to hear, however Apple Spatial does not utilize any of the processing effects forced by Dolby Atmos and upon rendering for Apple Spatial from Dolby Atmos all of the soundfield's height, room modeling and HRTF processing are stripped away to create a resulting 5.1 mix. This 5.1 mix is then forced through another object style playback rendering with additional **new** room modeling and HRTF processing that cannot be edited or controlled, further degrading and shrinking the intended spatial soundfield for headtracked playback with IMU enabled AirPods. 
 
 For more on Apple's spatial audio, we have outlined how to sideload and review Apple's spatial audio implementation here: [Previewing Spatial Audio on Apple AirPods]({{< relref "posts/previewing-spatial-audio-on-apple" >}})
 
@@ -94,13 +105,9 @@ We have also reviewed the implementation and use of Apple's IMU enabled devices 
 
 ##### Type: Object Audio
 
-Object-based audio is a good example of a spatialisation method that *lends itself* to interactive content, or head-tracked spatial audio.
+[Object-based](../mixing-terms#object-based) audio is a good example of a spatialisation method that lends itself to interactive content, or headtracked spatial audio.
 
-**Object-based audio refers to a system that sums together audio-objects at runtime/playtime.** This is a commonly used format that is growing in popularity due to its ability to assemble mixes for different configurations in real time, rather than having to create a new mix for each configuration, as seen in [Channel-Based](../mixing-terms#channel-based). We see this approach used all the time in game audio (game engines function using object-based audio), as well as proprietary systems such as Dolby Atmos #DolbyAtmos. Wave-field synthesis (WFS) is also a type of object-based spatialisation, but not one commonly used in the industry.
-
-**In object-based audio, metadata from your audio format tells your rendering system where objects are and when they play, depending on the audio delivery system you are using.** Object-based audio is easily made interactive, which may sound great (and it is!), but it has inherent tradeoffs.
-
-Because object-based audio is a runtime solution (you program rules and it plays by the rules when a user uses it), it can sound different depending on what the user does and how well the rules were designed. However, there is never a complete post-production pipeline, which can remove some essential elements from a mix, and make it difficult to control your listener's experience.
+[Object-based](../mixing-terms#object-based) audio refers to a system that sums together audio objects at runtime or playtime. This is commonly used audio mix style used for highly interactive mediums such as games due to its ability to assemble the output mix in real time despite any changing variables or input interactions in the experience. In [object-based](../mixing-terms#object-based) audio, metadata from your audio format tells your rendering system where objects are and how they are controlled, depending on the audio delivery system you are using. [Object-based](../mixing-terms#object-based) audio is easily made interactive, which may sound great (and it is!), but it has inherent tradeoffs, limitations and challenges for the creation process compared to pre-rendered production workflows. Since [object-based](../mixing-terms#object-based) audio is a runtime solution (you program rules and it plays by the rules when a user uses it), it can sound different depending on what the user does and how well the rules were designed. However, there is never a complete post-production pipeline, which can remove some essential elements from a mix, and make it difficult to control your listener's experience.
 
 ---
 
@@ -108,31 +115,25 @@ Because object-based audio is a runtime solution (you program rules and it plays
 
 ##### Type: Object Audio
 
-High Fidelity is a spatial audio company that evolved as a pivot from social VR. Early beta versions demonstrated High Fidelity as an online platform with a 2D top-down view that featured spatial audio for the purpose of hosting, for example, simultaneous DJ sets that you could move your 2D avatar around the 2D space to discover. So 2D visuals, 3D audio. Recently, High Fidelity has offered themselves as a spatial audio integration tool for networked environments. Their spatial audio processing is geared for WebRTC (Web real-time communication). That makes their tools great for real-time voice over IP solutions with low latency and effective spatialisation. While their tools are interesting, they are not made for creators to produce spatial audio content and are an extension of object audio implementation use for 3D engines (or game engine object audio). 
+High Fidelity is a spatial audio company that evolved as a pivot from social VR. Early beta versions demonstrated High Fidelity as a packaged example and SDK for a game object audio engine for developers to import as needed to their interactive 2D or 3D experiences. The design and package of this object audio engine is focused on leaning toward realism and away from creative control and for usecases that need runtime spatial audio only. While their tools are interesting, they are not made for creators to produce spatial audio content and are an extension of object audio implementation use for 3D engines (or game engine object audio). 
 
 ---
 ### [THX Spatial Audio]({{< relref "glossary/existing-formats#thx" >}})
 
 ##### Type: Other / HRTF
 
-While Mach1 Spatial and Facebook 360 are focused on the creation of spatial audio, THX offers an entirely different perspective and should not be compared. THX is an end-user solution that is marketed to enhance a gaming experience. We haven't seen any head-tracked spatial audio coming from THX. Our best description of THX is a post-processing chain of binaural filters and equalisation designed for listening to specific parts of a gaming soundscape. THX falls into the "virtual surround sound" category, but with more expansive calibration. Besides EQ, the two main spatial audio features they offer are virtual rendering of 7.1 surround sound and binauralized up-mixed version of standard stereo content. 
+THX is an end-user solution that is marketed to enhance a gaming experience. We haven't seen any headtracked spatial audio coming from THX. Our best description of THX is a post-processing chain of binaural filters and equalisation designed for listening to specific parts of a gaming soundscape. THX falls into the "virtual surround sound" category, but with more expansive calibration. Besides EQ, the two main spatial audio features they offer are virtual rendering of 7.1 surround sound and binauralized up-mixed version of standard stereo content. 
 
-At Mach1, we believe in preserving the high quality audio that sound designers, composers, and engineers worked expertly to create. While it is surely an entertaining feature, it is important to note that the methods THX use to spatialise audio are ultimately destructive to the creative mix.  
+While it is surely an entertaining feature, it is important to note that the methods THX use to spatialise audio are ultimately destructive to the creative mix.  
 
 ---
-## Format Terminology
+## [Codecs](../existing-formats#codecs)
 ---
-### [Codec vs. Format](../existing-formats#codec-vs-format)
 
-A codec is a software that compresses your media content into a container. When discussing spatial audio, MPEG-H is often brought up as the future of spatial audio formats. While MPEG-H is a very helpful technology for spatial audio, this isn't entirely correct. 
-
-MPEG-H is a modern codec and container to encourage support of large multichannel audio content/formats and metadata when needed. 
+### [MPEG-H]
+When discussing spatial audio, MPEG-H is often brought up as the future of spatial audio formats. While MPEG-H is a very helpful technology for spatial audio, this isn't entirely correct. MPEG-H is a modern codec and container to encourage support of large multichannel audio content/formats and metadata when needed. 
 It isn't relevant to compare a spatial audio format to MPEG-H because they are entirely different components.
 
-MPEG-H is the "container" and "codec" and "packaging" for multichannel/spatial/interactive audio content, whether it is Mach1 Spatial, ambisonics, surround sound, something custom made, or Dolby Atmos. All of these formats can be packaged in a codec and you can use MPEG-H as your preferred codec for that packaging. MPEG-H is suited to modernize and support the growing requirements of audio object solutions that require meta-data for processing. In short, it's a file container for audio that requires an audio engine with 3D math support to render that audio.
-
-So on it's own, MPEG-H is just an empty container, which begs the question of how to fill that container with audio content. 
-
-Mach1 Spatial offers a solution by focusing on how to fill that container with audio content that can be safely re-purposed or bridged to any and all other audio content formats. Mach1 Spatial's agnostic design and independence from proprietary codecs or containers makes it highly compatible with MPEG-H. The Mach1 Spatial format is a multichannel audio format that does not require any meta-data since the spatial audio is pre-rendered, and works easily with MPEG-H.
+MPEG-H is the "container" and "codec" and "packaging" for potentially any multichannel/spatial/interactive audio content, whether it is Mach1 Spatial, ambisonics, surround sound, something custom made, Sony360 Reality or Dolby Atmos. All of these formats can be packaged in a codec and you can use MPEG-H as your preferred codec for that packaging. MPEG-H is suited to modernize and support the growing requirements of audio object solutions that require meta-data for processing. In short, it's a file container for audio that requires an audio engine with 3D math support to render that audio. So on it's own, MPEG-H is just an empty container, which begs the question of how to fill that container with audio content. 
 
 ---
