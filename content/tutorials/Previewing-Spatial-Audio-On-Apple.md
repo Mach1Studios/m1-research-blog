@@ -22,7 +22,7 @@ Read more about early feedback on [Apple Spatial Implementation here]({{< relref
 
 As of version [1.5.10 of Mach1 Spatial System](https://www.mach1.tech/downloads) we have implementated a new `output type` on the `M1-Transcoder.app` it uses our [`m1-transcode`](https://github.com/Mach1Studios/m1-sdk/tree/master/binaries/executables) commandline to transcode to `5.1(side)` and then nicely generates or applies to video and transcodes the codec for direct AirDrop review on your Spatial-supported iOS device.
 
-<img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/previewing-spatial-audio-on-apple/applespatialoutput.gif" alt="" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
+<img src="https://mach1-research-public.s3.amazonaws.com/tutorials/resources/applespatialoutput.gif" alt="" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
 
 ##### If you are starting with a Mach1 Spatial mix
  - Open `M1-Transcode.app`

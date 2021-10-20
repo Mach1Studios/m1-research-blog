@@ -11,7 +11,7 @@ While this is currently a new emerging multichannel deliverable format that we a
 
 - [Read more on the limitations seen when using Dolby Atmos for spatial mixing here]({{< relref "posts/observations-and-limitations-of-dolby-atmos-for-spatial-mixing" >}})
 - [Read more on the limitations of Apple Spatial Playback Implemetation here]({{< relref "posts/observations-and-limitations-of-apple-spatial-playback-implementation" >}})
-- [Read more on preparing 5.1 mixes for Apple Spatial playback here]({{< relref "tutorials/previewing-spatial-audio-on-apple-airPods"}})
+- [Read more on preparing 5.1 mixes for Apple Spatial playback here]({{< relref "tutorials/previewing-spatial-audio-on-apple" >}})
 - [Read more on Initial Feedback on Apple Spatial Audio]({{< relref "posts/feedback-on-apple-spatial-audio" >}})
 
 #### Using M1-Transcoder GUI App to Transcode from Mach1 Spatial to Dolby Atmos (7.1.2 ADM Channel-Bed)

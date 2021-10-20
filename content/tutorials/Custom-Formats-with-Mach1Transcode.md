@@ -79,7 +79,7 @@ You can also find an example custom `.json` file here: [references/Custom16Chann
 
 The [M1-Transcoder](https://www.mach1.tech/spatial-system#transcoder) application from the [Mach1 Spatial System](https://www.mach1.tech/spatial-system) can also support custom JSON formats/configurations for Mach1Spatial->Custom transcodings.
 
-![ExampleCustomTranscodeGIF](references/Mach1Spatial-CustomOutput.gif)
+<img src="https://mach1-research-public.s3.amazonaws.com/tutorials/resources/Mach1Spatial-CustomOutput.gif" alt="" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
 
 #### Steps
 - Drag or load in your created JSON description to the `INPUT JSON` field

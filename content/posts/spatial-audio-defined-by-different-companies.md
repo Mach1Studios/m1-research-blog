@@ -32,7 +32,7 @@ When Apple makes use of head-tracking as an input to their audio spatialization,
 
 Even if all of Apple's spatial audio were interactive, we would still need to see an end to the use of generic HRTFs to truly obtain interactive spatial audio. The binaural effect output by Apple's spatial audio system is created using head-related transfer functions. This means that Apple's spatial audio system colors the sound with filters representing the way that someone else's ears would hear in some kind of room. Spatial audio should be agnostic to ear shape and size. Of course, in addition to artifacts that damage the sound quality and intended mix, it also means that we won't all hear it as well and that it won't work for everyone. Spatial audio should be democratic to everyone. Hopefully, Apple can open their system just enough to allow spatial audio solutions that preserve the creative mix to benefit from headtracking in their own or other devices with IMUs.
 
-For more on Apple's spatial audio, we have outlined how to sideload and review Apple's spatial audio implementation here: [Previewing Spatial Audio on Apple AirPods]({{< relref "posts/previewing-spatial-audio-on-apple" >}})
+For more on Apple's spatial audio, we have outlined how to sideload and review Apple's spatial audio implementation here: [Previewing Spatial Audio on Apple AirPods]({{< relref "tutorials/previewing-spatial-audio-on-apple" >}})
 
 We have also reviewed the implementation and use of Apple's IMU enabled devices here:
 [Feedback on Apple's Spatial Audio Implementation]({{< relref "posts/feedback-on-apple-spatial-audio" >}})
