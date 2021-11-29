@@ -43,7 +43,7 @@ We have found that this is a great IMU source to capture by default as not every
 #### Handling Apple supported Headphones with IMUs
 Thankfully there is a nicely [consolidated API for handling all Apple supported IMU enabled headphones](https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager), the only downside is it currently is limited to the iOS SDK at the time of writing this post. Currently we have had sucess with starting the native device IMU `CMMotionManager.startDeviceUpdates()` as one thread and the `CMHeadphoneMotionManager.startDeviceUpdates()` as another async thread and using a logic to only update global orientaion variables with the correctly intended motion manager as needed. 
 
-[Example thread for `CMMotionManager`](https://github.com/Mach1Studios/Pod-Mach1SpatialAPI/blob/master/Examples/mach1-decode-example/mach1-decode-example/ViewController.swift#L180-L221)
+[Example thread for `CMMotionManager`](https://github.com/Mach1Studios/Pod-Mach1SpatialAPI/blob/master/Examples/mach1-decode-example/mach1-decode-example/ViewController.swift#L180-L221) \
 [Example thread for `CMHeadphoneMotionManager`](https://github.com/Mach1Studios/Pod-Mach1SpatialAPI/blob/master/Examples/mach1-decode-example/mach1-decode-example/ViewController.swift#L223-L264)
 
 #### BoseAR Motion Support
