@@ -1,6 +1,7 @@
 # Mach1 Research Blog
 
-These pages are open to contribution and include exploration and pain points uncovered around spatial and multichannel audio in both the development and creative side. The posts focus on 
+These pages are open to contribution and include exploration and pain points uncovered around spatial and multichannel audio in both the development and creative side. 
+The posts and tutorials should be read knowing they contain some subjective opinion however the [Spatial Audio Glossary's]({{< relref "/glossary" >}}) goal is to remain as objective as possible.
 
 ### Contents
 - [Spatial Audio Glossary]({{< relref "/glossary" >}})

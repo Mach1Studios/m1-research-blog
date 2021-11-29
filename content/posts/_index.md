@@ -4,6 +4,7 @@ title: "Posts"
 
 ## Table of Contents
 
+- [Submitting Spatial Music Apps To iOS App Store]({{< relref "posts/submitting-spatial-music-apps-to-ios-app-store" >}})
 - [Observations and Limitations of Apple Spatial Playback Implementation]({{< relref "posts/observations-and-limitations-of-apple-spatial-playback-implementation" >}})
 - [Observations and Limitations of Dolby Atmos for Spatial Mixing]({{< relref "posts/observations-and-limitations-of-dolby-atmos-for-spatial-mixing" >}})
 - [How is the term Spatial Audio Used Per Company?]({{< relref "posts/spatial-audio-defined-by-different-companies" >}})
