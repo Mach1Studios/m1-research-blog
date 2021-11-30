@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "Mach1 Spatial & Multichannel Research Blog"
 theme = "ace-documentation"
 copyright = "©2021 Mach1, Corp."
-googleAnalytics = "G-7RBPB84DPR"
 
 enableRobotsTXT = true
 
@@ -22,6 +21,8 @@ slogan = ""
 fullRss = true # Puts entire HTML post into rss 'description' tag. If unset, default is false.
 disableSearch = false # default is false
 disableReadmoreNav = true # set true to hide prev/next navigation, default is false
+# Google Analytics 4
+googleAnalyticsID = "G-7RBPB84DPR"
 
 [params.comments]
 enable = true  # En/Disable comments globally, default: false. You can always enable comments on per page.
