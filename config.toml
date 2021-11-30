@@ -1,8 +1,9 @@
 baseURL = "https://research.mach1.tech"
 languageCode = "en-us"
-title = "Mach1 Research"
+title = "Mach1 Spatial & Multichannel Research Blog"
 theme = "ace-documentation"
-copyright = "©2020 Mach1, Corp."
+copyright = "©2021 Mach1, Corp."
+googleAnalytics = "G-7RBPB84DPR"
 
 enableRobotsTXT = true
 
@@ -35,7 +36,7 @@ theme = "xcode"
 darkTheme = "xcode-dark"  # apply this theme in dark mode
 
 [[params.nav.custom]]
-title = "Mach1 HomePage"
+title = "Mach1 Research Blog"
 url = "https://www.mach1.tech"
 
 [[params.nav.custom]]
@@ -47,7 +48,7 @@ showCategories = true       # /categories/
 showTags = true             # /tags/
 
 [[menu.shortcuts]]
-name = "Mach1"
+name = "Mach1 Website"
 url = "https://www.mach1.tech"
 weight = 1
 
