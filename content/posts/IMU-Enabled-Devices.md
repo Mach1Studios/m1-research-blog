@@ -20,8 +20,10 @@ Additionally we are excited to which of these devices will be easy for 3rd party
  - Bose QC35 II (`semi-open-use`)
  - Bose Frames Alto (`semi-open-use`)
  - Bose Frames Rondo (`semi-open-use`)
- - Apple AirPod Pro (`open-use`)
- - Apple AirPod Max (`open-use`)
+ - Apple AirPods Pro (`open-use`)
+ - Apple AirPods Max (`open-use`)
+ - Apple AirPods [3rd generation] (`open-use`)
+ - Beats Fit Pro (`open-use`)
  - [Audeze Mobius](#audeze-mobius) (`semi-open-use`)
  - JBL Quantum One (`closed/inaccessible`)
 
@@ -69,12 +71,15 @@ Additionally we are excited to which of these devices will be easy for 3rd party
 
 ## Device Specific Instructions
 
-#### AirPod Pro & AirPod Max
+#### AirPods Pro, AirPods Max, AirPods (3rd gen) & Beats Fit Pro
 As of Xcode 12 Beta Preview 6 or newer (Xcode 12) along with iOS 14+ the [CMHeadphoneMotionManager](https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager) API is available and with minimal effort we can expose the orientation data of the AirPod Pro. 
 View our demo implementation of this via an iOS app that outputs the orientation data via OSC here: https://github.com/Mach1Studios/M1-AirPodOSC
 
-_January-2021: On our latest QA the resulting orientation of the AirPod Max were different and not relative to the results outputted from AirPod Pro_
+_January-2021: On our latest QA the resulting orientation of the AirPods Max were different and not relative to the results outputted from AirPods Pro_
 [Link](https://www.facebook.com/590732605/videos/10158158827442606/)
+
+#### MetaMotion
+We have been using MetaMotion MMRL & MMS devices for custom 3rd party headtracking added nicely to any pair of headphones with great performance. We have even contributed to a prototyping cross-platform OpenFrameworks addon to help others use these devices as well: https://github.com/Mach1Studios/ofxMetaMotion
 
 #### WitMotion
 In an attempt to make the WitMotion controller accessible we have developed a cross-platform OpenFrameworks addon and example: https://github.com/Mach1Studios/ofxWitMotion
