@@ -4,6 +4,7 @@ title: "Posts"
 
 ## Table of Contents
 
+- [Comparing Binaural Playback II]({{< relref "posts/comparing-binaural-playback-ii" >}})
 - [Submitting Spatial Music Apps To iOS App Store]({{< relref "posts/submitting-spatial-music-apps-to-ios-app-store" >}})
 - [Observations and Limitations of Apple Spatial Playback Implementation]({{< relref "posts/observations-and-limitations-of-apple-spatial-playback-implementation" >}})
 - [Observations and Limitations of Dolby Atmos for Spatial Mixing]({{< relref "posts/observations-and-limitations-of-dolby-atmos-for-spatial-mixing" >}})
