@@ -16,8 +16,8 @@ The following includes a spatial audio mix conformed to the required "format" pe
 <p>
     <h4>Mach1 Spatial - Front Facing</h4>
       <audio controls="controls">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/audio/wav/Mach1Spatial-Forward-Render.wav" type="audio/wav">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/audio/mp3/Mach1Spatial-Forward-Render.mp3" type="audio/mp3">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/Mach1Spatial-Forward-Render.wav" type="audio/wav">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/Mach1Spatial-Forward-Render.mp3" type="audio/mp3">
       Your browser does not support the audio element.</audio>
     <br>
 </p>
@@ -25,8 +25,8 @@ The following includes a spatial audio mix conformed to the required "format" pe
     <h4>Dolby Atmos - Front Facing</h4>
       <p><i></p></i>
       <audio controls="controls">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/audio/wav/DolbyAtmosRenderer-Forward-Render.wav" type="audio/wav">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/audio/mp3/DolbyAtmosRenderer-Forward-Render.mp3" type="audio/mp3">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/DolbyAtmosRenderer-Forward-Render.wav" type="audio/wav">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/DolbyAtmosRenderer-Forward-Render.mp3" type="audio/mp3">
       Your browser does not support the audio element.</audio>
     <br>
 </p>
@@ -34,8 +34,8 @@ The following includes a spatial audio mix conformed to the required "format" pe
     <h4>Facebook360 - Front Facing</h4>
       <p><i></p></i>
       <audio controls="controls">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/audio/wav/FB360-Forward-Render.wav" type="audio/wav">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/audio/mp3/FB360-Forward-Render.mp3" type="audio/mp3">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/FB360-Forward-Render.wav" type="audio/wav">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/FB360-Forward-Render.mp3" type="audio/mp3">
       Your browser does not support the audio element.</audio>
     <br>
 </p>
@@ -43,8 +43,8 @@ The following includes a spatial audio mix conformed to the required "format" pe
     <h4>YouTube360 - Front Facing</h4>
       <p><i></p></i>
       <audio controls="controls">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/audio/wav/YT360-Forward-Render.wav" type="audio/wav">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/audio/mp3/YT360-Forward-Render.mp3" type="audio/mp3">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/YT360-Forward-Render.wav" type="audio/wav">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/YT360-Forward-Render.mp3" type="audio/mp3">
       Your browser does not support the audio element.</audio>
     <br>
 </p>
@@ -52,8 +52,8 @@ The following includes a spatial audio mix conformed to the required "format" pe
     <h4>Apple Spatial - Front Facing</h4>
       <p><i></p></i>
       <audio controls="controls">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/audio/wav/AppleSpatial-Forward-Render.wav" type="audio/wav">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/audio/mp3/AppleSpatial-Forward-Render.mp3" type="audio/mp3">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/AppleSpatial-Forward-Render.wav" type="audio/wav">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/AppleSpatial-Forward-Render.mp3" type="audio/mp3">
       Your browser does not support the audio element.</audio>
     <br>
 </p>
@@ -66,8 +66,8 @@ _Both of these "Right Facing" examples were taking by listening to the spatial m
  <p>
     <h4>Mach1 Spatial - Right Facing</h4>
       <audio controls="controls">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/audio/wav/Mach1Spatial-RightFacing-Render.wav" type="audio/wav">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/audio/mp3/Mach1Spatial-RightFacing-Render.mp3" type="audio/mp3">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/Mach1Spatial-RightFacing-Render.wav" type="audio/wav">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/Mach1Spatial-RightFacing-Render.mp3" type="audio/mp3">
       Your browser does not support the audio element.</audio>
     <br>
 </p>
@@ -78,8 +78,8 @@ The Above is the intended spatial mix, with specifically designed reflections in
     <h4>Apple Spatial - Right Facing</h4>
       <p><i></p></i>
       <audio controls="controls">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/audio/wav/AppleSpatial-RightFacing-Render.wav" type="audio/wav">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/audio/mp3/AppleSpatial-RightFacing-Render.mp3" type="audio/mp3">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/AppleSpatial-RightFacing-Render.wav" type="audio/wav">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/AppleSpatial-RightFacing-Render.mp3" type="audio/mp3">
       Your browser does not support the audio element.</audio>
     <br>
 </p>
