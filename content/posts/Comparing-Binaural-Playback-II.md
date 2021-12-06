@@ -22,15 +22,6 @@ The following includes a spatial audio mix conformed to the required "format" pe
     <br>
 </p>
 <p>
-    <h4>Dolby Atmos - Front Facing</h4>
-      <p><i></p></i>
-      <audio controls="controls">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/DolbyAtmosRenderer-Forward-Render.wav" type="audio/wav">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-binaural-playback-ii/DolbyAtmosRenderer-Forward-Render.mp3" type="audio/mp3">
-      Your browser does not support the audio element.</audio>
-    <br>
-</p>
-<p>
     <h4>Facebook360 - Front Facing</h4>
       <p><i></p></i>
       <audio controls="controls">
