@@ -10,6 +10,32 @@ At the time of writing this post ["spatial audio"]({{< relref "posts/spatial-aud
 
 We want to go over our experience of submitting an app to handle a use case of spatial audio not supported by any conventional audio distribution pipeline currently offered by Apple. We hope we can save the next developers some time with this post!
 
+## Submission Tracking Timeline
+This section will track our progress of submitting and handling common issues we saw when trying to distribute a spatial audio app on the iOS App Store.
+
+<div class="vtl">
+  <div class="event">
+    <strong class="edate">15 Nov 2021</strong>
+    <p class="etxt">App development started forking:<br><a href="https://github.com/Mach1Studios/Pod-Mach1SpatialAPI/tree/master/Examples/mach1-encode-example">SDK example</a></p>
+  </div>
+  <div class="event">
+    <strong class="edate">17 Nov 2021</strong>
+    <p class="etxt">Rejection: Improve UI/UX for minimal audio playback controls <br><b>[4.2 Design: Minimum Functionality]</b></p>
+  </div>
+  <div class="event">
+    <strong class="edate">21 Nov 2021</strong>
+    <p class="etxt">Resubmitted app with improvements</p>
+  </div>
+  <div class="event">
+    <strong class="edate">06 Dec 2021</strong>
+    <p class="etxt">Rejection: No Reason <br>(Apple representative to schedule a call to explain rejection)</p>
+  </div>
+    <div class="event">
+    <strong class="edate">08 Dec 2021</strong>
+    <p class="etxt"></p>
+  </div>
+</div>
+
 ## Summary of Issues
  1. App Store Review will reject "music" in the app and recommend distributing via iTunes
  2. iOS SDK currently does not support background audio/music with processing requirements
@@ -56,3 +82,75 @@ Supporting other IMUs via OSC or via bluetooth directly is also possible, we hop
 Allowing spatial music and audio play as intended with updating orientation and binauralized spatial playback enters a new challenge when developing an app that enters background mode (or is terminated). 
 
 We are currently investigating the best ways to allow spatial audio processing and playback in background mode with orientation still updating. So far we are looking into using the Location Services to allow background processing as this seems to be the only background thread safe API available. We will update this post with recomended solutions as they become available. 
+
+<style>
+/* (A) "SET" THE TIMELINE CONTAINER */
+.vtl {
+  /* (A1) RELATIVE POSITION NECESSARY TO PROPERLY POSITION TIMELINE LATER */
+  position: relative;
+  /* (A2) RESERVE MORE SPACE TO THE LEFT FOR THE TIMELINE */
+  padding: 10px 10px 10px 50px;
+  /* (A3) OPTIONAL WIDTH RESTRICTION */
+  max-width: 400px;
+}
+
+/* (B) DRAW TIMELINE USING ::BEFORE */
+.vtl::before {
+  /* (B1) DRAW THE TIMELINE */
+  content: '';
+  width: 5px;
+  background-color: #808080;
+  /* (B2) POSITION IT TO THE LEFT */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+}
+
+/* (C) STYLES FOR THE EVENTS */
+div.event {
+  padding: 20px 30px;
+  background-color: #929292;
+  position: relative;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* (D) STYLES FOR THE DATE & TEXT */
+strong.edate {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #202020;
+}
+p.etxt {
+  margin: 10px 0 0 0;
+  color: #404040;
+}
+
+/* (E) ADD "SPEECH BUBBLE TRIANGLE" TO THE EVENTS */
+div.event::before {
+  content: '';
+  border: 10px solid transparent;
+  border-right-color: #929292;
+  border-left: 0;
+  position: absolute;
+  top: 20%;
+  left: -10px;
+}
+
+/* (F) ADD A CIRCLE ON THE TIMELINE TO INDICATE AN EVENT */
+div.event::after {
+  content: '';
+  background: #fff;
+  border: 4px solid #808080;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: -41px;
+}
+
+/* (X) DOES NOT MATTER */
+html, body { font-family: arial, sans-serif; }
+</style>
