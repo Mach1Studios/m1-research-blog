@@ -24,15 +24,31 @@ This section will track our progress of submitting and handling common issues we
   </div>
   <div class="event">
     <strong class="edate">21 Nov 2021</strong>
-    <p class="etxt">Resubmitted app with improvements</p>
+    <p class="etxt">Resubmitted app with requested improvements</p>
+  </div>
+  <div class="event">
+    <strong class="edate">21 Nov 2021 - 06 Dec 2021</strong>
+    <p class="etxt">Waiting for Apple's manual review</p>
   </div>
   <div class="event">
     <strong class="edate">06 Dec 2021</strong>
-    <p class="etxt">Rejection: No Reason <br>(Apple representative to schedule a call to explain rejection)</p>
+    <p class="etxt">Rejection: No Reason <br>(Apple representative asks to schedule a call to explain rejection)</p>
   </div>
     <div class="event">
+    <strong class="edate">06 Dec 2021 - 08 Dec 2021</strong>
+    <p class="etxt">Waiting for Apple's explanation</p>
+  </div>
+  <div class="event">
     <strong class="edate">08 Dec 2021</strong>
-    <p class="etxt"></p>
+    <p class="etxt"><a href="#apple-appeal-process">Apple call explanation</a><br>No recommendations given</p>
+  </div>
+  <div class="event">
+    <strong class="edate">08 Dec 2021</strong>
+    <p class="etxt">Appeal to App Review Board submitted</p>
+  </div>
+  <div class="event">
+    <strong class="edate">08 Dec 2021</strong>
+    <p class="etxt">Development of additional video content features to explore "minimum required features"</p>
   </div>
 </div>
 
@@ -51,6 +67,11 @@ Apple seems to by default reject music packaged in an app, stating that you shou
 Simply just reply to the rejection and even appeal if needed with a message saying that iTunes does not distribute or playback spatial music as intended by the artist and label and until it does making an app is the only way to distribute the spatial music or spatial audio playback as intended and mixed.
 
 _(We are currently in the process of appeal for this rejection reason, we will keep this thread updated as the results and best options for solutions.)_
+
+##### Apple Appeal Process
+The explanation given is that they have no official recommendation and are rejecting it because Apple "believes distribution is just an album distribution that should go through iTunes channels" despite iTunes not supporting spatial music. They acknowledge that there is no recommended method of distributing spatial music and that this does not breach any guidelines directly. There is possible suggestion that adding more features to elevate this from not being "only" a listening experience might help. We will develop some additional content features to explore this route.
+
+_(We are still in the process of appeal for further classification and recommendations, we will keep this thread updated as the results and best options for solutions.)_
 
 #### `4. 2 Design: Minimum Functionality` Audio Player UX
 Apple expects some minimum UX when it comes to an audio player like UI for their users, you will likely face rejections unless you have some of the following functional UX/UI for your spatial audio player:
