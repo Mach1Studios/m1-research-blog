@@ -50,6 +50,10 @@ This section will track our progress of submitting and handling common issues we
     <strong class="edate">08 Dec 2021</strong>
     <p class="etxt">Development of additional video content features to explore "minimum required features"</p>
   </div>
+  <div class="event">
+    <strong class="edate">10 Dec 2021</strong>
+    <p class="etxt">Submitted a new minimum designed app that includes accompanying video to test App Store Review acceptance</p>
+  </div>
 </div>
 
 ## Summary of Issues
@@ -70,6 +74,8 @@ _(We are currently in the process of appeal for this rejection reason, we will k
 
 ##### Apple Appeal Process
 The explanation given is that they have no official recommendation and are rejecting it because Apple "believes distribution is just an album distribution that should go through iTunes channels" despite iTunes not supporting spatial music. They acknowledge that there is no recommended method of distributing spatial music and that this does not breach any guidelines directly. There is possible suggestion that adding more features to elevate this from not being "only" a listening experience might help. We will develop some additional content features to explore this route.
+
+Additional rejection responses describe that they believe this is just an enhancement of traditional audio
 
 _(We are still in the process of appeal for further classification and recommendations, we will keep this thread updated as the results and best options for solutions.)_
 
