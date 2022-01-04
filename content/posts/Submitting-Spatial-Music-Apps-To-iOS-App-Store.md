@@ -54,6 +54,10 @@ This section will track our progress of submitting and handling common issues we
     <strong class="edate">10 Dec 2021</strong>
     <p class="etxt">Submitted a new minimum designed app that includes accompanying video to test App Store Review acceptance</p>
   </div>
+  <div class="event">
+    <strong class="edate">02 Jan 2022</strong>
+    <p class="etxt">Apple officially rejects app<br>Apple confirms single artist/album spatial music distribution is not allowed as an app</p>
+  </div>
 </div>
 
 ## Summary of Issues
@@ -64,22 +68,29 @@ This section will track our progress of submitting and handling common issues we
 
 ### Common Rejections seen when distributing a spatial music or spatial audio iOS app
 
-#### `4. 2 Design: Minimum Functionality` Music Distribution Conflict
-Apple seems to by default reject music packaged in an app, stating that you should instead distribute the music via iTunes under `4. 2 Design: Minimum Functionality`
+#### `Guideline 4.2 - Design - Minimum Functionality` Music Distribution Conflict
+Apple seems to by default reject music packaged in an app, stating that you should instead distribute the music via iTunes under `4.2 Design: Minimum Functionality`
+
+##### Example Response from Apple:
+```
+Your app seems to be primarily a single song album and is therefore not appropriate for the App Store.
+
+Next Steps:
+Songs and movies should be submitted to the iTunes Store. If you wish to distribute your content as an app, please review your app concept and incorporate different content and features that are in compliance with the App Store Review Guidelines.
+```
+
+Unfortunetly, the above error from Apple may mean that you are stuck. They deem that single instances of spatial music should only be distributed via iTunes despite iTunes not supporting spatial audio. **This is a deadend and a serious roadblock created by Apple due to their poor judgement and lack of understanding spatial audio as a medium instead of only as a processing or playback effect.**
+
+Additional appeals all failed despite following the Review Board's advice. It has become clear that Apple's App Store Review Board does not want to allow artists/labels to distribute spatial music without waiting for some further platforming support.
+
+The interesting thing about this response is this line: `If you wish to distribute your content as an app, please review your app concept and incorporate different content and features that are in compliance with the App Store Review Guidelines.` After many attempts (adding video content and various graphical content components) it was confirmed by Apple's Review Board representatives that this is a red herring and that nothing would be accepted until it was not a piece of spatial music any more. 
+
+Rejection responses describe that they believe this is just an enhancement of traditional stereo audio instead of recognizing how this is a new format or medium entirely and not just a gimmicky playback feature. It is a shame that Apple's App Store Review Board does not understand what spatial audio is as a format and that there is no possible route for distributing spatial music via iTunes as they deem "spatal audio" to be limited to a processing effect as we hear it used via their implementation with AirPods, and not a mixing format as used by many to create spatial soundfields to create new experiences.
 
 ##### Solutions
-Simply just reply to the rejection and even appeal if needed with a message saying that iTunes does not distribute or playback spatial music as intended by the artist and label and until it does making an app is the only way to distribute the spatial music or spatial audio playback as intended and mixed.
+Reply to the rejection and even appeal if needed with a message saying that iTunes does not distribute or playback spatial music as intended by the artist and label and until it does making an app is the only way to distribute the spatial music or spatial audio playback as intended and mixed. It should be noted that this might not work at all and you may be stuck if you are dealing with music based content.
 
-_(We are currently in the process of appeal for this rejection reason, we will keep this thread updated as the results and best options for solutions.)_
-
-##### Apple Appeal Process
-The explanation given is that they have no official recommendation and are rejecting it because Apple "believes distribution is just an album distribution that should go through iTunes channels" despite iTunes not supporting spatial music. They acknowledge that there is no recommended method of distributing spatial music and that this does not breach any guidelines directly. There is possible suggestion that adding more features to elevate this from not being "only" a listening experience might help. We will develop some additional content features to explore this route.
-
-Additional rejection responses describe that they believe this is just an enhancement of traditional audio
-
-_(We are still in the process of appeal for further classification and recommendations, we will keep this thread updated as the results and best options for solutions.)_
-
-#### `4. 2 Design: Minimum Functionality` Audio Player UX
+#### `Guideline 4.2 - Design - Minimum Functionality` Audio Player UX
 Apple expects some minimum UX when it comes to an audio player like UI for their users, you will likely face rejections unless you have some of the following functional UX/UI for your spatial audio player:
  - Play / Stop controls
  - Playhead controls and seek controls
