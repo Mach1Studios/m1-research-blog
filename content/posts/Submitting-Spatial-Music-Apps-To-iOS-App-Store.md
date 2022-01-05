@@ -8,8 +8,8 @@ draft: false
 ## Status
 - Minimum Features for Single Artist Music App: **TBD**
   - Play controls and common audio player UI/UX
-  - Additional Media
-  - Fan Interaction Features
+  - Additional media *(not confirmed)*
+  - Fan interaction features
   - Documentation to the App Review Board explaining your use of "spatial audio"
 <br>
 - Minimum Features for Music Distribution Platform (multiple artists): **Not Confirmed**
