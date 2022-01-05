@@ -1,9 +1,10 @@
 ---
 title: "IMU Enabled Devices"
 date: 2020-06-05T03:10:05-04:00
-draft: true
+lastmod: 2021-12-02T03:10:05-04:00
+draft: false
 ---
-
+---
 ## Introduction
 As more and more devices become available on the market for headtracking and positional tracking we can expect more oppurtunity for growth of spatial audio and other creative uses for multichannel/spatial audio. Here we will try to track and list known devices, focused more on the consumer side as the DIY side could be endless (however we will still list some here for anyone starting to research DIY solutions).
 

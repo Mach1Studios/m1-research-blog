@@ -1,9 +1,10 @@
 ---
 title: "Comparing Binaural Decoders"
 date: 2017-06-05T03:10:05-04:00
+lastmod: 2017-06-05T03:10:05-04:00
 draft: false
 ---
-
+---
 ## Introduction 
 
 In this post we will decode implemented spatial audio decoders and associated binaural filters and other HRTF effect processes. At the time of this testing we are selecting available ambisonic players and plugins as well as the Mach1 Spatial VVBP approach. 

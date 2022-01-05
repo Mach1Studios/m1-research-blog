@@ -2,8 +2,10 @@
 title: "5. Misc & Misused"
 ---
 
+---
 ## [Loose Terms](../misc-terms#loose-terms)
 
+---
 ### [Dimensions](../misc-terms#dimensions)
 
 What does it mean when we say that an audio experience is 1D, 2D, or 3D? The interchangeable use of word 'dimensions' to refer to different things can be confusing, especially when the concept being referred to usually has its own name. 
@@ -20,7 +22,6 @@ In case it hasn't already been made clear, **using dimensions to express spatial
 ##### Related Terms : [Degrees of Freedom (DOF)](../technical-terms#dof)
 
 ---
-
 ### [3D Audio](../misc-terms#3daudio)
 
 3D audio as a term can often be found used in marketing campaigns where zero spatial audio is happening and there is no for of interactivity such as head-tracking or movement. This raises some questions about market intelligence and can lead to issues where specific features or even projects are misunderstood technologically by consumers due to the varying level of expectations thrown around for the terms such as "3D Audio" or even "Spatial Audio".

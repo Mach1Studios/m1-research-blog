@@ -1,9 +1,10 @@
 ---
 title: "Feedback on Apple's Spatial Audio Implementation"
 date: 2021-03-08T03:10:00-04:00
+lastmod: 2021-03-08T03:10:00-04:00
 draft: false
 ---
-
+---
 The Mach1 Spatial team is adamant about sharing tools and info to help the community build mediums revolving around spatial audio and headtracking audio. We wanted to share some feedback we had regarding Apple's approaches and what the next steps could be for them. 
 We have been tracking and collating tools for various headtracking and IMU enabled devices as we find them and [summarizing them here](https://research.mach1.tech/imu-enabled-devices).
 This includes examples we make to evaluate headtracking hardware (and used for this post) such as: https://github.com/Mach1Studios/M1-AirPodOSC

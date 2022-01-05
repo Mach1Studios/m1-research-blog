@@ -1,9 +1,10 @@
 ---
 title: "Describing 3D Motion"
 date: 2020-06-15T05:19:00-04:00
-draft: true
+lastmod: 2020-06-15T05:19:00-04:00
+draft: false
 ---
-
+---
 ## Describing 3D Motions & Rotations
 
 In the years of developing and creating for immersive mediums, there are usually moments of confusion and trouble when discussing and describing rotations or motions 3D (or 2D) space. Depending on what the project entails can lead to the creator describing things from 1st or 3rd perspectives and depending on what platform it is being built upon (and what frameworks) we see complications between different rotation and translation standards. 

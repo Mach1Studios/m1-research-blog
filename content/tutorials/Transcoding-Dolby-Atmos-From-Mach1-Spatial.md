@@ -3,6 +3,7 @@ title: "Transcoding Dolby Atmos From Mach1 Spatial"
 date: 2021-10-20T03:10:00-04:00
 ---
 
+---
 To help encourage more agnostic mixing options for all kinds of multichannel and spatial audio formats and not encourage users to start their mixing process in a limiting format such as Dolby Atmos. We have been working on the best practices for conversion to/from Dolby Atmos and ADM metadata based formaats. 
 
 This tutorial is to help as a starting point for anyone to test out converting to Dolby Atmos, the tutorial will focus on conversion from Mach1 Spatial, however you can safely convert to the Mach1 Spatial vector container easily from any other format transparently via the commandline tools and Mach1 Spatial SDK & Mach1 Spatial System in various ways.

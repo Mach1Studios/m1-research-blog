@@ -2,6 +2,7 @@
 title: "4. Existing Forms of Spatial Audio"
 ---
 
+---
 ## Deliverable Spatial Audio Formats
 ---
 
@@ -15,7 +16,6 @@ A codec is software that compresses and contains media data typically for transp
 The last category is to add descriptions for other common tools seen in some spatial audio approaches or workflows such as typical metadata standards or tools used for formats & codecs agnostically.
 
 ---
-
 ### [Mach1 Spatial](../existing-formats#mach1-spatial)
 
 ##### Type: Channel-Based Audio
@@ -25,7 +25,6 @@ Mach1 Spatial acts as a universal delivery format by safely handling or ingestin
 Mach1 Spatial is a VVBP system (Virtual Vector based panning system). VVBP is a useful method because it does not use effects that can produce damaging artifacts in an artistic mix. There is no timbral effect on the mix, meaning the frequencies do not change and the quality of audio isn't altered in any way. Instead Mach1 Spatial acts as a framework for correctly assembling, translating and containing spatial soundfields with full transparency and ease of use. Mach1 Spatial was born to meet the criteria for the preservation of professional audio standards and best practices in a medium where quality of sound is critical for maintaining immersion. The system is contained into a single multichannel deliverable through already existing audio containers and codecs and does not require use of any additional metadata or complex processing, all of the spatial soundfield information is within the audio data. The system supports both head-tracked 3DOF spatial audi as well as 6DOF when integrated into a 3D engines. It does not require any proprietary audio library or media engine and can function fully on top of any existing audio system/engine.
 
 ---
-
 ### [Ambisonics](../existing-formats#ambisonics)
 
 ##### Type: Ambisonics / Scene Audio
@@ -49,7 +48,6 @@ While ambisonics may be useful for some, such as those with higher-order systems
 A usecase for ambisonics that is common is for field recordings using ambisonic related microphone arrangements. It should be noted however that the microphones themselves are vector point recordings that later get [encoded](../technical-terms#encode) into the ambisonic B-Format spherical harmonic standard, before this step they are akin to other multi-mic arrays where each capsule is attempting to capture a specific cardioid sound response & direction (typically referred to as A-Format ambisonics). With this in mind, and true with most spatial audio formats, any microphone arrangements could be succesfully used and [encoded](../technical-terms#encode).
 
 ---
-
 ### [Facebook 360 Audio](../existing-formats#fb360)
 
 ##### Type: Ambisonics / Scene Audio
@@ -57,7 +55,6 @@ A usecase for ambisonics that is common is for field recordings using ambisonic 
 Facebook's spatial audio is part of their 360 Spatial Workstation. The system was bought by Facebook from Two Big Ears. They feature production tools that can be encoded with platform-specific metadata. It's focus is on playback within a specific application. The framework places a listener at the center of a sphere and uses panning within that sphere. Early and late room reflections are also available. In this sense, Facebook 360 uses additional room modelling processing. This is consistent with the research produced by Facebook Reality Labs, as their agenda focuses on users having a sense of shared space. On a technical level the Facebook360 (aka .tbe) is a custom variation of a 2nd order ambisonic soundfield with additional HRTF and room modeling processing.
 
 ---
-
 ### [Dolby Atmos Audio](../existing-formats#dolby-atmos)
 
 ##### Type: Object Audio
@@ -77,7 +74,6 @@ For a review of use of Dolby Atmos, refer to [Observations and Limitations of Do
 For more information on Dolby Atmos, refer to [Object-Based](../mixing-terms#object-based) 
 
 ---
-
 ### [Sony 360 Audio](../existing-formats#sony-360)
 
 ##### Type: Object Audio
@@ -88,6 +84,7 @@ For more information on Sony 360, refer to [Object-Based](../mixing-terms#object
 ## Runtime Spatial Audio Implementations
 ---
 
+---
 ### [Apple Spatial Audio](../existing-formats#apple-spatial-audio)
 
 ##### Type: Other / Channel-Based Audio
@@ -100,7 +97,6 @@ We have also reviewed the implementation and use of Apple's IMU enabled devices 
 [Feedback on Apple's Spatial Audio Implementation]({{< relref "posts/feedback-on-apple-spatial-audio" >}})
 
 ---
-
 ### [Game Engine Object Audio](../existing-formats#game-engine-object-audio)
 
 ##### Type: Object Audio
@@ -110,7 +106,6 @@ We have also reviewed the implementation and use of Apple's IMU enabled devices 
 [Object-based](../mixing-terms#object-based) audio refers to a system that sums together audio objects at runtime or playtime. This is commonly used audio mix style used for highly interactive mediums such as games due to its ability to assemble the output mix in real time despite any changing variables or input interactions in the experience. In [object-based](../mixing-terms#object-based) audio, metadata from your audio format tells your rendering system where objects are and how they are controlled, depending on the audio delivery system you are using. [Object-based](../mixing-terms#object-based) audio is easily made interactive, which may sound great (and it is!), but it has inherent tradeoffs, limitations and challenges for the creation process compared to pre-rendered production workflows. Since [object-based](../mixing-terms#object-based) audio is a runtime solution (you program rules and it plays by the rules when a user uses it), it can sound different depending on what the user does and how well the rules were designed. However, there is never a complete post-production pipeline, which can remove some essential elements from a mix, and make it difficult to control your listener's experience.
 
 ---
-
 ### [High Fidelity Spatial Audio](../existing-formats#high-fidelity-spatial-audio)
 
 ##### Type: Object Audio
@@ -130,6 +125,7 @@ While it is surely an entertaining feature, it is important to note that the met
 ## [Codecs](../existing-formats#codecs)
 ---
 
+---
 ### [MPEG-H]
 When discussing spatial audio, MPEG-H is often brought up as the future of spatial audio formats. While MPEG-H is a very helpful technology for spatial audio, this isn't entirely correct. MPEG-H is a modern codec and container to encourage support of large multichannel audio content/formats and metadata when needed. 
 It isn't relevant to compare a spatial audio format to MPEG-H because they are entirely different components.

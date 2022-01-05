@@ -2,8 +2,9 @@ baseURL = "https://research.mach1.tech"
 languageCode = "en-us"
 title = "Mach1 Spatial & Multichannel Research Blog"
 theme = "ace-documentation"
-copyright = "©2021 Mach1, Corp."
+copyright = "©2022 Mach1, Corp."
 
+enableGitInfo = true
 enableRobotsTXT = true
 
 [markup.highlight]
@@ -15,17 +16,18 @@ unsafe = true  # enable raw HTML in Markdown
 
 [params]
 style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
-dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
+dateFormat = "January 2, 2006"  # if unset, default is "2006-01-02"
+ShowDatesOnPosts = true
 logo = ""  # if you have a logo png
 slogan = ""
 fullRss = true # Puts entire HTML post into rss 'description' tag. If unset, default is false.
-disableSearch = false # default is false
+disableSearch = true # default is false
 disableReadmoreNav = true # set true to hide prev/next navigation, default is false
 # Google Analytics 4
 googleAnalyticsID = "G-7RBPB84DPR"
 
 [params.comments]
-enable = true  # En/Disable comments globally, default: false. You can always enable comments on per page.
+enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
 
 [params.math]
 enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
@@ -57,3 +59,6 @@ weight = 1
 name = "<i class='fab fa-github'></i>"
 url = "https://github.com/Mach1Studios/m1-sdk"
 weight = 2
+
+[frontmatter]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
