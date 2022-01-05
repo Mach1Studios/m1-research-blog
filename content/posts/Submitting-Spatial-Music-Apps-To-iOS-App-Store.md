@@ -1,15 +1,24 @@
 ---
 title: "Submitting Spatial Music Apps to iOS App Store"
 date: 2021-11-22T10:10:05-04:00
-lastmod: 2022-01-04T10:10:05-04:00
+lastmod: 2022-01-05T10:10:05-04:00
 draft: false
 ---
 ---
+## Status
+- Minimum Features for Single Artist Music App: **TBD**
+  - Play controls and common audio player UI/UX
+  - Additional Media
+  - Fan Interaction Features
+<br>
+- Minimum Features for Music Distribution Platform (multiple artists): **Not Confirmed**
+  - Play controls and common audio player UI/UX
+
 ## Introduction
 
 At the time of writing this post ["spatial audio"]({{< relref "posts/spatial-audio-defined-by-different-companies" >}}) seems to be a term that has many varying meanings in the market. However we know the common expectation for spatial audio should include perceivable audio interactivity from a listener's headtracking or motion of some kind, otherwise we are just making more methods of distributing stereo mixes to listeners with more complex forms of run time processing to fit the "binaural stereo" category. Ultimately if you are an artist or label that wants to retain control how your spatial music soundfields are handled and played to the end user, currently the best method would be making your own app and leveraging 3rd party IMU/motion APIs (such as CMHeadphoneMotionManager/CMMotionManager from Apple, or BoseAR from Bose, or even a custom API, etc.) and applying that motion data to your preferred end target spatial audio "format". For the sake of this post we will only be referring to using Mach1 Spatial SDK and simple vector based panned or SPS soundfields as that preferred spatial audio framework. However this would also apply to other use cases such as: ambisonic player, headtracking augmented Dolby Atmos player, Mach1 Spatial SDK being used for both the aforementioned players, etc.
 
-We want to go over our experience of submitting an app to handle a use case of spatial audio not supported by any conventional audio distribution pipeline currently offered by Apple. We hope we can save the next developers some time with this post!
+We want to go over our experience of submitting an app to handle a use case of spatial audio not supported by any conventional audio distribution pipeline currently offered by Apple. *The goal is to track the bare minimum for distributing a spatial music app via App Store Review until iTunes and other pipelines support spatial audio formats.* We hope we can save the next developer, musician or artist some time with this post!
 
 ## Submission Tracking Timeline
 This section will track our progress of submitting and handling common issues we saw when trying to distribute a spatial audio app on the iOS App Store.
@@ -41,7 +50,7 @@ This section will track our progress of submitting and handling common issues we
   </div>
   <div class="event">
     <strong class="edate">08 Dec 2021</strong>
-    <p class="etxt"><a href="#apple-appeal-process">Apple call explanation</a><br>No recommendations given</p>
+    <p class="etxt">Apple call explanation<br>No recommendations given</p>
   </div>
   <div class="event">
     <strong class="edate">08 Dec 2021</strong>
@@ -57,7 +66,11 @@ This section will track our progress of submitting and handling common issues we
   </div>
   <div class="event">
     <strong class="edate">02 Jan 2022</strong>
-    <p class="etxt">Apple officially rejects app<br>Apple confirms single artist/album spatial music distribution is not allowed as an app</p>
+    <p class="etxt">Apple rejects app<br>Apple confirms single artist/album spatial music distribution is not allowed as an app</p>
+  </div>
+  <div class="event">
+    <strong class="edate">05 Jan 2022</strong>
+    <p class="etxt">Apple Review Board appeal call<br>Apple acknowledges difference between spatial audio as a format vs how iTunes supports spatial playback as a processing effect<br>Apple recommends adding <b>more</b> fan interaction</p>
   </div>
 </div>
 
@@ -87,6 +100,11 @@ Additional appeals all failed despite following the Review Board's advice. It ha
 The interesting thing about this response is this line: `If you wish to distribute your content as an app, please review your app concept and incorporate different content and features that are in compliance with the App Store Review Guidelines.` After many attempts (adding video content and various graphical content components) it was confirmed by Apple's Review Board representatives that this is a red herring and that nothing would be accepted until it was not a piece of spatial music any more. 
 
 Rejection responses describe that they believe this is just an enhancement of traditional stereo audio instead of recognizing how this is a new format or medium entirely and not just a gimmicky playback feature. It is a shame that Apple's App Store Review Board does not understand what spatial audio is as a format and that there is no possible route for distributing spatial music via iTunes as they deem "spatal audio" to be limited to a processing effect as we hear it used via their implementation with AirPods, and not a mixing format as used by many to create spatial soundfields to create new experiences.
+
+##### Update
+Apple has acknowledged the difference and distinction between spatial audio as a rendered soundfield mix and "spatial audio" as a processing playback effect. In a call with the App Review Board they challenged our claim that iTunes does not support "spatial audio" saying we should ask the artist to use the dedicated ["Apple Spatial Audio"]({{< relref "posts/observations-and-limitations-of-apple-spatial-playback-implementation" >}}) playback on iTunes and that iTunes. We discussed with the review board the difference between spatial audio soundfield mixes created by an artist or engineer via a multichannel format (whether Mach1 Spatial, ambisonics or an object based format) compared to what iTunes does not which is adding a "spatial playback effect" to specific Dolby or Sony based formats without disgression from the artist. They thankfully seemed to acknowledge this difference and recommend adding more fan interaction (merchandise purchase link or event ticket links) to the app to make it more of an interactive experience. They also asked to include notes on documentation of this distinction as well as any feedback from the artist/musicians involved endorsing the app.
+
+**We will follow this advice and report back on what the minimum required development is for an artist or label to distribute their own spatial soundfields via an app.**
 
 ##### Solutions
 Reply to the rejection and even appeal if needed with a message saying that iTunes does not distribute or playback spatial music as intended by the artist and label and until it does making an app is the only way to distribute the spatial music or spatial audio playback as intended and mixed. It should be noted that this might not work at all and you may be stuck if you are dealing with music based content.
