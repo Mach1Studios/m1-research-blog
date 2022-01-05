@@ -6,7 +6,7 @@ draft: false
 ---
 ---
 ## Introduction
-_Date: 2021-09-22_
+
 This post is to discuss our internal observations and limitations we found when transcoding to a ingestible 5.1 mix format and container that Apple will apply dynamic headtracking spatial playback for. We have done these tests from a source Mach1 Spatial file and used M1-Transcoder.app to correctly setup a 5.1 file, we have also done the same tests from the Dolby Atmos pipeline and can conclude that the same resulting file could be made from either workflow approach, knowing this we find it much easier to use anything and correctly transcode as needed via M1-Transcoder.app to avoid all the complications and complexities when using Dolby Atmos Master files to create a simple 5.1 file. 
 
 - [Read more on preparing 5.1 mixes for Apple Spatial playback here]({{< relref "tutorials/previewing-spatial-audio-on-apple" >}})

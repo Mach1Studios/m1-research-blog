@@ -5,7 +5,8 @@ lastmod: 2022-01-04T10:10:05-04:00
 draft: false
 ---
 ---
-## Introduction 
+## Introduction
+
 At the time of writing this post ["spatial audio"]({{< relref "posts/spatial-audio-defined-by-different-companies" >}}) seems to be a term that has many varying meanings in the market. However we know the common expectation for spatial audio should include perceivable audio interactivity from a listener's headtracking or motion of some kind, otherwise we are just making more methods of distributing stereo mixes to listeners with more complex forms of run time processing to fit the "binaural stereo" category. Ultimately if you are an artist or label that wants to retain control how your spatial music soundfields are handled and played to the end user, currently the best method would be making your own app and leveraging 3rd party IMU/motion APIs (such as CMHeadphoneMotionManager/CMMotionManager from Apple, or BoseAR from Bose, or even a custom API, etc.) and applying that motion data to your preferred end target spatial audio "format". For the sake of this post we will only be referring to using Mach1 Spatial SDK and simple vector based panned or SPS soundfields as that preferred spatial audio framework. However this would also apply to other use cases such as: ambisonic player, headtracking augmented Dolby Atmos player, Mach1 Spatial SDK being used for both the aforementioned players, etc.
 
 We want to go over our experience of submitting an app to handle a use case of spatial audio not supported by any conventional audio distribution pipeline currently offered by Apple. We hope we can save the next developers some time with this post!
