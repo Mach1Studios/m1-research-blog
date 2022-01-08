@@ -1,7 +1,7 @@
 ---
 title: "Submitting Spatial Music Apps to iOS App Store"
 date: 2021-11-22T10:10:05-04:00
-lastmod: 2022-01-05T10:10:05-04:00
+lastmod: 2022-01-07T10:10:05-04:00
 draft: false
 ---
 ---
@@ -73,6 +73,14 @@ This section will track our progress of submitting and handling common issues we
     <strong class="edate">05 Jan 2022</strong>
     <p class="etxt">Apple Review Board appeal call<br>Apple acknowledges difference between spatial audio as a format vs how iTunes supports spatial playback as a processing effect<br>Apple recommends adding <b>more</b> fan interaction</p>
   </div>
+  <div class="event">
+    <strong class="edate">06 Jan 2022</strong>
+    <p class="etxt">Resubmitted app with <b>more</b> fan interaction UI/UX</p>
+  </div>
+  <div class="event">
+    <strong class="edate">07 Jan 2022</strong>
+    <p class="etxt">Apple rejects app<br>Claims there is no usage of motion data (ha!)<br>Claims the same 4.2 guideline regarding music distribution</p>
+  </div>
 </div>
 
 ## Summary of Issues
@@ -112,6 +120,13 @@ Apple expects some minimum UX when it comes to an audio player like UI for their
  - Play / Stop controls
  - Playhead controls and seek controls
  - Next/Previous mix controls
+
+#### `Guideline 2.5.1 - Performance - Software Requirements`
+Apple might give a rejection with a response along the lines of:
+```
+During review, we were prompted to provide consent to access the Motion & Fitness Activity information. However, we were not able to locate any features in your app that use the Motion & Fitness Activity information.
+```
+This should be an easy one to respond to since its clear the reviewer didn't spend too much time reviewing the app if they did not understand that motion data was used for playing back the spatial soundfield of the audio mix. Just remind them in a response that you use the motion data for audio related reasons to make the audio mix interactively to the user via CMHeadphoneMotionManager API and/or CMMotionManager API.
 
 ### Motion Management
 In any case that your spatial music or audio app requiring orientation to properly decode a binauralized stereo listening experience you will have to design a management system for handling all the possible input orientation data from different IMU sources.
