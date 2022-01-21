@@ -1,7 +1,7 @@
 ---
 title: "Submitting Spatial Music Apps to iOS App Store"
 date: 2021-11-22T10:10:05-04:00
-lastmod: 2022-01-07T10:10:05-04:00
+lastmod: 2022-01-21T10:10:05-04:00
 draft: false
 ---
 ---
