@@ -55,7 +55,7 @@ This section will track our progress of submitting and handling common issues we
   </div>
   <div class="event">
     <strong class="edate">08 Dec 2021</strong>
-    <p class="etxt">Appeal to App Review Board submitted</p>
+    <p class="etxt">Appeal to App Review Board submitted<br>Recommendation: add more supplemental content such as video</p>
   </div>
   <div class="event">
     <strong class="edate">08 Dec 2021</strong>
@@ -79,7 +79,11 @@ This section will track our progress of submitting and handling common issues we
   </div>
   <div class="event">
     <strong class="edate">07 Jan 2022</strong>
-    <p class="etxt">Apple rejects app<br>Claims there is no usage of motion data (ha!)<br>Claims the same 4.2 guideline regarding music distribution</p>
+    <p class="etxt">Apple rejects app<br>Reviewer inadequetly reviewed app<br>Claims 2.5.1 guideline<br>Claims the same 4.2 guideline regarding music distribution</p>
+  </div>
+  <div class="event">
+    <strong class="edate">19 Jan 2022</strong>
+    <p class="etxt">Apple calls from appeal board<br>rejection upheld<br>no recommendation<br>Apple states they will call in a week with more information</p>
   </div>
 </div>
 
@@ -114,6 +118,11 @@ Additional appeals failed despite following the Review Board's advice for adding
 Apple has acknowledged the difference and distinction between spatial audio as a rendered soundfield mix and "spatial audio" as a processing playback effect. In a call with the App Review Board they challenged our claim that iTunes does not support "spatial audio" saying we should ask the artist to use the dedicated ["Apple Spatial Audio"]({{< relref "posts/observations-and-limitations-of-apple-spatial-playback-implementation" >}}) playback on iTunes. We discussed with the review board the difference between spatial audio soundfield mixes created by an artist or engineer via a multichannel format (whether Mach1 Spatial, ambisonics or an object based format) compared to what iTunes does not which is adding a "spatial playback effect" to specific Dolby or Sony based formats without disgression from the artist. They thankfully seemed to acknowledge this difference and recommend adding more fan interaction (merchandise purchase link or event ticket links) to the app to make it more of an interactive experience. They also asked to include notes on documentation of this distinction as well as any feedback from the artist/musicians involved endorsing the app.
 
 **We will follow this advice and report back on what the minimum required development is for an artist or label to distribute their own spatial soundfields via an app.**
+
+##### Update
+Using the appeal board lead to the same conclusion, they acknowledged that we went beyond the intended UX of the app by adding everything Apple recommended us to add despite us disagreeing with the additions. They also acknowledged that there is no alternative form of distribution suitable for the spatial music content in the app, however they still upheld the rejection providing no additional real feedback or recommendations. They did say they will review all the content and this specific usecase and setup a follow up call since they were unable to provide next steps.
+
+During the call they were suggesting we create a spatial music platform for multiple artists, which we said was not at all our attention, Apple then recommended making an app that is more encompassing for the artist, "adding more content about the artist would improve the return rate for users to the app", however we explained we are only responsible for creating an interactive audio experience for this single piece of content and are not responsible for making a content management app for the artist. After this exchange Apple seems to acknowledge our use case and intended UX and we are hoping they review with more scrutiny. Apple seems to be receptive to interactive spatial music content in an app as a side feature or bonus content, but not when the app is centered around spatial music or spatial content as the focus of the app.
 
 #### `Guideline 4.2 - Design - Minimum Functionality` Audio Player UX
 Apple expects some minimum UX when it comes to an audio player like UI for their users, you will likely face rejections unless you have some of the following functional UX/UI for your spatial audio player:
