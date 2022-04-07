@@ -1,6 +1,7 @@
 ---
 title: "Custom Formats with Mach1Transcode"
 date: 2020-06-15T03:15:37-04:00
+lastmod: 2022-04-07T03:10:05-04:00
 ---
 
 ---
@@ -67,11 +68,11 @@ You can grab the platformed commandline `m1-transcode` here: [Mach1 Spatial SDK 
 This commandline binary is also used by M1-Transcoder.app/exe and can be found in your `User Data/Mach1 Spatial System/` directory of your computer if you installed [Mach1 Spatial System](https://www.mach1.tech/spatial-system).
 
 #### Example command
-`./m1-transcode fmtconv -in-file /path/to/16channel.wav -in-fmt TTPoints -in-json /path/to/16ChannelDescription.json -out-file /path/to/output-m1spatial.wav -out-fmt M1Spatial -out-file-chans 0`
+`./m1-transcode fmtconv -in-file /path/to/16channel.wav -in-fmt CustomPoints -in-json /path/to/16ChannelDescription.json -out-file /path/to/output-m1spatial.wav -out-fmt M1Spatial -out-file-chans 0`
 
 Input JSON description of the surround/spatial soundfield setup per your design and input it with the -in-json arguement for any custom input or output transcoding.
 
-The `-in-fmt` or `-out-fmt` as `TTPoints` can be used to set a custom json format.
+The `-in-fmt` or `-out-fmt` as `CustomPoints` can be used to set a custom json format.
 
 You can also find an example custom `.json` file here: [references/Custom16Channel.json](https://github.com/Mach1Studios/m1-sdk/tree/master/binaries/executables/reference)
 
