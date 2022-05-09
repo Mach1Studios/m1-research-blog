@@ -1,6 +1,7 @@
-baseURL = "https://research.mach1.tech"
+baseURL = "https://research.mach1.tech/"
 languageCode = "en-us"
-title = "Mach1 Spatial & Multichannel Research Blog"
+title = "Mach1 Research"
+titledescription = "Spatial & Multichannel Blog"
 theme = "ace-documentation"
 copyright = "©2022 Mach1, Corp."
 
