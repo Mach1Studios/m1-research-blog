@@ -7,6 +7,7 @@ The posts and tutorials should be read knowing they contain some subjective opin
 - [Spatial Audio Glossary]({{< relref "/glossary" >}})
 - [Research Posts]({{< relref "/posts" >}})
 - [Tutorials]({{< relref "/tutorials" >}})
+- [Musings & Deification]({{< relref "/musings" >}})
 
 ##### Contributions
 
