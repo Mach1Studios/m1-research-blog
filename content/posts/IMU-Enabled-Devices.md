@@ -1,7 +1,7 @@
 ---
 title: "IMU Enabled Devices"
 date: 2020-06-05T03:10:05-04:00
-lastmod: 2021-12-02T03:10:05-04:00
+lastmod: 2022-08-15T03:10:05-04:00
 draft: false
 ---
 ---
@@ -29,8 +29,10 @@ Additionally we are excited to which of these devices will be easy for 3rd party
  - JBL Quantum One (`closed/inaccessible`)
 
 ### Attachable IMU Trackers
- - [mBient Lab MetaMotion](https://mbientlab.com/metamotionr) (`open-use`)
+ - [mBient Lab MetaMotion](https://mbientlab.com/metamotions) (`open-use`)
+ - [Supperware](https://supperware.co.uk/) (`open-use`)
  - [WitMotion](#witmotion) (`open-use`)
+ - [nvsonic](https://github.com/trsonic/nvsonic-head-tracker) (`open-use`)
  - EDTracker Pro (`open-use`)
  - Waves NX (`closed/inaccessible`)(`semi-open-use`)
  - BBC micro:bit (`open-use`)
@@ -68,6 +70,7 @@ Additionally we are excited to which of these devices will be easy for 3rd party
  - tracking.js
 
 #### Opensource Facetrackers
+ - Mediapipe FaceDetection/FaceTracker
  - Spark AR: Face Tracker
 
 ## Device Specific Instructions
@@ -76,8 +79,8 @@ Additionally we are excited to which of these devices will be easy for 3rd party
 As of Xcode 12 Beta Preview 6 or newer (Xcode 12) along with iOS 14+ the [CMHeadphoneMotionManager](https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager) API is available and with minimal effort we can expose the orientation data of the AirPod Pro. 
 View our demo implementation of this via an iOS app that outputs the orientation data via OSC here: https://github.com/Mach1Studios/M1-AirPodOSC
 
-_January-2021: On our latest QA the resulting orientation of the AirPods Max were different and not relative to the results outputted from AirPods Pro_
-[Link](https://www.facebook.com/590732605/videos/10158158827442606/)
+#### Supperware
+We recommend usage of [Supperware](https://supperware.co.uk/) tethered IMU for studio environments. The IMU and associated connection tools are very maturely designed and further supports an opensource API for bridge connection to be natively written into production software.
 
 #### MetaMotion
 We have been using MetaMotion MMRL & MMS devices for custom 3rd party headtracking added nicely to any pair of headphones with great performance. We have even contributed to a prototyping cross-platform OpenFrameworks addon to help others use these devices as well: https://github.com/Mach1Studios/ofxMetaMotion

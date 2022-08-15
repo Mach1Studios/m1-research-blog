@@ -32,13 +32,6 @@ Spatial audio with headtracking has many other advantages, including but not lim
 The difference between head-tracked and head-locked spatial audio is really important. Spatial audio experiences and technology should include headtracking to be truly considered as such. You can find more about [headtracked](../general-terms#headtracked) vs. [headlocked](../general-terms#headlocked) spatial audio and the methods used to create spatial audio such as in our section on [headtracking](../general-terms#headtracked), as well as in [HRTFs](../general-terms#hrtf).
 
 ---
-#### [Pre-rendered](../technical-terms#render) vs. [Runtime](../technical-terms#runtime)
-Another technical trait that can be used to describe `spatial audio` is whether its been through a more traditional post-production pipeline resulting in a [pre-rendered](../technical-terms#render) spatial soundfield or if we are discussing layers of variable and interactive processes being applied to create changing effects to assets during [runtime](../technical-terms#runtime) or playback. This mostly tends to describe how the "creator" of the spatial soundfield created and produced it.
-
-##### Synonyms : [3D Audio](../misc-terms#3daudio), [Diegetic Audio](../general-terms#diegetic)
-##### Related Terms : 
-
----
 ### [Headtracking](../general-terms#headtracked)
 Headtracked spatial audio is anchored in absolute space, which can be detected as the listener rotates their head or in some cases [moves within a space](../mixing-terms#6dof).
 
@@ -57,6 +50,13 @@ It should be noted that there is no effect process that happens in headlocked sp
 
 ##### Synonyms : 
 ##### Related Terms : [Headtracked](../general-terms#headtracking)
+
+---
+#### [Pre-rendered](../technical-terms#render) vs. [Runtime](../technical-terms#runtime)
+Another technical trait that can be used to describe `spatial audio` is whether its been through a more traditional post-production pipeline resulting in a [pre-rendered](../technical-terms#render) spatial soundfield or if we are discussing layers of variable and interactive processes being applied to create changing effects to assets during [runtime](../technical-terms#runtime) or playback. This mostly tends to describe how the "creator" of the spatial soundfield created and produced it.
+
+##### Synonyms : [3D Audio](../misc-terms#3daudio), [Diegetic Audio](../general-terms#diegetic)
+##### Related Terms : 
 
 ---
 ### [HRTF](../general-terms#hrtf)

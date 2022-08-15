@@ -52,5 +52,5 @@ Please visit the repository page to learn more: [https://github.com/Mach1Studios
 
 ---
 ###### Contributors:
-[Aïli Arakida Niimura](https://github.com/clpng)\
-[Dylan Marcus](https://github.com/himwho)
+[Dylan Marcus](https://github.com/himwho)\
+[Aïli Arakida Niimura](https://github.com/clpng)
