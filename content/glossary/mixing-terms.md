@@ -137,8 +137,6 @@ Because object-based audio is a runtime solution (you program rules and it plays
 
 ### [Scene-Based](../mixing-terms#scene-based)
 
-Scene-based Spatialisation (Ambisonics)
-
 Scene-based spatialisation represents an audio scene from a first-person perspective. The most common example of scene-based spatialisation is #Ambisonics, a technology that was developed in the 1970s and has since been used as one of the dominant spatialisation techniques. It's popularity stems from its use within academia rather than from its quality and ease of use from an industry perspective.
 
 Scene-based spatialisation usually entails placing a listener at the center of a sphere or comparable 3D shape. Ambisonics are created using spherical harmonics and complex mathematics. They are referred to in 'orders', which means how many channels are output, corresponding to the "resolution" of the spatial image. 

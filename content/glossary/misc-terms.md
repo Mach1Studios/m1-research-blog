@@ -24,7 +24,7 @@ In case it hasn't already been made clear, **using dimensions to express spatial
 ---
 ### [3D Audio](../misc-terms#3daudio)
 
-3D audio as a term can often be found used in marketing campaigns where zero spatial audio is happening and there is no for of interactivity such as head-tracking or movement. This raises some questions about market intelligence and can lead to issues where specific features or even projects are misunderstood technologically by consumers due to the varying level of expectations thrown around for the terms such as "3D Audio" or even "Spatial Audio".
+3D audio as a term that can often be found used very broadly and sometimes incorrectly in marketing materials. This raises some questions about market intelligence and can lead to issues where specific features or even projects are misunderstood technologically by consumers due to the varying level of expectations thrown around for the terms such as "3D Audio" or even "Spatial Audio".
 
 3D Audio has been used as a term to describe any of the following: 
  - headtracking and interactive spatial audio
@@ -36,9 +36,21 @@ In case it hasn't already been made clear, **using dimensions to express spatial
  - Roomscale game object audio processing
  - Roomscale spatial pre-rendered audio processing
 
-As the list grows it is becoming more clear that when someone refers to 3D Audio or Spatial Audio it can really mean anything, leading to miscommunications and pain points for both creatives and consumers.
+As the list grows it is becoming more clear that when someone refers to 3D Audio or Spatial Audio it can really mean anything, leading to miscommunications and pain points for both creatives and consumers. We believe the term '3D Audio' should be reserved for only cases where there is end-user or listener interactivity such as: 
+ - headtracking and interactive spatial audio
+ - HRTF processing for object audio (headtracking)
+ - Roomscale game object audio processing
+ - Roomscale spatial pre-rendered audio processing
 
 ##### Synonyms : [Headtracked](../general-terms#headtracked), [Headlocked](../general-terms#headlocked), [HRTF](../general-terms#hrtf)
 ##### Related Terms : [Spatial Audio](../general-terms#spatial-audio)
+
+---
+### [Metaverse](../misc-terms#metaverse)
+
+This is another term we often see thrown around alongside various spatial audio terms. As of 2022 it refers to a concept of aggregating virtual worlds and game environments as a new social platform to varying degrees, as it comes to spatial audio it is nothing different than what has existed for decades around creating either realistic or creatively interesting interactive audio and the raising demand for better audio production or rendering from the game, art or entertainment industries. Any concept that would exist in a "metaverse project" in terms of audio would also exist elsewhere and for those reasons its easier to separate these terms as they have no direct correlation.
+
+##### Synonyms : 
+##### Related Terms : 3D Environment, Game, Internet
 
 ---
