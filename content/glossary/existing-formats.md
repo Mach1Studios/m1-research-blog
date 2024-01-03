@@ -24,6 +24,9 @@ Mach1 Spatial acts as a universal delivery format by safely handling or ingestin
 
 Mach1 Spatial is a VVBP system (Virtual Vector based panning system). VVBP is a useful method because it does not use effects that can produce damaging artifacts in an artistic mix. There is no timbral effect on the mix, meaning the frequencies do not change and the quality of audio isn't altered in any way. Instead Mach1 Spatial acts as a framework for correctly assembling, translating and containing spatial soundfields with full transparency and ease of use. Mach1 Spatial was born to meet the criteria for the preservation of professional audio standards and best practices in a medium where quality of sound is critical for maintaining immersion. The system is contained into a single multichannel deliverable through already existing audio containers and codecs and does not require use of any additional metadata or complex processing, all of the spatial soundfield information is within the audio data. The system supports both head-tracked 3DOF spatial audi as well as 6DOF when integrated into a 3D engines. It does not require any proprietary audio library or media engine and can function fully on top of any existing audio system/engine.
 
+##### Synonyms : 
+##### Related Terms : VVBP, SPS, VBAP, LBAP
+
 ---
 ### [Ambisonics](../existing-formats#ambisonics)
 
@@ -46,6 +49,9 @@ While ambisonics may be useful for some, such as those with higher-order systems
 - Confusion with normalization for different variations of ambisonics
 
 A usecase for ambisonics that is common is for field recordings using ambisonic related microphone arrangements. It should be noted however that the microphones themselves are vector point recordings that later get [encoded](../technical-terms#encode) into the ambisonic B-Format spherical harmonic standard, before this step they are akin to other multi-mic arrays where each capsule is attempting to capture a specific cardioid sound response & direction (typically referred to as A-Format ambisonics). With this in mind, and true with most spatial audio formats, any microphone arrangements could be succesfully used and [encoded](../technical-terms#encode).
+
+##### Synonyms : B-Format
+##### Related Terms : ACNSN3D, FuMa
 
 ---
 ### [Facebook 360 Audio](../existing-formats#fb360)
@@ -70,7 +76,7 @@ The Dolby Atmos Master files are comprised of:
 - `.atmos.audio` : a multichannel uncompressed audio file
 - `.atmos.metadata` : the object-bed specific metadata
 
-For a review of use of Dolby Atmos, refer to [Observations and Limitations of Dolby Atmos for Spatial Mixing]({{< relref "posts/observations-and-limitations-of-dolby-atmos-for-spatial-mixing" >}})\
+For a review of use of Dolby Atmos, refer to [Observations and Limitations of Dolby Atmos for Spatial Mixing]({{< ref "posts/observations-and-limitations-of-dolby-atmos-for-spatial-mixing" >}})\
 For more information on Dolby Atmos, refer to [Object-Based](../mixing-terms#object-based) 
 
 ---
@@ -91,10 +97,10 @@ For more information on Sony 360, refer to [Object-Based](../mixing-terms#object
 
 Apple's spatial audio is currently highly feature and usecase driven. The process used for spatialisation differs between these applications. For example, the headtracked Dolby Atmos output from Apple's TV app undergoes a different process than Apple Music spatialisation to a certain extent. Apple Music spatial audio tracks have all had to be "re-engineered" using Dolby Atmos. Ideally this would allow the benefit of ensuring that the spatial mix that is released is more closely related to what the producer intended you to hear, however Apple Spatial does not utilize any of the processing effects forced by Dolby Atmos and upon rendering for Apple Spatial from Dolby Atmos all of the soundfield's height, room modeling and HRTF processing are stripped away to create a resulting 5.1 mix. This 5.1 mix is then forced through another object style playback rendering with additional **new** room modeling and HRTF processing that cannot be edited or controlled, further degrading and shrinking the intended spatial soundfield for headtracked playback with IMU enabled AirPods. 
 
-For more on Apple's spatial audio, we have outlined how to sideload and review Apple's spatial audio implementation here: [Previewing Spatial Audio on Apple AirPods]({{< relref "tutorials/previewing-spatial-audio-on-apple" >}})
+For more on Apple's spatial audio, we have outlined how to sideload and review Apple's spatial audio implementation here: [Previewing Spatial Audio on Apple AirPods]({{< ref "tutorials/previewing-spatial-audio-on-apple" >}})
 
 We have also reviewed the implementation and use of Apple's IMU enabled devices here:
-[Feedback on Apple's Spatial Audio Implementation]({{< relref "posts/feedback-on-apple-spatial-audio" >}})
+[Feedback on Apple's Spatial Audio Implementation]({{< ref "posts/feedback-on-apple-spatial-audio" >}})
 
 ---
 ### [Game Engine Object Audio](../existing-formats#game-engine-object-audio)
@@ -120,7 +126,7 @@ Atmoky is a runtime spatial audio engine for dynamically processing audio object
 High Fidelity is a spatial audio company that evolved as a pivot from social VR. Early beta versions demonstrated High Fidelity as a packaged example and SDK for a game object audio engine for developers to import as needed to their interactive 2D or 3D experiences. The design and package of this object audio engine is focused on leaning toward realism and away from creative control and for usecases that need runtime spatial audio only. While their tools are interesting, they are not made for creators to produce spatial audio content and are an extension of object audio implementation use for 3D engines (or game engine object audio). 
 
 ---
-### [THX Spatial Audio]({{< relref "glossary/existing-formats#thx" >}})
+### [THX Spatial Audio]({{< ref "/glossary/existing-formats#thx" >}} "thx")
 
 ##### Type: Other / HRTF
 

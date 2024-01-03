@@ -197,7 +197,71 @@ _Refers to a process of pre-determining all intended processes and effects to an
 
 `Spatial audio` content that has been pre-rendered or rendered has the added benefit of using more time expensive and higher quality processing effects that might not normally be too expensive to be processed in realtime, especially from device to device.
 
-##### Synonyms : Pre-rendered
+##### Synonyms : 
+##### Related Terms : 
+
+---
+
+### [A-Format]({{< ref "/glossary/technical-terms#a-format" >}})
+A often misused term describing multichannel soundfields or multi-mic arrays that **Is not ambisonics** but is sometimes used as to create a multichannel source that later can be encoded into ambisonics.
+
+##### Synonyms : 
+##### Related Terms : 
+
+---
+
+### [B-Format]({{< ref "/glossary/technical-terms#ambisonics" >}})
+A synonym for an ambisonic encoded soundfield.
+
+##### Synonyms : [Ambisonics]({{< ref "/glossary/technical-terms#p-format" >}})
+##### Related Terms : 
+
+---
+
+### [T-Format]({{< ref "/glossary/technical-terms#t-format" >}})
+A often misused term describing multichannel soundfields or multi-mic arrays that **Is not ambisonics** but is sometimes used as to create a multichannel source that later can be encoded into ambisonics.
+
+##### Synonyms :
+##### Related Terms : 
+
+---
+
+### [P-Format]({{< ref "/glossary/technical-terms#p-format" >}})
+A often misused term describing multichannel soundfields or multi-mic arrays that **Is not ambisonics** but is sometimes used as to create a multichannel source that later can be encoded into ambisonics.
+
+##### Synonyms : 
+##### Related Terms : 
+
+---
+
+### [C-Format]({{< ref "/glossary/technical-terms#c-format" >}})
+Describes a **partially ambisonics** multichannel file where 2 of the channels are decoded from ambisonics the rest of the channels replicate ambisonic domain concepts to replicate the source ambisonic material. Was suggested as a temporary means of distribution to ensure that the first two channels can be played back safely on all systems as they are decoded from ambisonics into traditional stereo.
+
+##### Synonyms : 
+##### Related Terms : 
+
+---
+
+### [D-Format]({{< ref "/glossary/technical-terms#d-format" >}})
+**Is not ambisonics**: multichannel decoding from an ambisonic source
+
+##### Synonyms : 
+##### Related Terms : 
+
+---
+
+### [E-Format]({{< ref "/glossary/technical-terms#e-format" >}})
+**Is not ambisonics**: multichannel decoding from an ambisonic source
+
+##### Synonyms : 
+##### Related Terms : 
+
+---
+
+### [G-Format]({{< ref "/glossary/technical-terms#g-format" >}})
+**Is not ambisonics**: 5.1 multichannel decoding from an ambisonic source
+
+##### Synonyms : 
 ##### Related Terms : 
 
 ---
