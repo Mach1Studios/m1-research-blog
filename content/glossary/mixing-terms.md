@@ -3,47 +3,47 @@ title: "2. Mixing Terms"
 ---
 
 ---
-## [Common Workflow Terms](../mixing-terms#workflow-terms)
+## Common Workflow Terms
 ---
 
-### [Panning](../mixing-terms#panning)
+### Panning
 _Refers to panning a source sound or track into a spatial soundfield multichannel configuration or format. It is completely synonymous with [Encode](../technical-terms#encode)_
 ##### Synonyms : [Pan](../mixing-terms#panning), [Encode](../technical-terms#encode), Input to Spatial Soundfield
 ##### Related Terms :
 
 ---
 
-### [Monitoring](../mixing-terms#monitoring)
+### Monitoring
 _Refers to the binaural downmix based on the current listening "orientation" as a method of monitoring or live listening to a spatial soundfield via stereo binuaralized headpones or speakers. It is completely synonymous with [Decode](../technical-terms#decode)_
-##### Synonyms : [Monitor](../mixing-terms#monitoring), [Decode](../technical-terms#decode), [Listening](../mixing-terms#monitoring), Stereo Playback, [Binauralized](../mixing-terms#binaural)
-##### Related Terms : [Binaural](../mixing-terms#binaural)
+##### Synonyms : [Monitor](../mixing-terms#monitoring), [Decode](../technical-terms#decode), [Listening](../mixing-terms#monitoring), Stereo Playback, [Binauralized](../mixing-terms#binaural-filtering)
+##### Related Terms : [Binaural](../mixing-terms#binaural-filtering)
 
 ---
 
-### [Divergence](../mixing-terms#diverge)
+### Divergence
 _Divergence describes the amount of concentration of a panned or encoded input sound source to a specific [azimuth](../technical-terms#azimuth) or [elevation](../technical-terms#elevation). For example the higher the diverge the less this signal will exist in the opposite direction, the lower the diverge the more the signal will exist in all directions (until eventually becoming mono during [monitoring](../mixing-terms#monitoring) or [decoding](../technical-terms#decode))._
 _This is unique to a vector based spatial or multichannel audio system and is different from sperhical based audio systems [distance](../general-terms#distance) which is less about signal distribution within a soundfield._
 ##### Synonyms : Focus, Directional Isolation
 ##### Related Terms : [Distance](../general-terms#distance)
 
 ---
-## [Processing Effect Terms](../mixing-terms#processing-terms)
+## Processing Effect Terms
 ---
 
-### [HRTF](../mixing-terms#hrtf)
+### HRTF
 ##### Synonyms : [Head Related Transfer Functions](../general-terms#hrtf)
 ##### Related Terms : 
 
 ---
 
-### [Room Modeling](../mixing-terms#room-modeling)
-_Room modeling is a catch all term for various [reverberance](../mixing-terms#reverb), delay and even filter digital signal processes (DSP) that can be applied to the audio content. This can be used as a tool to add more externalization preception ability to any audio content but comes at the cost of altering the signal to do so. This effect is highly dependent on the use case and how this is being utilized to be more effective than destructive._
-##### Synonyms : [Reverb](../mixing-terms#reverb), [Reverberance](../mixing-terms#reverb), Physical Modeling
+### Room Modeling
+_Room modeling is a catch all term for various reverberance, delay and even filter digital signal processes (DSP) that can be applied to the audio content. This can be used as a tool to add more externalization preception ability to any audio content but comes at the cost of altering the signal to do so. This effect is highly dependent on the use case and how this is being utilized to be more effective than destructive._
+##### Synonyms : Reverb, Reverberance, Physical Modeling
 ##### Related Terms : [Externalization](../general-terms#externalization)
 
 ---
 
-### [Binaural Filtering](../mixing-terms#binaural-filtering)
+### Binaural Filtering
 
 ##### Synonyms : 
 ##### Related Terms : [Binaural Recording](../mixing-terms#binaural-recording)
@@ -59,7 +59,7 @@ These methods sound similar but are doing different things. If you slap on a bin
 
 ---
 
-### [Binaural Recording](../mixing-terms#binaural-recording)
+### Binaural Recording
 When you make a **binaural recording**, you put one microphone into each ear of a dummy head, thereby recording from a first-person perspective. Remember that this means the perspective you are recording will be 'colored' by the dimensions of the dummy head and ears.  
 
 Alternatively, you can pop a microphone in each of your own ears and record with your own head size and ear shape. But the same concept applies to this method – if you pass on your recording to someone else, they will be listening from the perspective of _your_ ears. It might be pretty different from their own ears, which could degrade the quality of the spatial experience.
@@ -68,10 +68,10 @@ Binaural recording is used most often for ASMR, for testing in audio technology,
 ##### Synonyms : 
 ##### Related Terms : [Binaural Filtering](../mixing-terms#binaural-filtering)
 ---
-## [Spatial Mix Dimensions](../mixing-terms#spatial-dimensions)
+## Spatial Mix Dimensions
 ---
 
-### [3DOF](../mixing-terms#3dof)
+### 3DOF
 _3DOF stands for 3 Degrees of Freedom:_
  - _Rotating head left and right (shaking head as "no")_
  - _Rotating head up and down (shaking head as "yes")_
@@ -82,7 +82,7 @@ _Typically if you refer to a spatial mix as a 3DOF mix then you are implying it 
 
 ---
 
-### [6DOF](../mixing-terms#6dof)
+### 6DOF
 _6DOF stands for 6 degrees of Freedom:_
  - _Rotating head left and right (shaking head as "no")_
  - _Rotating head up and down (shaking head as "yes")_
@@ -91,15 +91,15 @@ _6DOF stands for 6 degrees of Freedom:_
  - _Strafing left or right (side-stepping to your left or right)_
  - _Climbing up or down (in level or floors)_
 
-Typically this is referred to as [roomscale](../technical-terms#roomscale) or orientational & positional movements and rotations.
-##### Synonyms : [Roomscale](../technical-terms#roomscale), Orientational & Positional
+Typically this is referred to as roomscale or orientational & positional movements and rotations.
+##### Synonyms : Roomscale, Orientational & Positional
 ##### Related Terms : [6DOF (sensor)](../technical-terms#6dof)
 
 ---
-## [Spatial Mixing Types](../mixing-terms#mix-types)
+## Spatial Mixing Types
 ---
 
-### [Channel-Based](../mixing-terms#channel-based)
+### Channel-Based
 
 Channel-based spatialisation is a process by which an audio engineer has created a multichannel mix of 'where the sounds go', typically for a standard surround sound format such as 5.1, 7.1, etc.
 
@@ -115,12 +115,12 @@ There are some exceptions to this, however. Formats such as #Mach1,  unify the 
 
 Channel-based spatialisation is not set to disappear anytime soon. For all the discussion on the versatility of [Object-Based](../mixing-terms#object-based) audio, channel-based spatialisation may have its own advantages depending on the experience that needs to be created and the system it's created for.
 
-##### Synonyms : [Surround](../existing-formats#surround)
-##### Related Terms : [Mach1 Spatial](../existing-formats#mach1-spatial), [Dolby Atmos](../existing-formats#dolby-atmos)
+##### Synonyms : Surround
+##### Related Terms : [Mach1 Spatial](../existing-formats#mach1-spatial), [Dolby Atmos](../existing-formats#dolby-atmos-audio)
 
 ---
 
-### [Object-Based](../mixing-terms#object-based)
+### Object-Based
 
 Object-based audio is a good example of a spatialisation method that *lends itself* to interactive content, or head-tracked spatial audio.
 
@@ -131,11 +131,11 @@ Object-based audio is a good example of a spatialisation method that *lends itse
 Because object-based audio is a runtime solution (you program rules and it plays by the rules when a user uses it), it can sound different depending on what the user does and how well the rules were designed. However, there is never a complete post-production pipeline, which can remove some essential elements from a mix, and make it difficult to control your listener's experience.
 
 ##### Synonyms : 
-##### Related Terms : [Dolby Atmos](../existing-formats#dolby-atmos), [Sony 360](../existing-formats#sony-360)
+##### Related Terms : [Dolby Atmos](../existing-formats#dolby-atmos-audio), [Sony 360](../existing-formats#sony-360-audio)
 
 ---
 
-### [Scene-Based](../mixing-terms#scene-based)
+### Scene-Based
 
 Scene-based spatialisation represents an audio scene from a first-person perspective. The most common example of scene-based spatialisation is #Ambisonics, a technology that was developed in the 1970s and has since been used as one of the dominant spatialisation techniques. It's popularity stems from its use within academia rather than from its quality and ease of use from an industry perspective.
 

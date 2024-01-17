@@ -3,84 +3,84 @@ title: "3. Technical Terms"
 ---
 
 ---
-## [Degrees of Freedom (DOF)](../technical-terms#dof)
+## Degrees of Freedom (DOF) {#dof}
 ---
 
-### [3DOF](../technical-terms#3dof)
+### 3DOF
 _Typically refers to a single sensor (accelerometer or gyroscope) 3 axis output values_
 ##### Synonyms : 
 ##### Related Terms : [3DOF (Movement)](../mixing-terms#3dof)
 
 ---
 
-### [6DOF](../technical-terms#6dof)
+### 6DOF
 _Typically refers to the usage of two sensors (accelerometer and/or gyroscope and/or magnometer) 6 axis output values_
 ##### Synonyms : 
 ##### Related Terms : [6DOF (Movement)](../mixing-terms#6dof)
 
 ---
 
-### [9DOF](../technical-terms#9dof)
+### 9DOF
 _Typically refers to the usage of three sensors (accelerometer, gyroscope and magnometer) 9 axis output values_
 ##### Synonyms : 
 ##### Related Terms : 
 
 ---
 
-### [10DOF (and greater)](../technical-terms#10dof)
+### 10DOF (and greater)
 _Typically refers to the usage and combination of sensors for 10 or more axis data output values_
 ##### Synonyms : 
 ##### Related Terms : 
 
 ---
-## [Inputs & Outputs](../technical-terms#io)
+## Inputs & Outputs
 ---
 
-### [Source](../technical-terms#source)
+### Source
 _Typically referring to a sound source or a single mono or stereo input sound/track_
 ##### Synonyms : Input
 ##### Related Terms : 
 
 ---
 
-### [Listener](../technical-terms#listener)
+### Listener
 _Typically referring to the listening object representing your first person perspective ears or the virtual microphone object or location for stereo capture and playback_
-##### Synonyms : [Decode](../technical-terms#decode), [Monitor](../mixing-terms#monitoring), [Monitoring](../mixing-terms#monitoring), [Listening](../mixing-terms#monitoring), Stereo Playback, [Binauralized](../mixing-terms#binaural)
+##### Synonyms : [Decode](../technical-terms#decode), [Monitor](../mixing-terms#monitoring), [Monitoring](../mixing-terms#monitoring), [Listening](../mixing-terms#monitoring), Stereo Playback, [Binauralized](../mixing-terms#binaural-filtering)
 ##### Related Terms : 
 
 ---
 
-### [Encode](../technical-terms#encode)
+### Encode
 _Having audio content input into a spatial or multichannel soundfield._
 ##### Synonyms : [Pan](../mixing-terms#panning), [Panning](../mixing-terms#panning), Input to Spatial Soundfield
 ##### Related Terms :
 
 ---
 
-### [Decode](../technical-terms#decode)
+### Decode
 _Having spatial or multichannel soundfield content output for an intended two ear or two channel playback._
-##### Synonyms : [Monitor](../mixing-terms#monitoring), [Monitoring](../mixing-terms#monitoring), [Listening](../mixing-terms#monitoring), Stereo Playback, [Binauralized](../mixing-terms#binaural), [Listener](../technical-terms#listener)
-##### Related Terms : [Binaural](../mixing-terms#binaural)
+##### Synonyms : [Monitor](../mixing-terms#monitoring), [Monitoring](../mixing-terms#monitoring), [Listening](../mixing-terms#monitoring), Stereo Playback, [Binauralized](../mixing-terms#binaural-filtering), [Listener](../technical-terms#listener)
+##### Related Terms : [Binaural](../mixing-terms#binaural-filtering)
 
 ---
-## [Describing Rotations](../technical-terms#describing-rotation)
+## Describing Rotations
 ---
 
-### [Azimuth](../technical-terms#azimuth)
+### Azimuth
 _Refers to the horizontal angle or direction or rotation. Typically when discussing spatial audio a common example of usage of azimuth would be the azimuth of a sound source [panned](../mixing-terms#panning) around you as the [listener](../technical-terms#listener)._
 ##### Synonyms : Yaw
 ##### Related Terms : [Heading](../technical-terms#heading) 
 
 ---
 
-### [Elevation](../technical-terms#elevation)
+### Elevation
 _Refers to the angular distance of the source above or below the horizon._
 ##### Synonyms : Height, Pitch
 ##### Related Terms : [Heading](../technical-terms#heading)
 
 ---
 
-### [Heading](../technical-terms#heading)
+### Heading
 A direction or bearing, combining the above terms of [Azimuth](../technical-terms#azimuth) and [Elevation](../technical-terms#elevation).
 
 ##### Synonyms : 
@@ -88,7 +88,7 @@ A direction or bearing, combining the above terms of [Azimuth](../technical-term
 
 ---
 
-### [Euler](../technical-terms#euler)
+### Euler
 Description of rotations comprised of 3 angles. Commonly using: 
  - Yaw
  - Pitch
@@ -103,14 +103,14 @@ but sometimes referred to as `X, Y, Z` in some 3D systems _(be mindful of the or
 
 ---
 
-### [Quaternion](../technical-terms#quat)
+### Quaternion
 Mathematical notation for representing spatial orientations and rotations of elements in three dimensional space. Useful for [avoiding common issues when describing 3D](https://research.mach1.tech/posts/describing-3d-motion) rotations in [Euler](../technical-terms#euler) such as [Gimbal Lock](../technical-terms#gimbal-lock)
-##### Synonyms : [Quat](../technical-terms#quat)
+##### Synonyms : [Quat](../technical-terms#quaternion)
 ##### Related Terms : 
 
 ---
 
-### [Degrees](../technical-terms#degrees)
+### Degrees
 Used to describe rotation angles in which a full rotation is `360` degree units. 
 
 ##### Synonyms : 
@@ -118,17 +118,17 @@ Used to describe rotation angles in which a full rotation is `360` degree units.
 
 ---
 
-### [Radians](../technical-terms#radians)
+### Radians
 Used to describe rotation angles in which a full rotation is `2π` or `6.28318530718`.
 
 ##### Synonyms : 
 ##### Related Terms : [Euler](../technical-terms#euler)
 
 ---
-## [Spatial Audio: Common Issues](../technical-terms#commonissues)
+## Spatial Audio: Common Issues {#commonissues}
 ---
 
-### [Gimbal Lock](../technical-terms#gimbal-lock)
+### Gimbal Lock
 Gimbal lock is a loss of a degree of freedom when two axes rotate in parralel, the output rotation becomes one less degree of freedom.
 
 To explain this more simply; two or more axes line up in a way so that the applied Euler rotation cannot distiguish which of the two axes are rotating because they yield the same results. 
@@ -140,7 +140,7 @@ _Example: If you add 90 pitch upward in degrees to an object, rotating yaw or ro
  
 ---
 
-### [Latency](../technical-terms#latency)
+### Latency
 Describes when something has a latent or delayed reaction. Typically in spatial audio world we can describe headtracking or 3D rotations as being latent when you can percieve a time delay from your real world motion to the interacted virtual motion. This can be a very destructive issue for any hardware that has motion based sensors in them when applied to audio for spatial audio perception.
 
 When discussing latency in the audio world in general it can refer to the actual audio signal itself having a perceived delay.
@@ -149,10 +149,10 @@ When discussing latency in the audio world in general it can refer to the actual
 ##### Related Terms : 
 
 ---
-## [Additional Technologies](../technical-terms#tech)
+## Additional Technologies
 ---
 
-### [IMU](../technical-terms#imu)
+### IMU
 Stands for *I*nertial *M*otion *U*nit, a series of sensors usually within a silicon chip that can typically include any number of the following sensor types:
 - Accelerometer
 - Gyroscope
@@ -164,17 +164,17 @@ Each of these sensor outputs can have typically 3 data outputs so the IMU typica
 
 --- 
 
-### [Sensor Fusion](../technical-terms#sensor-fusion)
-Sensor Fusion is a a mathematics for combining multiple datasets relating to motion or force into one dataset for predicting orientation, [heading](../technical-terms#heading) and/or position. The output data can be collected into different types such as [Radians](../technical-terms#radians) or [Degrees](../technical-terms#degrees) or [Quaternion](../technical-terms#quat).
+### Sensor Fusion
+Sensor Fusion is a a mathematics for combining multiple datasets relating to motion or force into one dataset for predicting orientation, [heading](../technical-terms#heading) and/or position. The output data can be collected into different types such as [Radians](../technical-terms#radians) or [Degrees](../technical-terms#degrees) or [Quaternion](../technical-terms#quaternion).
 
 ##### Synonyms : 
 ##### Related Terms : 
 
 ---
-## [Technical Descriptions](../technical-terms#techdesc)
+## Technical Descriptions {#techdescs}
 ---
 
-### [Realtime](../technical-terms#realtime)
+### Realtime
 _Refers to a process or effect that can be applied in realtime, usually during playback but in general any process that can be computed faster than actual time._
 
 ##### Synonyms : 
@@ -182,7 +182,7 @@ _Refers to a process or effect that can be applied in realtime, usually during p
 
 ---
 
-### [Runtime](../technical-terms#runtime)
+### Runtime
 _Refers to all processes that happen during the playback of the sound content._
 
 `Spatial audio` processes that are limited to runtime processes have to compensate for what processing power is available on that device, this limitation means that these processes have to be able to run faster than realtime and can sometimes be limited in quality.
@@ -192,7 +192,7 @@ _Refers to all processes that happen during the playback of the sound content._
 
 ---
 
-### [Render](../technical-terms#render)
+### Render
 _Refers to a process of pre-determining all intended processes and effects to an output file usually to be faithfully replayed or reused without change._ 
 
 `Spatial audio` content that has been pre-rendered or rendered has the added benefit of using more time expensive and higher quality processing effects that might not normally be too expensive to be processed in realtime, especially from device to device.
@@ -202,7 +202,7 @@ _Refers to a process of pre-determining all intended processes and effects to an
 
 ---
 
-### [A-Format]({{< ref "/glossary/technical-terms#a-format" >}})
+### A-Format
 A often misused term describing multichannel soundfields or multi-mic arrays that **Is not ambisonics** but is sometimes used as to create a multichannel source that later can be encoded into ambisonics.
 
 ##### Synonyms : 
@@ -210,15 +210,15 @@ A often misused term describing multichannel soundfields or multi-mic arrays tha
 
 ---
 
-### [B-Format]({{< ref "/glossary/technical-terms#ambisonics" >}})
+### B-Format
 A synonym for an ambisonic encoded soundfield.
 
-##### Synonyms : [Ambisonics]({{< ref "/glossary/technical-terms#p-format" >}})
+##### Synonyms : [Ambisonics](../general-terms#ambisonics)
 ##### Related Terms : 
 
 ---
 
-### [T-Format]({{< ref "/glossary/technical-terms#t-format" >}})
+### T-Format
 A often misused term describing multichannel soundfields or multi-mic arrays that **Is not ambisonics** but is sometimes used as to create a multichannel source that later can be encoded into ambisonics.
 
 ##### Synonyms :
@@ -226,7 +226,7 @@ A often misused term describing multichannel soundfields or multi-mic arrays tha
 
 ---
 
-### [P-Format]({{< ref "/glossary/technical-terms#p-format" >}})
+### P-Format
 A often misused term describing multichannel soundfields or multi-mic arrays that **Is not ambisonics** but is sometimes used as to create a multichannel source that later can be encoded into ambisonics.
 
 ##### Synonyms : 
@@ -234,7 +234,7 @@ A often misused term describing multichannel soundfields or multi-mic arrays tha
 
 ---
 
-### [C-Format]({{< ref "/glossary/technical-terms#c-format" >}})
+### C-Format
 Describes a **partially ambisonics** multichannel file where 2 of the channels are decoded from ambisonics the rest of the channels replicate ambisonic domain concepts to replicate the source ambisonic material. Was suggested as a temporary means of distribution to ensure that the first two channels can be played back safely on all systems as they are decoded from ambisonics into traditional stereo.
 
 ##### Synonyms : 
@@ -242,7 +242,7 @@ Describes a **partially ambisonics** multichannel file where 2 of the channels a
 
 ---
 
-### [D-Format]({{< ref "/glossary/technical-terms#d-format" >}})
+### D-Format
 **Is not ambisonics**: multichannel decoding from an ambisonic source
 
 ##### Synonyms : 
@@ -250,7 +250,7 @@ Describes a **partially ambisonics** multichannel file where 2 of the channels a
 
 ---
 
-### [E-Format]({{< ref "/glossary/technical-terms#e-format" >}})
+### E-Format
 **Is not ambisonics**: multichannel decoding from an ambisonic source
 
 ##### Synonyms : 
@@ -258,7 +258,7 @@ Describes a **partially ambisonics** multichannel file where 2 of the channels a
 
 ---
 
-### [G-Format]({{< ref "/glossary/technical-terms#g-format" >}})
+### G-Format
 **Is not ambisonics**: 5.1 multichannel decoding from an ambisonic source
 
 ##### Synonyms : 

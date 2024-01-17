@@ -15,10 +15,10 @@ Many [object-based]({{< relref "glossary/mixing-terms#object-based" >}}) audio s
 
 One creative usecase of spatial audio is to re-create the way we hear naturally. Unfortunately, many platforms deliver head-locked experiences and call it spatial audio. In real life, the way you hear something changes as you move your head, so if any company is using the term spatial audio without using headtracking, take it as a sign to look deeper into what's *actually* going on, because it's not really spatial audio. Usually what those companies mean when they refer something as "spatial audio" is a binauralised stereo downmix of a mix that has been created using spatial characteristics or processing.
 
-## [Mach1 Spatial Audio](#mach1-spatial)
+## [Mach1 Spatial Audio]({{< relref "glossary/existing-formats#mach1-spatial" >}})
 We wanted to begin by explaining more clearly what we mean by [spatial audio]({{< relref "glossary/general-terms#spatial-audio" >}}). In our terms, spatial audio refers to audio that is extended in dimension for playback either by leveraging playback of multichannel audiofiles in a space of loudspeakers to create 3D soundfield playback or doing so virtually to headphones by introducing interactivity via orientation or positional data to "adjust" the correct stereo playback of that 3D soundfield. There are many approaches for prerendering spatial soundfields as well as approaches that utilize runtime only spatial soundfield processing. With that in mind we focus on making sure that all these approaches can be used together safely by focusing on tooling for multichannel audio creation and playback create an aggregated framework for all flavors of "spatial audio".
 
-## [Apple Spatial Audio](#apple-spatial)
+## [Apple Spatial Audio]({{< relref "glossary/existing-formats#apple-spatial-audio" >}})
 
 Currently Apple does not utilize its own spatial audio workflow or format, instead it expects a user to convert any piece of content of any spatial audio flavor into a specific 5.1 mix file type and combined within a video container. On iOS devices if the correct conditions are met the user can utilize orientation data from their AirPods Pro or AirPods Max devices to add headtracking spatial audio playback of the 5.1. This implementation is one of the earliest we have seen on a consumer level for true interactive spatial audio playback, however it is extremely poor in quality and limited in creative use. 
 
@@ -39,7 +39,7 @@ For more on Apple's spatial audio, we have outlined how to sideload and review A
 We have also reviewed the implementation and use of Apple's IMU enabled devices here:
 [Feedback on Apple's Spatial Audio Implementation]({{< relref "posts/feedback-on-apple-spatial-audio" >}})
 
-## [Dolby Spatial Audio](dolby-spatial-audio)
+## [Dolby Spatial Audio]({{< relref "glossary/existing-formats#dolby-atmos-audio" >}})
 
 Like Sony 360 Reality, Dolby Atmos is not just a format, it is also a production tool. Dolby Atmos is not a codec. It does not itself encode or decode its format. Other Dolby codecs are used to decode the Dolby Atmos format. The Dolby Atmos format uses MPEG-H style of metadata however it does have its own parsed version of this metadata. This means that the Dolby Atmos format is a *container* holding both the file format as well as the object-based metadata.
 
@@ -53,7 +53,7 @@ As with everything we've looked at, it depends on the interaction involved. You 
 
 Despite Dolby Atmos being an object-based supported audio format it does not include any features for interactive spatial audio of any kind, including typical headtracking binauralized playback. All cases of Dolby Atmos mixes playing back with headtracking headphones spatially, including Apple's implementation of playing back Dolby Atmos on AirPods Pro/Max, are 3rd party playback implementation without any standardization. To put it in other terms, if you are listening to a Dolby Atmos mix with headtracking that was done by some made up way outside of Dolby's approval (and not reviewable by Dolby Atmos Renderer) meaning each time we get a new case of this feature it will sound different from app to app resulting in a completely broken mixing landscape for artists and audio professionals alike. 
   
-## [Sony Spatial Audio](sony-spatial-audio)
+## [Sony Spatial Audio]({{< relref "glossary/existing-formats#sony-360-audio" >}})
 
 Sony, like Dolby Atmos, is both a production tool as well as a format using MPEG-H as a standard for encoding object-based metadata. With the Sony Headphones Connect app and a Sony 360 Reality compatible premium streaming service, you can playback 360 Reality content on any device. 
 
