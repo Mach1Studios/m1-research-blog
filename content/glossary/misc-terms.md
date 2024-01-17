@@ -3,10 +3,10 @@ title: "5. Misc & Misused"
 ---
 
 ---
-## [Loose Terms](../misc-terms#loose-terms)
+## Loose Terms
 
 ---
-### [Dimensions](../misc-terms#dimensions)
+### Dimensions
 
 What does it mean when we say that an audio experience is 1D, 2D, or 3D? The interchangeable use of word 'dimensions' to refer to different things can be confusing, especially when the concept being referred to usually has its own name. 
 
@@ -22,7 +22,7 @@ In case it hasn't already been made clear, **using dimensions to express spatial
 ##### Related Terms : [Degrees of Freedom (DOF)](../technical-terms#dof)
 
 ---
-### [3D Audio](../misc-terms#3daudio)
+### 3D Audio
 
 3D audio as a term that can often be found used very broadly and sometimes incorrectly in marketing materials. This raises some questions about market intelligence and can lead to issues where specific features or even projects are misunderstood technologically by consumers due to the varying level of expectations thrown around for the terms such as "3D Audio" or even "Spatial Audio".
 
@@ -42,11 +42,11 @@ As the list grows it is becoming more clear that when someone refers to 3D Audio
  - Roomscale game object audio processing
  - Roomscale spatial pre-rendered audio processing
 
-##### Synonyms : [Headtracked](../general-terms#headtracked), [Headlocked](../general-terms#headlocked), [HRTF](../general-terms#hrtf)
+##### Synonyms : [Headtracked](../general-terms#headtracking), [Headlocked](../general-terms#headlocked), [HRTF](../general-terms#hrtf)
 ##### Related Terms : [Spatial Audio](../general-terms#spatial-audio)
 
 ---
-### [Metaverse](../misc-terms#metaverse)
+### Metaverse
 
 This is another term we often see thrown around alongside various spatial audio terms. As of 2022 it refers to a concept of aggregating virtual worlds and game environments as a new social platform to varying degrees, as it comes to spatial audio it is nothing different than what has existed for decades around creating either realistic or creatively interesting interactive audio and the raising demand for better audio production or rendering from the game, art or entertainment industries. Any concept that would exist in a "metaverse project" in terms of audio would also exist elsewhere and for those reasons its easier to separate these terms as they have no direct correlation.
 
