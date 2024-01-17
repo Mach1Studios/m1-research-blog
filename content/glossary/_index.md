@@ -54,3 +54,4 @@ Please visit the repository page to learn more: [https://github.com/Mach1Studios
 ###### Contributors:
 [Dylan Marcus](https://github.com/himwho)\
 [Aïli Arakida Niimura](https://github.com/clpng)
+[Matthew Bosch](https://github.com/mattbosch)
