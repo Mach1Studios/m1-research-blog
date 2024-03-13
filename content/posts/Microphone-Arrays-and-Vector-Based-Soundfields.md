@@ -14,18 +14,6 @@ Finding, discovering or measuring the capsule arrangement and ordering precisely
 
 Some manufacturers will nicely describe the layout and by using a visual tool to reference it we only have to confirm the angle descriptions (left handed/right handed polar, or order and meaning of Euler X Y Z).
 
-### Examples
-
-#### Zylia ZM-1
-Provides nice [documentation](https://www.zylia.co/white-paper.html), we used the Spherical (or commonly known as Polar) coordinates which is right handed (inversed azimuth values when inputting to the M1-SDK).
-
-![Zylia ZM-1](resources/micarrays/zylia_zm-1.png)
-
-#### CoreSound OctoMic
-Had less documentation on the ordering and position of the capsules, a user has shared unofficial mapping and 3D rendering of the placement (special thanks to @Sam Hocking).
-
-![CoreSound OctoMic](resources/micarrays/coresound_octomic.png)
-
 ### Divergence and Ideal Encoding Settings
 
 Currently we are doing tests to figure out what are the ideal ways to encode a multi-mic array directly into a vector based or channel-based spatial audio container while avoiding ambisonics.
@@ -39,3 +27,15 @@ Currently we are using [this commandline tool](https://github.com/Mach1Studios/m
 #### Results
 
 TBD
+
+## Examples
+
+#### Zylia ZM-1
+Provides nice [documentation](https://www.zylia.co/white-paper.html), we used the Spherical (or commonly known as Polar) coordinates which is right handed (inversed azimuth values when inputting to the M1-SDK).
+
+<img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/micarrays/zylia_zm-1.png" alt="Zylia ZM-1" style="width:75%;">
+
+#### Core Sound OctoMic
+Had less documentation on the ordering and position of the capsules, a user has shared unofficial mapping and 3D rendering of the placement (special thanks to @Sam Hocking).
+
+<img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/micarrays/coresound_octomic.png" alt="CoreSound OctoMic" style="width:75%;">
