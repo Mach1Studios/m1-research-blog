@@ -1,0 +1,12 @@
+name = 'mach1-research-blog'
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "A minimalist, Mach1 Hugo theme."
+homepage = ""
+tags = ["minimal", "mach1", "dark", "modern", "clean"]
+features = ["minimal", "dark mode", "responsive"]
+min_version = "0.51.0"
+
+[author]
+  name = "Mach1"
+  homepage = "https://mach1.tech

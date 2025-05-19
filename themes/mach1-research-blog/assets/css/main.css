@@ -1,0 +1,158 @@
+/* Theme Variables */
+:root {
+  --background: #181818;
+  --text: #eaeaea;
+  --accent: #ffc107;
+  --line: #333;
+  --muted: #888;
+  --font-main: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Base Styles */
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font-main);
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #ffd54f;
+}
+
+header, nav, footer {
+  background: var(--background);
+  border-bottom: 1px solid var(--line);
+  padding: 1.5rem 0;
+}
+
+hr, .divider {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 2rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  color: var(--text);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.01em;
+}
+
+button, .btn {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.5em 1.5em;
+  border-radius: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+button:hover, .btn:hover {
+  background: var(--accent);
+  color: var(--background);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  display: inline-block;
+}
+
+footer {
+  color: var(--muted);
+  font-size: 0.9em;
+  border-top: 1px solid var(--line);
+  border-bottom: none;
+  margin-top: 3rem;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.card {
+  background: #141414;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 4px;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.site-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* Navigation */
+.main-nav {
+  margin-top: 1rem;
+}
+
+/* Footer */
+.footer-content {
+  text-align: center;
+}
+
+/* Main Content */
+main {
+  min-height: 60vh;
+  padding: 2rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

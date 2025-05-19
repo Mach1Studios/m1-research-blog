@@ -2,7 +2,7 @@ baseURL = "https://research.mach1.tech/"
 languageCode = "en-us"
 title = "Mach1 Research"
 titledescription = "Spatial & Multichannel Blog"
-theme = "ace-documentation"
+theme = "mach1-research-blog"
 copyright = "©2022 Mach1, Corp."
 
 enableGitInfo = true
