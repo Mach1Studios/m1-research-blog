@@ -1,8 +1,12 @@
 /* Theme Variables */
 :root {
   --background: #181818;
+  --background-darker: #141414;
   --text: #eaeaea;
+  --text-muted: #999;
   --accent: #ffc107;
+  --link: #eaeaea;
+  --link-hover: #fff;
   --line: #333;
   --muted: #888;
   --font-main: 'Inter', 'Helvetica Neue', Arial, sans-serif;
@@ -18,13 +22,32 @@ body {
   line-height: 1.6;
 }
 
+/* Link styling - more obvious links */
 a {
-  color: var(--accent);
+  color: var(--link);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: all 0.2s;
+  border-bottom: 1px dotted rgba(234, 234, 234, 0.3);
 }
 
 a:hover {
+  color: var(--link-hover);
+  border-bottom-color: var(--link-hover);
+}
+
+/* Navigation and special links don't have underlines */
+nav a, .site-title a, .product-title a, .header a, 
+.year-tabs a, .github-btn, .footer a, .no-underline {
+  border-bottom: none;
+}
+
+/* Only interactive controls use accent color */
+.btn, button, .interactive, .action-link {
+  color: var(--accent);
+  border-bottom: none;
+}
+
+.btn:hover, button:hover, .interactive:hover, .action-link:hover {
   color: #ffd54f;
 }
 
@@ -76,6 +99,15 @@ nav li {
   display: inline-block;
 }
 
+nav a {
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
 footer {
   color: var(--muted);
   font-size: 0.9em;
@@ -86,28 +118,18 @@ footer {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
 .card {
-  background: #141414;
+  background: var(--background-darker);
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-  background: var(--background);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--line);
-  border-radius: 4px;
 }
 
 /* Header */
@@ -121,6 +143,7 @@ footer {
 .site-title {
   margin: 0;
   font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .site-title a {
@@ -144,6 +167,242 @@ main {
   padding: 2rem 0;
 }
 
+/* Post Metadata */
+.post-meta {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.post-date, .post-lastmod {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.post-date-icon, .post-lastmod-icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.7;
+}
+
+/* Post Styles */
+.post {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+.post-content {
+  line-height: 1.7;
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.post-content pre {
+  background: var(--background-darker);
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.post-content code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  background: var(--background-darker);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+.post-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+/* Post List Styles */
+.list-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.list-header {
+  margin-bottom: 3rem;
+}
+
+.list-title {
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+
+.list-description {
+  color: var(--text-muted);
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.post-item {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2rem;
+}
+
+.post-item:last-child {
+  border-bottom: none;
+}
+
+.post-item-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.post-item-summary {
+  margin-bottom: 1.5rem;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+/* Year tabs styling (like in screenshots) */
+.year-tabs {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1rem;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.year-tabs a {
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  white-space: nowrap;
+}
+
+.year-tabs a.active, .year-tabs a:hover {
+  color: var(--text);
+  position: relative;
+}
+
+.year-tabs a.active:after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+}
+
+/* Timeline styling */
+.timeline-content {
+  margin: 2rem 0;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.timeline-date {
+  min-width: 3rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding-top: 0.3rem;
+}
+
+.timeline-entry {
+  flex: 1;
+}
+
+.timeline-entry h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Library/Product cards */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.product-card {
+  background: var(--background-darker);
+  border-radius: 6px;
+  padding: 2rem;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-category {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Icon and buttons styling */
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+.github-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--text);
+  transition: all 0.2s;
+}
+
+.github-btn:hover {
+  border-color: var(--text);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .site-header {
@@ -155,4 +414,28 @@ main {
     flex-direction: column;
     gap: 0.5rem;
   }
+  
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .timeline-date {
+    padding-top: 0;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 4px;
 }
