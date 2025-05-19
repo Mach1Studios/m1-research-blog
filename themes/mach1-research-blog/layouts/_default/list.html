@@ -8,23 +8,5 @@
         </div>
       {{ end }}
     </header>
-
-    <div class="post-list">
-      {{ range .Pages }}
-        <article class="post-item">
-          <h2 class="post-item-title">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          </h2>
-          
-          {{ partial "components/post-meta.html" . }}
-          
-          <div class="post-item-summary">
-            {{ .Summary }}
-          </div>
-          
-          <a href="{{ .RelPermalink }}" class="read-more action-link">Read More →</a>
-        </article>
-      {{ end }}
-    </div>
   </div>
 {{ end }}

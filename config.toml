@@ -27,6 +27,9 @@ disableReadmoreNav = true # set true to hide prev/next navigation, default is fa
 # Google Analytics 4
 googleAnalyticsID = "G-7RBPB84DPR"
 
+# Define main sections
+mainSections = ["posts", "tutorials", "musings", "glossary"]
+
 [params.comments]
 enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
 
