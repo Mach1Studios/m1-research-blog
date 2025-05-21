@@ -1,8 +1,10 @@
 <div class="container">
   <div class="site-header">
-    <h1 class="site-title"><a href="/">{{ site.Title }}</a></h1>
-    <nav class="main-nav">
-      {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-    </nav>
+    <div class="logo-container">
+      <a href="/" class="logo-link">
+        <img src="/logo.png" alt="Mach1 Logo" class="site-logo">
+        <span class="site-title">{{ site.Title }}</span>
+      </a>
+    </div>
   </div>
 </div>

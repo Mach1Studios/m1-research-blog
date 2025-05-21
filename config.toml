@@ -8,6 +8,29 @@ copyright = "©2015 -> ©2025 Mach1, Corp."
 enableGitInfo = true
 enableRobotsTXT = true
 
+# Content organization
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "Tutorials"
+    url = "/tutorials/"
+    weight = 2
+  [[menu.main]]
+    name = "Glossary"
+    url = "/glossary/"
+    weight = 3
+  [[menu.main]]
+    name = "Musings"
+    url = "/musings/"
+    weight = 4
+
 [markup.highlight]
 codeFences = true
 noClasses = false

@@ -1,12 +1,35 @@
-{{- with resources.Get "js/main.js" }}
-  {{- if eq hugo.Environment "development" }}
-    {{- with . | js.Build }}
-      <script src="{{ .RelPermalink }}"></script>
-    {{- end }}
-  {{- else }}
-    {{- $opts := dict "minify" true }}
-    {{- with . | js.Build $opts | fingerprint }}
-      <script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
-    {{- end }}
-  {{- end }}
-{{- end }}
+<!-- Sidebar Collapsible JavaScript -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all collapse buttons
+    const collapseButtons = document.querySelectorAll('.collapse-btn');
+    
+    // Add click event to each button
+    collapseButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        // Toggle aria-expanded attribute
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', !isExpanded);
+        
+        // Find the nearest tree-children element (sibling)
+        const treeFolder = button.closest('.tree-folder');
+        const treeChildren = treeFolder.nextElementSibling;
+        
+        if (treeChildren && treeChildren.classList.contains('tree-children')) {
+          // Toggle the collapsed class
+          treeChildren.classList.toggle('collapsed');
+        }
+      });
+    });
+  });
+</script>
+
+{{ with resources.Get "js/main.js" }}
+  {{ if eq hugo.Environment "development" }}
+    <script src="{{ .RelPermalink }}"></script>
+  {{ else }}
+    {{ with . | minify | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{ end }}
+  {{ end }}
+{{ end }}

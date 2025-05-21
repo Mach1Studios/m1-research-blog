@@ -10,6 +10,7 @@
   --line: #333;
   --muted: #888;
   --font-main: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --sidebar-width: 280px;
 }
 
 /* Base Styles */
@@ -37,7 +38,8 @@ a:hover {
 
 /* Navigation and special links don't have underlines */
 nav a, .site-title a, .product-title a, .header a, 
-.year-tabs a, .github-btn, .footer a, .no-underline {
+.year-tabs a, .github-btn, .footer a, .no-underline,
+.logo-link, .tree-link, .sidebar-link, .sidebar-nav-link {
   border-bottom: none;
 }
 
@@ -87,6 +89,73 @@ button:hover, .btn:hover {
   color: var(--background);
 }
 
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.main-container {
+  display: flex;
+  min-height: calc(100vh - 200px);
+}
+
+.sidebar-wrapper {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  padding-right: 2rem;
+  position: sticky;
+  top: 2rem;
+  align-self: flex-start;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+.content-wrapper {
+  flex: 1;
+  max-width: calc(100% - var(--sidebar-width));
+  min-width: 0;
+  padding-left: 2rem;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.site-logo {
+  height: 40px;
+  width: auto;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Navigation */
+.main-nav {
+  margin-top: 0;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -102,12 +171,172 @@ nav li {
 nav a {
   color: var(--text-muted);
   transition: color 0.2s;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 nav a:hover {
   color: var(--text);
 }
 
+/* Sidebar */
+.sidebar {
+  padding: 2rem 0;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar-section {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-heading {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.sidebar-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.sidebar-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text);
+}
+
+.sidebar-link:hover {
+  color: var(--accent);
+}
+
+/* Sidebar Navigation */
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 0.7rem;
+}
+
+.sidebar-nav-link {
+  display: block;
+  padding: 0.4rem 0;
+  color: var(--text);
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.sidebar-nav-link:hover {
+  color: var(--accent);
+  transform: translateX(3px);
+}
+
+/* Directory Tree */
+.directory-tree {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tree-item {
+  margin-bottom: 0.5rem;
+}
+
+.tree-folder {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.tree-children {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+  border-left: 1px solid var(--line);
+  overflow: hidden;
+  max-height: 1000px; /* Arbitrary large value */
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+.tree-children.collapsed {
+  max-height: 0;
+  margin: 0;
+}
+
+.tree-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.tree-children .tree-link {
+  font-size: 0.9rem;
+  padding: 0.25rem 0;
+  line-height: 1.4;
+}
+
+.tree-link:hover {
+  color: var(--text);
+  transform: translateX(3px);
+}
+
+.tree-folder > .tree-link {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Collapsible Button */
+.collapse-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.3rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+  color: var(--text-muted);
+}
+
+.collapse-btn:hover {
+  color: var(--text);
+  background: transparent;
+}
+
+.collapse-btn[aria-expanded="true"] {
+  transform: rotate(180deg);
+}
+
+.collapse-icon {
+  fill: currentColor;
+}
+
+/* Footer */
 footer {
   color: var(--muted);
   font-size: 0.9em;
@@ -117,12 +346,16 @@ footer {
   padding: 2rem 0;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+.footer-content {
+  text-align: center;
 }
 
+/* Main Content */
+main {
+  padding: 2rem 0;
+}
+
+/* Card */
 .card {
   background: var(--background-darker);
   border: 1px solid var(--line);
@@ -130,41 +363,6 @@ footer {
   padding: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Header */
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.site-title {
-  margin: 0;
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-
-.site-title a {
-  color: var(--text);
-  text-decoration: none;
-}
-
-/* Navigation */
-.main-nav {
-  margin-top: 1rem;
-}
-
-/* Footer */
-.footer-content {
-  text-align: center;
-}
-
-/* Main Content */
-main {
-  min-height: 60vh;
-  padding: 2rem 0;
 }
 
 /* Post Metadata */
@@ -191,8 +389,7 @@ main {
 
 /* Post Styles */
 .post {
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .post-header {
@@ -242,8 +439,7 @@ main {
 
 /* Post List Styles */
 .list-page {
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .list-header {
@@ -351,72 +547,48 @@ main {
   margin-bottom: 0.5rem;
 }
 
-/* Library/Product cards */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
-.product-card {
-  background: var(--background-darker);
-  border-radius: 6px;
-  padding: 2rem;
-  transition: transform 0.2s;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-}
-
-.product-title {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.product-category {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* Icon and buttons styling */
+/* Icon styling */
 .icon {
   display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin-right: 0.5rem;
-}
-
-.github-btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  color: var(--text);
-  transition: all 0.2s;
-}
-
-.github-btn:hover {
-  border-color: var(--text);
+  width: 16px;
+  height: 16px;
+  margin-right: 0.3rem;
+  vertical-align: middle;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .main-container {
+    flex-direction: column;
+  }
+  
+  .sidebar-wrapper {
+    width: 100%;
+    height: auto;
+    position: static;
+    padding-right: 0;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--line);
+  }
+  
+  .content-wrapper {
+    max-width: 100%;
+  }
+  
   .site-header {
     flex-direction: column;
     align-items: flex-start;
   }
   
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
+  .main-nav {
+    margin-top: 1rem;
+    width: 100%;
   }
   
-  .product-grid {
-    grid-template-columns: 1fr;
+  nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
   }
   
   .timeline-item {
@@ -431,11 +603,72 @@ main {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
+  height: 6px;
   background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--line);
   border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* Add this to the existing CSS file */
+
+.tree-link.active {
+  color: var(--accent) !important;
+  font-weight: 500;
+}
+
+.tree-folder > a.tree-link {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.tree-folder > a.tree-link.active {
+  color: var(--accent) !important;
+}
+
+.sidebar-caption {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: -0.5rem 0 1rem;
+  font-style: italic;
+}
+
+/* Add this after the .sidebar-caption style at the end */
+.section-indicator {
+  font-size: 0.6rem;
+  margin-left: 0.5rem;
+  color: var(--text-muted);
+  transition: transform 0.2s ease-in-out;
+}
+
+.section-title {
+  display: inline-block;
+  flex: 1;
+}
+
+.section-meta {
+  display: flex;
+  align-items: center;
+  min-width: 2.5rem;
+  justify-content: flex-end;
+}
+
+.section-count {
+  font-size: 0.75rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.tree-link.active .section-count {
+}
+
+.tree-link.active .section-indicator {
 }
