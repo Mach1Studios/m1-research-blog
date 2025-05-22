@@ -8,11 +8,15 @@
         <li class="tree-item">
           <div class="tree-folder">
             {{ $isInGlossary := eq .Section "glossary" }}
-            {{ $glossaryCount := len (where .Site.RegularPages "Section" "glossary") }}
+            {{ $mainContentGlossary := slice }}
+            {{ range where site.Pages "Section" "glossary" }}
+              {{ if and (not (in .File.Path "themes/")) (eq .Kind "page") (not .IsSection) }}
+                {{ $mainContentGlossary = $mainContentGlossary | append . }}
+              {{ end }}
+            {{ end }}
             <a href="/glossary" class="tree-link {{ if $isInGlossary }}active{{ end }}">
               <span class="section-title">Spatial Audio Glossary</span>
               <span class="section-meta">
-                <!-- <span class="section-count">{{ $glossaryCount }}</span> -->
                 {{ if $isInGlossary }}
                 <span class="section-indicator">▼</span>
                 {{ else }}
@@ -23,7 +27,7 @@
           </div>
           {{ if $isInGlossary }}
           <ul class="tree-children">
-            {{ range sort (where .Site.RegularPages "Section" "glossary") "Date" "desc" }}
+            {{ range sort $mainContentGlossary "Date" "desc" }}
               <li>
                 <a href="{{ .Permalink }}" class="tree-link {{ if eq .Permalink $.Permalink }}active{{ end }}">{{ .Title }}</a>
               </li>
@@ -36,11 +40,17 @@
         <li class="tree-item">
           <div class="tree-folder">
             {{ $isInPosts := eq .Section "posts" }}
-            {{ $postsCount := len (where .Site.RegularPages "Section" "posts") }}
+            {{ $mainContentPosts := slice }}
+            {{ range where site.Pages "Section" "posts" }}
+              {{ if and (eq .Kind "page") (not .IsSection) }}
+                {{ if and (not (in .Title "Post 1")) (not (in .Title "Post 2")) (not (in .Title "Post 3")) }}
+                  {{ $mainContentPosts = $mainContentPosts | append . }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
             <a href="/posts" class="tree-link {{ if $isInPosts }}active{{ end }}">
               <span class="section-title">Research Posts</span>
               <span class="section-meta">
-                <!-- <span class="section-count">{{ $postsCount }}</span> -->
                 {{ if $isInPosts }}
                 <span class="section-indicator">▼</span>
                 {{ else }}
@@ -51,7 +61,7 @@
           </div>
           {{ if $isInPosts }}
           <ul class="tree-children">
-            {{ range sort (where .Site.RegularPages "Section" "posts") "Date" "desc" }}
+            {{ range sort $mainContentPosts "Date" "desc" }}
               <li>
                 <a href="{{ .Permalink }}" class="tree-link {{ if eq .Permalink $.Permalink }}active{{ end }}">{{ .Title }}</a>
               </li>
@@ -64,11 +74,15 @@
         <li class="tree-item">
           <div class="tree-folder">
             {{ $isInTutorials := eq .Section "tutorials" }}
-            {{ $tutorialsCount := len (where .Site.RegularPages "Section" "tutorials") }}
+            {{ $mainContentTutorials := slice }}
+            {{ range where site.Pages "Section" "tutorials" }}
+              {{ if and (not (in .File.Path "themes/")) (eq .Kind "page") (not .IsSection) }}
+                {{ $mainContentTutorials = $mainContentTutorials | append . }}
+              {{ end }}
+            {{ end }}
             <a href="/tutorials" class="tree-link {{ if $isInTutorials }}active{{ end }}">
               <span class="section-title">Tutorials</span>
               <span class="section-meta">
-                <!-- <span class="section-count">{{ $tutorialsCount }}</span> -->
                 {{ if $isInTutorials }}
                 <span class="section-indicator">▼</span>
                 {{ else }}
@@ -79,7 +93,7 @@
           </div>
           {{ if $isInTutorials }}
           <ul class="tree-children">
-            {{ range sort (where .Site.RegularPages "Section" "tutorials") "Date" "desc" }}
+            {{ range sort $mainContentTutorials "Date" "desc" }}
               <li>
                 <a href="{{ .Permalink }}" class="tree-link {{ if eq .Permalink $.Permalink }}active{{ end }}">{{ .Title }}</a>
               </li>
@@ -92,11 +106,15 @@
         <li class="tree-item">
           <div class="tree-folder">
             {{ $isInMusings := eq .Section "musings" }}
-            {{ $musingsCount := len (where .Site.RegularPages "Section" "musings") }}
+            {{ $mainContentMusings := slice }}
+            {{ range where site.Pages "Section" "musings" }}
+              {{ if and (not (in .File.Path "themes/")) (eq .Kind "page") (not .IsSection) }}
+                {{ $mainContentMusings = $mainContentMusings | append . }}
+              {{ end }}
+            {{ end }}
             <a href="/musings" class="tree-link {{ if $isInMusings }}active{{ end }}">
               <span class="section-title">Musings & Deification</span>
               <span class="section-meta">
-                <!-- <span class="section-count">{{ $musingsCount }}</span> -->
                 {{ if $isInMusings }}
                 <span class="section-indicator">▼</span>
                 {{ else }}
@@ -107,7 +125,7 @@
           </div>
           {{ if $isInMusings }}
           <ul class="tree-children">
-            {{ range sort (where .Site.RegularPages "Section" "musings") "Date" "desc" }}
+            {{ range sort $mainContentMusings "Date" "desc" }}
               <li>
                 <a href="{{ .Permalink }}" class="tree-link {{ if eq .Permalink $.Permalink }}active{{ end }}">{{ .Title }}</a>
               </li>

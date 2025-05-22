@@ -6,5 +6,20 @@
         <span class="site-title">{{ site.Title }}</span>
       </a>
     </div>
+    {{ if .Section }}
+    <div class="section-header">
+      {{ if eq .Section "glossary" }}
+      <h2 class="current-section">Spatial Audio Glossary</h2>
+      {{ else if eq .Section "posts" }}
+      <h2 class="current-section">Research Posts</h2>
+      {{ else if eq .Section "tutorials" }}
+      <h2 class="current-section">Tutorials</h2>
+      {{ else if eq .Section "musings" }}
+      <h2 class="current-section">Musings & Deification</h2>
+      {{ else }}
+      <h2 class="current-section">{{ humanize .Section }}</h2>
+      {{ end }}
+    </div>
+    {{ end }}
   </div>
 </div>
