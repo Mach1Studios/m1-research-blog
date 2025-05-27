@@ -20,15 +20,13 @@ Some major quality issues are introduced by Apple in an attempt to add headtrack
 
 This one should be obvious since the mix has been transformed to a flattened 5.1 mix before Apple can use it for headtracking spatial playback. All sources with elevation panning in the mix are flattened to the center plane, the anecdote we want to point out is "why even partner & use Dolby Atmos as the recommended workflow" if at the end all of this will be stripped away. On that note, we want to remind anyone reading how even [Dolby Atmos has extremely limited panning space for "elevation"]({{< relref "posts/observations-and-limitations-of-dolby-atmos-for-spatial-mixing" >}}) despite marketing toward this feature. Anecdotes aside it should be noted that all headtracking related sonic changes from pitching your head up or down while listening to Apple Spatial playback, are not intended by the mix engineer and are an additional processing effect coloring and degrading sound quality of the mix instead of utilizing the mix information available from the audio professional's source material.
 
-<img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/observations-limiations-of-apple-spatial/applespatial-panning-1.png" alt="Apple Spatial Audio Implementation - Top View" class="light-theme-image" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
-<img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/observations-limiations-of-apple-spatial/applespatial-panning-1-dark.png" alt="Apple Spatial Audio Implementation - Top View" class="dark-theme-image" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
+<img src="/posts/resources/observations-limiations-of-apple-spatial/applespatial-panning-1-dark.png" alt="Apple Spatial Audio Implementation - Top View" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
 
 ### Shrunken Soundfield Image
 
 Apple's implementation of adding headtracking to playback 5.1 mixes seems to be done by constructing an object-based implementation of the 6 channels with positions of each channel placed as an object around you similar to how it would be in real life with 6 loudspeakers. By doing this they have inherently shrunken the soundfield even further as an object-based system has no divergence, when doing tests (and we plan on adding them to this post) you can hear how the soundfield shrinks when transcoding from source to 5.1, but how it shrinks again when comparing to a virtual (or physical) 5.1 setup when processing through Apple Spatial playback. This is a major hit on quality, and one that no audio professional has any control over or method of mixing for.
 
-<img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/observations-limiations-of-apple-spatial/applespatial-panning-2.png" alt="Apple Spatial Audio Implementation - Back View" class="light-theme-image" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
-<img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/observations-limiations-of-apple-spatial/applespatial-panning-2-dark.png" alt="Apple Spatial Audio Implementation - Back View" class="dark-theme-image" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
+<img src="/posts/resources/observations-limiations-of-apple-spatial/applespatial-panning-2-dark.png" alt="Apple Spatial Audio Implementation - Back View" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
 
 ## Added Coloring Processing Effects
 

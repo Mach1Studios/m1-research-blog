@@ -841,20 +841,3 @@ main {
   left: 10px;
 }
 
-/* Dark theme image handling */
-.dark-theme-image {
-  display: none;
-}
-
-.light-theme-image {
-  display: block;
-}
-
-/* For dark theme, show dark images and hide light images */
-body .dark-theme-image {
-  display: block;
-}
-
-body .light-theme-image {
-  display: none;
-}
