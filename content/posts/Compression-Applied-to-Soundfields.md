@@ -4,7 +4,7 @@ date: 2019-09-05T03:11:53-04:00
 lastmod: 2019-09-05T03:11:53-04:00
 draft: false
 ---
----
+
 ## Targets of Testing
 To determine the value of compression in terms of file reduction compared to the quality of retaining the compression across the whole soundfield evenly. Also with discussion of the comparison of typical value of file reduction compared to the quality of resulting decompressed audio files. Also exploring if VBR compression types are safe to use on channel dependent soundfield material.
 

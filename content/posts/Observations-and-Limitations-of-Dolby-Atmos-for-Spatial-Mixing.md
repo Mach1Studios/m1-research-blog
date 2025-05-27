@@ -4,7 +4,8 @@ date: 2021-08-24T10:10:00-04:00
 lastmod: 2021-08-24T10:10:00-04:00
 draft: false
 ---
----
+
+
 ## Introduction
 
 This post is to discuss our internal observations and limitations we found when using Dolby Atmos for a creative spatial audio project. Using Dolby Atmos for front facing projected style content should be discussed separately from this post, we want to only focus on pain points we found when using and comparing Dolby Atmos for full spatial audio mixing and post-production when every direction is important from a first person perspective, not just the front.
@@ -14,11 +15,13 @@ Dolby Atmos contains two components, a channel-based bed component and an object
 
 ### Half Elevation Vector Space
 Something to make note of when using Dolby Atmos is that out of the box for both the object-bed and the channel-bed there is a limited vector space, specifically there is from the "floor" to the "ceiling" since this is originally designed for theater based mixing. That means that when translated to a virtual setting (expectations we would have for `spatial audio` mixing) we face our first observed limitation, we are missing 50% of the virtual mixing space.
-<img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/observations-limitations-of-atmos-for-spatial/atmos-panningspace-1.png" alt="" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
+<img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/observations-limitations-of-atmos-for-spatial/atmos-panningspace-1.png" alt="Dolby Atmos - Panning Space" class="light-theme-image" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
+<img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/observations-limitations-of-atmos-for-spatial/atmos-panningspace-1-dark.png" alt="Dolby Atmos - Panning Space" class="dark-theme-image" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
 
 ### Reduced Elevation Spatial Resolution
 Further exploration of the designated 2x channels for elevation in the channel-bed Dolby Atmos workflows shows that we have even less of the virtual vector space available for `spatial audio` mixing. Any input sources panned with `>0` elevation starts distributing signal to those 2x elevation channels, meaning there is very little directional isolation for any elevated sources. This seems to really derive from the fact that this system is intended for distributed loudspeaker soundsystems (in theaters), but when we use this for virtual `spatial audio` mixing this is a huge limitation, especially for headphone targeted content.
-<img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/observations-limitations-of-atmos-for-spatial/atmos-panningspace-2.png" alt="" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
+<img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/observations-limitations-of-atmos-for-spatial/atmos-panningspace-2.png" alt="Dolby Atmos - Panning Space 2" class="light-theme-image" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
+<img src="https://mach1-research-public.s3.amazonaws.com/posts/resources/observations-limitations-of-atmos-for-spatial/atmos-panningspace-2-dark.png" alt="Dolby Atmos - Panning Space 2" class="dark-theme-image" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
 
 ### Channel-Bed Panning and Object-Bed Panning
 Having a split system multichannel format might have some advantages, however Dolby Atmos's implementation of this seems to cause more harm than good, we find a lot of user confusion on the panning spaces of the object-bed vs the channel-bed, the UI for tools focused around Dolby Atmos tends to lead a user to believe they are different, but they seem to have the same end effect after runtime playback. We also find that having this split causes a ton of issues for developers building interpretations of playback, the fact that it is left open ended around a proprietary and unforgiving channel-bed shape, combined with an object-bed that should be more straightforward but is not, and in fact requires proprietary runtime room modeling processes; will cause a fractured playback landscape for just Dolby Atmos content.

@@ -32,60 +32,38 @@ enableRobotsTXT = true
     weight = 4
 
 [markup.highlight]
-codeFences = true
-noClasses = false
+  codeFences = true
+  noClasses = false
 
 [markup.goldmark.renderer]
-unsafe = true  # enable raw HTML in Markdown
+  unsafe = true  # enable raw HTML in Markdown
 
 [params]
-style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
-dateFormat = "January 2, 2006"  # if unset, default is "2006-01-02"
-ShowDatesOnPosts = true
-logo = ""  # if you have a logo png
-slogan = ""
-fullRss = true # Puts entire HTML post into rss 'description' tag. If unset, default is false.
-disableSearch = true # default is false
-disableReadmoreNav = true # set true to hide prev/next navigation, default is false
-# Google Analytics 4
-googleAnalyticsID = "G-7RBPB84DPR"
-
-# Define main sections
-mainSections = ["posts", "tutorials", "musings", "glossary"]
+  style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+  dateFormat = "January 2, 2006"  # if unset, default is "2006-01-02"
+  ShowDatesOnPosts = true
+  logo = "/logo.svg"
+  slogan = "Defenders of the Audio Realm"
+  fullRss = true # Puts entire HTML post into rss 'description' tag. If unset, default is false.
+  disableSearch = true # default is false
+  disableReadmoreNav = true # set true to hide prev/next navigation, default is false
+  # Google Analytics 4
+  googleAnalyticsID = "G-7RBPB84DPR"
+  
+  # Define main sections
+  mainSections = ["posts", "tutorials", "musings", "glossary"]
 
 [params.comments]
-enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
+  enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
 
 [params.math]
-enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
-use = "katex"  # option: "katex", "mathjax". default: "katex"
+  enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
+  use = "katex"  # option: "katex", "mathjax". default: "katex"
 
 [params.syntax]
-use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
-theme = "xcode"
-darkTheme = "xcode-dark"  # apply this theme in dark mode
-
-[[params.nav.custom]]
-title = "Mach1 Research Blog"
-url = "https://www.mach1.tech"
-
-[[params.nav.custom]]
-title = "About"
-url = "/about"
-
-[params.nav]
-showCategories = true       # /categories/
-showTags = true             # /tags/
-
-[[menu.shortcuts]]
-name = "Mach1 Website"
-url = "https://www.mach1.tech"
-weight = 1
-
-[[menu.shortcuts]]
-name = "<i class='fab fa-github'></i>"
-url = "https://github.com/Mach1Studios/m1-sdk"
-weight = 2
+  use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
+  theme = "xcode"
+  darkTheme = "xcode-dark"  # apply this theme in dark mode
 
 [frontmatter]
-lastmod = ["lastmod", ":git", "date", "publishDate"]
+  lastmod = ["lastmod", ":git", "date", "publishDate"]

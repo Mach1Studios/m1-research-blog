@@ -4,7 +4,7 @@ date: 2021-07-09T03:57:53-04:00
 lastmod: 2021-07-09T03:57:53-04:00
 draft: false
 ---
----
+
 While working with spatial and multichannel audio across different target platform; what codec is available is not always what is preferred. This post is to keep tabs on the different expectations of each codec and how it handles multichannel audio streams/files.
 
 ## FFmpeg

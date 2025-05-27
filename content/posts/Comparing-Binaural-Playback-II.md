@@ -4,7 +4,7 @@ date: 2021-10-01T03:10:05-04:00
 lastmod: 2021-10-01T03:10:05-04:00
 draft: false
 ---
----
+
 ## Introduction 
 This post is a continuation of an exploration that prompted the development of an agnostic and process free multichannel/spatial audio framework that became the Mach1 Spatial SDK. In an effort to help showcase the sonic differences and usability of the current spatial audio market we are rendering various different format tests to sonically compare them without use of additional hardware, making A/B comparisons a little more accessible. It is recommended to create your own local tests and compare mixes played back in different means with headtracking active to further expose limitations. 
 

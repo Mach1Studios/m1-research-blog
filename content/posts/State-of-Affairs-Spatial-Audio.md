@@ -3,7 +3,7 @@ title: "State of Affairs: Spatial Audio"
 date: 2022-03-18T10:10:05-04:00
 lastmod: 2022-03-23T10:10:05-04:00
 ---
----
+
 Over the last year there has been a lot of growth and interest into concepts surrounding spatial and multichannel audio in various different use cases and examples across many markets. We wanted to collect our observations and criticisms into a single post in an effort to help everyone researching to learn from our experiences and encourage better practices at large. When it comes to spatial audio we want to encourage growth as a medium and let different use cases define what spatial audio means in each instance while still catering to a creative production pipeline that enables more creative and technical growth at large, in human words: we want less proprietary approaches or tools and more open or cross-compatible growth.
 
 ## Key Points for the Industry to Encourage Growth

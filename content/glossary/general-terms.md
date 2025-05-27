@@ -2,7 +2,6 @@
 title: "1. General Terms"
 ---
 
----
 ### Spatial Audio
 The term spatial audio has been thrown around a lot lately but *what is spatial audio*? What does it mean when you're listening to something with spatial audio? 
 

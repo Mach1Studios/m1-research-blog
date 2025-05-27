@@ -11,6 +11,7 @@
   --muted: #888;
   --font-main: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   --sidebar-width: 280px;
+  --header-height: 70px;
 }
 
 /* Base Styles */
@@ -21,6 +22,7 @@ body {
   margin: 0;
   font-size: 18px;
   line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scroll during sidebar animation */
 }
 
 /* Link styling - more obvious links */
@@ -96,27 +98,34 @@ button:hover, .btn:hover {
   padding: 0 2rem;
 }
 
+/* Main Container */
 .main-container {
   display: flex;
   min-height: calc(100vh - 200px);
+  position: relative;
 }
 
+/* Sidebar Wrapper */
 .sidebar-wrapper {
   width: var(--sidebar-width);
   flex-shrink: 0;
-  padding-right: 2rem;
   position: sticky;
   top: 2rem;
   align-self: flex-start;
   height: calc(100vh - 200px);
   overflow-y: auto;
+  z-index: 50;
+  padding-right: 1rem;
+  transition: transform 0.3s ease;
 }
 
+/* Content Wrapper */
 .content-wrapper {
   flex: 1;
   max-width: calc(100% - var(--sidebar-width));
   min-width: 0;
   padding-left: 2rem;
+  transition: max-width 0.3s ease, margin-left 0.3s ease;
 }
 
 /* Header */
@@ -556,24 +565,134 @@ main {
   vertical-align: middle;
 }
 
+/* Collapsible Sidebar */
+.sidebar-toggle {
+  display: none; /* Hidden by default on desktop */
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  background: var(--background-darker);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+  background: var(--line);
+}
+
+.sidebar-toggle-icon {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: var(--text);
+  transition: all 0.3s ease;
+}
+
+.sidebar-toggle-icon::before,
+.sidebar-toggle-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background: var(--text);
+  transition: all 0.3s ease;
+}
+
+.sidebar-toggle-icon::before {
+  top: -6px;
+}
+
+.sidebar-toggle-icon::after {
+  bottom: -6px;
+}
+
+/* Sidebar closed state */
+.sidebar-closed .sidebar-wrapper {
+  transform: translateX(-100%);
+  box-shadow: none;
+}
+
+.sidebar-closed .sidebar-toggle-icon {
+  background: transparent;
+}
+
+.sidebar-closed .sidebar-toggle-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.sidebar-closed .sidebar-toggle-icon::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.sidebar-closed .content-wrapper {
+  margin-left: 0;
+  max-width: 100%;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
+  body {
+    padding-top: var(--header-height); /* Space for fixed header */
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 90;
+    background: var(--background);
+    border-bottom: 1px solid var(--line);
+    height: var(--header-height);
+  }
+
+  .container {
+    padding: 0 1rem; /* Smaller padding on mobile */
+  }
+
   .main-container {
     flex-direction: column;
   }
   
+  .sidebar-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: calc(var(--header-height) + 10px);
+    left: 10px;
+  }
+  
   .sidebar-wrapper {
-    width: 100%;
-    height: auto;
-    position: static;
-    padding-right: 0;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid var(--line);
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    bottom: 0;
+    width: var(--sidebar-width);
+    z-index: 80;
+    background: var(--background);
+    border-right: 1px solid var(--line);
+    overflow-y: auto;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateX(0);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
   }
   
   .content-wrapper {
-    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .site-header {
@@ -605,6 +724,25 @@ main {
   
   .timeline-date {
     padding-top: 0;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px; /* Smaller text on very small screens */
+  }
+  
+  .sidebar-wrapper {
+    width: 85%; /* Wider sidebar on small screens to be easier to use */
+  }
+  
+  .site-header {
+    padding: 0.5rem 0;
+  }
+  
+  .site-title {
+    font-size: 1.2rem;
   }
 }
 
@@ -690,4 +828,33 @@ main {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+/* Sidebar toggle button - adjust position based on scroll */
+.sidebar-toggle {
+  transition: top 0.3s ease, transform 0.3s ease;
+}
+
+/* When sidebar is closed, make toggle button more visible */
+.sidebar-closed .sidebar-toggle {
+  transform: translateX(0);
+  left: 10px;
+}
+
+/* Dark theme image handling */
+.dark-theme-image {
+  display: none;
+}
+
+.light-theme-image {
+  display: block;
+}
+
+/* For dark theme, show dark images and hide light images */
+body .dark-theme-image {
+  display: block;
+}
+
+body .light-theme-image {
+  display: none;
 }

@@ -4,7 +4,7 @@ date: 2018-06-15T05:19:00-04:00
 lastmod: 2018-06-15T05:19:00-04:00
 draft: false
 ---
----
+
 ## Introduction
 Another common pitfall when dealing with multichannel content or developing handling multichannel content is various hardcoded channel orderings that happen from leftover surround formats development focused around broadcasting. This now plagues more modern developments with various issues when attempting to bridge between solutions or development media pipelines specific to your project or a new application. Various commonly used media handlers know will read a multichannel of `x` channels and assume a specific legacy multichannel surround format, depending on the codec during handling the channels may be tagged, re-ordered and even filtered. This can be completely destructive when using multichannel audio for anything outside the intended legacy surround design, commonly seen in AR,VR,MR,XR,LBE and custom media application and projects we know all work on today.
 

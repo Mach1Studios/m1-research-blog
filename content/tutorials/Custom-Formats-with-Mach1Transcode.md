@@ -4,7 +4,6 @@ date: 2020-06-15T03:15:37-04:00
 lastmod: 2022-04-07T03:10:05-04:00
 ---
 
----
 The Mach1Transcode API and CommandLine executable `m1-transcode` can be supplied with a description of a custom multichannel format/configuration to be used as either an input desciption of a soundfield or an output soundfield.  
 
 Developed originally to explore mixes on custom multichannel configurations often seen in various LBE or multimedia projects, however we found a lot of use cases for exploring custom pipelines between normally blackbox multichannel media handlers and serving them as needed to any other format/configuration. This allowed exploration of bridging between formats, tools and formats and enabled us to great creative with all available tools for mixing multimedia projects more easily. 

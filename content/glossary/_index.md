@@ -1,9 +1,9 @@
 ---
 title: "Spatial Audio Glossary"
 ---
----
-- [Contents]({{< relref "/glossary" >}})
----
+
+## [Table of Contents]({{< relref "/glossary" >}})
+
 - [General Terms]({{< relref "/glossary/general-terms" >}})
 	- [Spatial Audio](general-terms#spatial-audio)
 	- [HRTFs](general-terms#hrtf)

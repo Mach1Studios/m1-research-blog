@@ -4,7 +4,7 @@ date: 2021-08-11T03:10:05-04:00
 date: 2021-10-20T03:10:05-04:00
 draft: false
 ---
----
+
 ## What do companies mean when they talk about spatial audio?
 
 Currently this is a very broad question because spatial audio is a subject spanning across disciplines and industries. We could talk about different [flavors of audio spatialization]({{< relref "glossary/general-terms#spatial-audio" >}}), or about the history of spatial audio in academia. What we would like to focus on is the way the consumer electronics industry has most commonly employed the term in recent years, and share some points of clarification based on our years of experience both creating spatial audio experiences and the tools necessary to create them.

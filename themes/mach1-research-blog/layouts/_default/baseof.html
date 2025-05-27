@@ -9,7 +9,10 @@
   </header>
   
   <div class="main-container container">
-    <div class="sidebar-wrapper">
+    <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle Sidebar">
+      <span class="sidebar-toggle-icon"></span>
+    </button>
+    <div class="sidebar-wrapper" id="sidebar-wrapper">
       {{ partial "sidebar.html" . }}
     </div>
     <main class="content-wrapper">

@@ -4,7 +4,7 @@ date: 2020-02-28T05:19:00-04:00
 lastmod: 2020-02-28T05:19:00-04:00
 draft: false
 ---
----
+
 _Written by Visnja Krzic and Jacqueline Bosnjak_
 
 ### An Introduction to Spatial Practices and Aesthetics

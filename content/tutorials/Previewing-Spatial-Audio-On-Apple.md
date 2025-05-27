@@ -3,7 +3,6 @@ title: "Previewing Spatial Audio on Apple AirPods"
 date: 2021-08-12T03:10:00-04:00
 ---
 
----
 While investigating how Apple applies their own HRTF and headtracking implementation on top of Dolby Atmos it became appearent that there are a few glaring issues and limitations. It also became clear that we can transcode all formats to playback on Apple devices without use of Dolby Atmos at all, making a much cleaner and direct pipeline if your target is only for headtracking as defined by Apple.
 
 Apple seems to simply expect a video file with an `EAC3` encoded audio track configured as `5.1(side)` and with a specific bitrate and other simple to implement codec settings.
