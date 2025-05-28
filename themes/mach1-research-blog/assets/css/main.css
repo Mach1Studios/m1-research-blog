@@ -200,6 +200,11 @@ nav a:hover {
   gap: 2rem;
 }
 
+/* Hide mobile header on desktop */
+.sidebar-mobile-header {
+  display: none;
+}
+
 .sidebar-section {
   margin-bottom: 1.5rem;
 }
@@ -362,6 +367,9 @@ footer {
 /* Main Content */
 main {
   padding: 2rem 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Card */
@@ -620,16 +628,32 @@ main {
   box-shadow: none;
 }
 
+/* Fix icon states - hamburger when closed, X when open */
 .sidebar-closed .sidebar-toggle-icon {
-  background: transparent;
+  background: var(--text); /* Show middle line for hamburger */
 }
 
 .sidebar-closed .sidebar-toggle-icon::before {
+  top: -6px; /* Reset to hamburger position */
+  transform: rotate(0deg);
+}
+
+.sidebar-closed .sidebar-toggle-icon::after {
+  bottom: -6px; /* Reset to hamburger position */
+  transform: rotate(0deg);
+}
+
+/* X icon when sidebar is open */
+.sidebar-toggle-icon {
+  background: transparent; /* Hide middle line for X */
+}
+
+.sidebar-toggle-icon::before {
   top: 0;
   transform: rotate(45deg);
 }
 
-.sidebar-closed .sidebar-toggle-icon::after {
+.sidebar-toggle-icon::after {
   bottom: 0;
   transform: rotate(-45deg);
 }
@@ -639,10 +663,106 @@ main {
   max-width: 100%;
 }
 
+/* Mobile-specific improvements */
+@media (max-width: 900px) {
+  /* Ensure sidebar is properly hidden when closed */
+  .sidebar-closed .sidebar-wrapper {
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+
+  /* Show sidebar when open */
+  .sidebar-wrapper {
+    visibility: visible;
+  }
+
+  /* Better touch targets for mobile */
+  .tree-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.1rem 0;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+
+  .tree-link:active {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Improve sidebar scrolling on mobile */
+  .sidebar-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+
+  /* Better spacing for mobile content */
+  .post-content {
+    margin-top: 2rem; /* More space after metadata */
+    padding: 0 0.5rem; /* Add slight padding for better readability */
+  }
+
+  /* Ensure post meta is clearly separated */
+  .post-meta {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+    border-left: 3px solid var(--accent);
+  }
+
+  .post-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  /* Ensure proper spacing between all content elements */
+  .post-content > * {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .post-content > *:first-child {
+    margin-top: 0;
+  }
+
+  .post-content > *:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Improve table responsiveness */
+  .post-content table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+
+  .post-content table thead,
+  .post-content table tbody,
+  .post-content table tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  /* Better blockquote styling on mobile */
+  .post-content blockquote {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-left: 4px solid var(--accent);
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 0 4px 4px 0;
+  }
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   body {
-    padding-top: var(--header-height); /* Space for fixed header */
+    padding-top: calc(var(--header-height) + 1rem); /* Extra space for fixed header */
   }
 
   header {
@@ -654,50 +774,117 @@ main {
     background: var(--background);
     border-bottom: 1px solid var(--line);
     height: var(--header-height);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .container {
     padding: 0 1rem; /* Smaller padding on mobile */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .main-container {
     flex-direction: column;
+  }
+
+  /* Ensure content wrapper takes full width on mobile */
+  .content-wrapper {
+    max-width: 100%;
+    width: 100%;
+    flex: 1;
   }
   
   .sidebar-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: calc(var(--header-height) + 10px);
-    left: 10px;
+    top: 1rem; /* Align with sidebar header padding */
+    right: 1rem; /* Match sidebar header padding */
+    left: auto;
+    width: 44px; /* Larger touch target */
+    height: 44px;
+    background: var(--background-darker);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 110; /* Highest z-index */
   }
   
   .sidebar-wrapper {
     position: fixed;
-    top: var(--header-height);
+    top: 0; /* Full height including header */
     left: 0;
+    right: 0; /* Ensure full width */
     bottom: 0;
-    width: var(--sidebar-width);
-    z-index: 80;
+    width: 100vw; /* Full screen width */
+    height: 100vh; /* Full screen height */
+    z-index: 100; /* Higher than header */
     background: var(--background);
-    border-right: 1px solid var(--line);
     overflow-y: auto;
-    padding: 1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0; /* Remove padding, handle in content */
+    transition: transform 0.3s ease;
     transform: translateX(0);
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
   }
+
+  /* Mobile sidebar header */
+  .sidebar-mobile-header {
+    display: flex !important; /* Override desktop hide */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--background); /* Same as sidebar background */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: calc(var(--header-height) - 2rem); /* Account for padding */
+    box-sizing: border-box;
+  }
+
+  .sidebar-mobile-title h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text);
+    font-weight: 500;
+  }
+
+
+
+  /* Adjust sidebar content padding */
+  .sidebar-content {
+    padding: 1rem;
+  }
+
+  /* Remove the backdrop pseudo-element as we're going full screen */
   
   .content-wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem; /* More top padding for header clearance */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    flex: 1;
+    min-width: 0; /* Prevent flex item from overflowing */
+  }
+
+  /* Prevent content scroll when sidebar is open */
+  .sidebar-open {
+    overflow: hidden;
+  }
+
+  /* Improve content spacing when sidebar is closed */
+  .sidebar-closed .content-wrapper {
     padding-left: 1rem;
     padding-right: 1rem;
-    width: 100%;
-    box-sizing: border-box;
   }
   
   .site-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.5rem;
   }
   
   .section-header {
@@ -708,13 +895,19 @@ main {
   }
   
   .main-nav {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     width: 100%;
   }
   
   nav ul {
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: flex-start;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
   }
   
   .timeline-item {
@@ -725,6 +918,137 @@ main {
   .timeline-date {
     padding-top: 0;
   }
+
+  /* Improve post content on mobile */
+  .post-content {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  /* Make main post title much smaller on mobile */
+  .post-title {
+    font-size: 1.1rem !important; /* Much smaller for mobile */
+    line-height: 1.4;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem; /* Increase bottom margin for better separation */
+    margin-left: 1rem; /* Add left padding to title */
+    font-weight: 600;
+  }
+
+  .post-content h1,
+  .post-content h2,
+  .post-content h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+
+  .post-content h1 {
+    font-size: 1.5rem; /* Smaller h1 in content */
+  }
+
+  .post-content h2 {
+    font-size: 1.3rem; /* Smaller h2 in content */
+  }
+
+  .post-content h3 {
+    font-size: 1.1rem; /* Smaller h3 in content */
+  }
+
+  /* Better spacing for lists */
+  .post-content ul,
+  .post-content ol {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .post-content li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Improve code blocks on mobile */
+  .post-content pre {
+    font-size: 0.85rem;
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 6px;
+  }
+
+  .post-content code {
+    font-size: 0.85rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  /* Better image handling */
+  .post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  /* Ensure main content area is properly sized on mobile */
+  main {
+    padding: 1.5rem 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1rem; /* Additional space below header */
+  }
+
+  /* Improve post header spacing */
+  .post-header {
+    margin-bottom: 2rem;
+    padding-bottom: 0; /* Remove padding */
+    border-bottom: none; /* Remove border from header */
+  }
+
+  /* Better spacing for post metadata */
+  .post-meta {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 6px;
+    border-left: 3px solid var(--accent);
+    border-bottom: 1px solid var(--line); /* Add border below metadata */
+    padding-bottom: 1.5rem; /* Add padding below metadata */
+  }
+
+  /* Better spacing for post content */
+  .post {
+    margin-bottom: 2rem;
+  }
+
+  /* Hide section headers on mobile to save space */
+  .section-header,
+  .current-section {
+    display: none;
+  }
+
+  /* Ensure articles and posts take full width */
+  .post, .list-page, article {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Tablet-specific adjustments */
+@media (max-width: 768px) and (min-width: 481px) {
+  .sidebar-wrapper {
+    width: 100vw; /* Full screen on tablets too */
+    height: 100vh; /* Full screen height */
+    right: 0; /* Ensure full width */
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .content-wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 /* Small mobile devices */
@@ -734,7 +1058,9 @@ main {
   }
   
   .sidebar-wrapper {
-    width: 85%; /* Wider sidebar on small screens to be easier to use */
+    width: 100vw; /* Full screen on small devices */
+    height: 100vh; /* Full screen height */
+    right: 0; /* Ensure full width */
   }
   
   .site-header {
@@ -743,6 +1069,141 @@ main {
   
   .site-title {
     font-size: 1.2rem;
+  }
+
+  .container {
+    padding: 0 0.75rem;
+  }
+
+  .content-wrapper {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  /* Improve touch targets */
+  .tree-link {
+    padding: 0.75rem 0.5rem;
+    margin: 0.1rem 0;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+
+  .tree-link:hover,
+  .tree-link:focus {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  /* Better spacing for sidebar sections */
+  .sidebar-section {
+    margin-bottom: 2rem;
+  }
+
+  .sidebar-heading {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Improve post typography on small screens */
+  .post-content {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .post-title {
+    font-size: 1.05rem !important; /* Even smaller on very small screens */
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+  }
+
+  .post-meta {
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    padding: 0.75rem;
+  }
+
+  /* Better button sizing */
+  button, .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    min-height: 44px; /* Ensure good touch target */
+  }
+
+  /* Improve navigation on small screens */
+  nav ul {
+    gap: 0.75rem;
+  }
+
+  nav a {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.25rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Better focus states for accessibility */
+  .tree-link:focus,
+  .sidebar-link:focus,
+  nav a:focus,
+  button:focus,
+  .btn:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  /* Improve sidebar toggle button on small screens */
+  .sidebar-toggle {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    right: 1rem; /* Consistent positioning */
+    left: auto;
+    top: 1rem; /* Consistent positioning */
+  }
+
+  .sidebar-toggle:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  /* Better visual feedback for active states */
+  .tree-link.active {
+    background-color: rgba(255, 193, 7, 0.1);
+    border-left: 3px solid var(--accent);
+    padding-left: calc(0.5rem - 3px);
+  }
+
+  /* Improve readability of sidebar text */
+  .sidebar-text {
+    line-height: 1.5;
+  }
+
+  .sidebar-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0;
+    min-height: 32px;
+  }
+
+  /* Better spacing for directory tree */
+  .directory-tree {
+    margin-top: 1rem;
+  }
+
+  .tree-children {
+    margin-left: 1rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 0.5rem;
+  }
+
+  /* Improve section indicators */
+  .section-indicator {
+    font-size: 0.7rem;
+    font-weight: bold;
   }
 }
 
@@ -835,9 +1296,11 @@ main {
   transition: top 0.3s ease, transform 0.3s ease;
 }
 
-/* When sidebar is closed, make toggle button more visible */
+/* When sidebar is closed, keep toggle button on the right */
 .sidebar-closed .sidebar-toggle {
   transform: translateX(0);
-  left: 10px;
+  right: 1rem; /* Match open state */
+  left: auto;
+  top: 1rem; /* Match open state */
 }
 
