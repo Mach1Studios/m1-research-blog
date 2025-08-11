@@ -207,3 +207,45 @@
     {{ end }}
   {{ end }}
 {{ end }}
+
+<!-- Mermaid.js for rendering diagrams from Markdown code fences ```mermaid -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (!window.mermaid) return;
+
+    try {
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const mermaidTheme = prefersDark ? 'dark' : 'default';
+
+      // Initialize Mermaid without auto-start; we'll upgrade code blocks first
+      mermaid.initialize({ startOnLoad: false, theme: mermaidTheme, securityLevel: 'loose' });
+
+      // Transform fenced code blocks (```mermaid) into <div class="mermaid"> for rendering
+      document.querySelectorAll('pre > code.language-mermaid').forEach(function(codeEl) {
+        const preEl = codeEl.parentElement;
+        const highlightWrapper = preEl.parentElement && preEl.parentElement.classList && preEl.parentElement.classList.contains('highlight')
+          ? preEl.parentElement
+          : null;
+        const diagram = codeEl.textContent;
+        const container = document.createElement('div');
+        container.className = 'mermaid';
+        container.textContent = diagram;
+        if (highlightWrapper) {
+          highlightWrapper.replaceWith(container);
+        } else {
+          preEl.replaceWith(container);
+        }
+      });
+
+      // Render all mermaid containers
+      if (typeof mermaid.run === 'function') {
+        mermaid.run({ querySelector: '.mermaid' });
+      } else if (typeof mermaid.init === 'function') {
+        mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+      }
+    } catch (err) {
+      console.error('Mermaid initialization failed:', err);
+    }
+  });
+</script>
