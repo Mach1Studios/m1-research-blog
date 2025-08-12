@@ -8,6 +8,7 @@ title: "Posts"
 - [IMU Enabled Devices]({{< relref "/posts/imu-enabled-devices" >}})
 
 ### Research Blog Posts
+- [Mach1 Spatial and Eclipsa Audio: Open-Format Interoperability]({{< relref "/posts/mach1-spatial-and-eclipsa-audio-open-format-interoperability" >}})
 - [Microphone Arrays and Vector Based Soundfields]({{< relref "/posts/microphone-arrays-and-vector-based-soundfields" >}})
 - [Naming Conventions: Ambisonic "Formats"]({{< relref "/posts/naming-conventions_ambisonic-formats" >}})
 - [State of Affairs: Spatial Audio]({{< relref "/posts/state-of-affairs-spatial-audio" >}})
