@@ -9,9 +9,7 @@ draft: false
 
 Both Mach1 and Eclipsa share a philosophy of open, platform-agnostic spatial audio, and they complement each other in the production/distribution chain. Mach1 provides a creator-friendly and developer-friendly working framework and a robust SDK for manipulation, while Eclipsa provides a standardized delivery framework for the metadata and codec support. 
 
-By adding Eclipsa/IAMF support from the Mach1 Spatial enabled production pipeline, we unlock powerful workflows that bridge creation and distribution seamlessly. This post explores the potential for integrating these two open-format spatial audio systems to create an *end-to-end* pipeline that maintains quality while providing maximum flexibility.
-
-> In plain terms: **Mach1** is where you *create and control your sound* without worrying about final delivery constraints; **Eclipsa/IAMF** is where that sound gets *packaged for the world to hear*, in a standard format compatible with a wide range of platforms and devices.
+By combining Eclipsa/IAMF support with a Mach1 Spatial enabled production pipeline, we unlock powerful workflows that bridge creation and distribution seamlessly. This post explores the potential for integrating these two open-format spatial audio systems to create an *end-to-end* pipeline that maintains quality while providing maximum flexibility.
 
 ## Mach1 as an Intermediate Mix Format
 
@@ -25,7 +23,7 @@ Integrating Eclipsa (IAMF) as one of these target formats via an output .iamf wi
 
 Currently, Mach1Transcode supports a wide range of spatial audio formats – from channel-based surrounds (5.1, 7.1, 7.1.4, etc.), to ambisonics (ACN/SN3D first order, third order, etc.), to various microphone array layouts. It even allows *custom configurations* defined via JSON files.
 
-By adding IAMF/Eclipsa to the supported format list, Mach1 would allow developers to ingest an Eclipsa file and convert it to Mach1, or conversely take a Mach1 mix and produce an Eclipsa bitstream. 
+By adding IAMF/Eclipsa to the supported format list, Mach1 would allow developers to ingest an Eclipsa file and convert it to Mach1 Spatial, or conversely take a Mach1 Spatial soundfield and produce an Eclipsa encoded bitstream. 
 
 ### Example API Usage
 
@@ -62,8 +60,8 @@ This would extract the audio into Mach1's working format for further editing or 
 
 | Feature        | Mach1 SDK (Production)              | Eclipsa/IAMF (Distribution)       |
 |:---------------|:------------------------------------|:----------------------------------|
-| Primary role   | Intermediate “master” format        | Final consumer playback format    |
-| Focus          | Creator workflow, editing, routing  | Standardized delivery, compatibility |
+| Primary role   | Intermediate “master” format        | consumer playback format option    |
+| Focus          | Creator workflow, editing, routing, development & decode control  | Standardized packaging, compatibility |
 | Audio data     | Uncompressed or custom-encoded      | Codec-based (Opus, AAC, PCM)      |
 | Openness       | SDK + open documentation            | Public spec + reference implementation |
 | Metadata       | Flexible channel mapping, amplitude panning | Structured IAMF metadata for spatial elements |
@@ -74,12 +72,12 @@ This would extract the audio into Mach1's working format for further editing or 
 
 The IAMF spec is public and a reference implementation is available. This openness is similar to Mach1's own openness (*Mach1's methods are published and the SDK is on GitHub*).
 
-The result is that a Mach1-Eclipsa integration could potentially cover "all of it" – the entire end-to-end chain in open source:
+The result is that a Mach1-Eclipsa integration is an example of covering "all of it" – the entire end-to-end chain in open source:
 - **Authoring tools**
 - **Intermediate format** 
 - **Final consumer format**
 
-Mach1's amplitude-pan approach could even simplify some aspects of Eclipsa authoring. For instance, Mach1's channels could be mapped directly to Eclipsa's channel-based elements or used to derive object trajectories. Since Mach1 is *codec-agnostic*, it can carry uncompressed or compressed audio which Eclipsa could encode using Opus, AAC, or PCM inside the MP4 (IAMF supports multiple codecs, with Opus being a likely choice for delivery).
+Mach1's amplitude-pan approach could even simplify some aspects of Eclipsa authoring. For instance, the Mach1 Spatial channels could be mapped directly to Eclipsa's channel-based elements or used to derive object trajectories. Since Mach1 is *codec-agnostic*, it can carry uncompressed or compressed audio which Eclipsa could encode using Opus, AAC, or PCM inside the MP4 (IAMF supports multiple codecs, with Opus being a likely choice for delivery).
 
 ```mermaid
 %%{init: {'theme': 'dark', 'flowchart': {'curve': 'basis'}} }%%
@@ -93,21 +91,27 @@ flowchart LR
 
   subgraph Dist["Distribution (Eclipsa / IAMF)"]
     D(Transcode to IAMF)
-    E(Stream / Playback)
-    C --> D --> E
+    C --> D
+  end
+
+  subgraph Playback["Playback"]
+    E(Mach1Decode API Playback)
+    F(IAMF Decode Playback)
+    D --> E
+    D --> F
   end
 
   classDef m1 fill:#0f172a,stroke:#60a5fa,stroke-width:2px,color:#e5e7eb;
   classDef iamf fill:#111827,stroke:#34d399,stroke-width:2px,color:#e5e7eb;
-  class A,B,C m1;
-  class D,E iamf;
+  class A,B,C,E m1;
+  class D,F iamf;
   ```
 
 ## Conclusion
 
 In short, Mach1 Spatial and Eclipsa Audio together enable an open, end-to-end pipeline: Mach1 covers the creation and intermediary workflow and supportive development pipeline, and Eclipsa covers the codec deliverable and final streaming endpoint. This integration would provide content creators with unprecedented flexibility while maintaining the quality and openness that both platforms champion.
 
-The combination of these technologies represents a significant step forward in creating truly *platform-agnostic* spatial & multichannel audio workflows that can adapt to any distribution pipeline while *preserving the creative intent* of the original mix. 
+The combination of these technologies represents a great example in creating truly *platform-agnostic* spatial & multichannel audio workflows that can adapt to any distribution pipeline while *preserving the creative intent* of the original mix. 
 
 ## Future Research Directions
 
