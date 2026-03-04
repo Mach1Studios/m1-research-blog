@@ -80,6 +80,14 @@ Our engineering team evaluated each spatializer across three primary dimensions:
 
 ### Unity Built-in Spatializer
 
+<p>
+    <h4>Unity 3D (Built-in)</h4>
+      <audio controls="controls">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-unity-spatializer/audio/mp3/Unity3D_Test.mp3" type="audio/mp3">
+      Your browser does not support the audio element.</audio>
+    <br>
+</p>
+
 The built-in spatializer applies the least amount of HRTF processing. This results in the most tonally neutral output — the source signal retains its original character with minimal spectral alteration. The trade-off is that front/back differentiation is the weakest of the three. Sounds placed directly in front of and behind the listener are difficult to distinguish.
 
 For applications where preserving the original timbre is paramount and spatial cues are supplemented by visual context, the built-in option may be sufficient.
@@ -91,16 +99,9 @@ Steam Audio sits in the middle ground on coloration and provides noticeably bett
 This dual approach — subtractive *and* additive — makes spatial positioning more pronounced but introduces more tonal deviation from the source material.
 
 <p>
-    <h4>Steam Audio — Raw Output (+20 dB offset)</h4>
+    <h4>Steam Audio (−20 dB compensated)</h4>
       <audio controls="controls">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-unity-spatializer-hrtfs/SteamAudio_Test.mp4" type="audio/mp4">
-      Your browser does not support the audio element.</audio>
-    <br>
-</p>
-<p>
-    <h4>Steam Audio — With −20 dB Compensation</h4>
-      <audio controls="controls">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-unity-spatializer-hrtfs/SteamAudio_Test_-20dB.mp4" type="audio/mp4">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-unity-spatializer/audio/mp3/SteamAudio_Test_-20dB.mp3" type="audio/mp3">
       Your browser does not support the audio element.</audio>
     <br>
 </p>
@@ -130,7 +131,7 @@ flowchart LR
 <p>
     <h4>Resonance Audio</h4>
       <audio controls="controls">
-      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-unity-spatializer-hrtfs/Resonance_Test.mp4" type="audio/mp4">
+      <source src="https://mach1-research-public.s3.amazonaws.com/posts/resources/compare-unity-spatializer/audio/mp3/Resonance_Test.mp3" type="audio/mp3">
       Your browser does not support the audio element.</audio>
     <br>
 </p>
